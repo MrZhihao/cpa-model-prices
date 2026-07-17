@@ -2,7 +2,7 @@ name: Update merged model prices
 
 on:
   schedule:
-    - cron: "23 * * * *"
+    - cron: "23 */6 * * *"
   workflow_dispatch:
   push:
     paths:
