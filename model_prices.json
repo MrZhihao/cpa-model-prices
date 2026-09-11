@@ -22691,6 +22691,14 @@
         },
         "name": "claude-mid-conversation-system",
         "pattern": "claude-[a-z]+-(?:4[-._](?:[89]|[1-9]\\d)(?!\\d)|(?:[5-9]|[1-9]\\d)(?!\\d)(?:[-._]\\d{1,2}(?!\\d))?)"
+      },
+      {
+        "description": "Any Weights & Biases Inference model id, anchored to the wandb/ namespace so only that provider's ids match. W&B's serverless catalog is reasoning-first and grows faster than this registry names it, so an id the map has not described yet is treated as reasoning-capable and keeps the caller's reasoning_effort instead of dropping it or raising UnsupportedParamsError. Rules lose to exact entries, so a mapped non-reasoning model such as wandb/meta-llama/Llama-3.1-8B-Instruct is unaffected. Carries no mode and no pricing, so cost stays on the standard unpriced behavior and the deployment does not read as catalog-mapped to the router's reasoning-effort resolver.",
+        "model_info": {
+          "supports_reasoning": true
+        },
+        "name": "wandb-reasoning-baseline",
+        "pattern": "^wandb/"
       }
     ]
   },
@@ -33840,7 +33848,7 @@
       "image"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
     "supports_none_reasoning_effort": true,
     "supports_parallel_function_calling": true,
@@ -33885,7 +33893,7 @@
       "image"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
     "supports_none_reasoning_effort": true,
     "supports_parallel_function_calling": true,
@@ -34103,7 +34111,7 @@
       "image"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
     "supports_none_reasoning_effort": true,
     "supports_parallel_function_calling": true,
@@ -34149,7 +34157,7 @@
       "image"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
     "supports_none_reasoning_effort": true,
     "supports_parallel_function_calling": true,
@@ -34453,7 +34461,7 @@
       "text"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
     "supports_none_reasoning_effort": true,
     "supports_parallel_function_calling": true,
@@ -34505,7 +34513,7 @@
       "text"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
     "supports_none_reasoning_effort": true,
     "supports_parallel_function_calling": true,
@@ -34757,7 +34765,7 @@
       "text"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
     "supports_none_reasoning_effort": false,
     "supports_parallel_function_calling": true,
@@ -34808,7 +34816,7 @@
       "text"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
     "supports_none_reasoning_effort": false,
     "supports_parallel_function_calling": true,
@@ -37187,13 +37195,14 @@
     "supports_tool_choice": true
   },
   "jina-reranker-v2-base-multilingual": {
-    "input_cost_per_token": 1.8E-8,
+    "input_cost_per_token": 5E-8,
     "litellm_provider": "jina_ai",
     "max_input_tokens": 1024,
     "max_output_tokens": 1024,
     "max_tokens": 1024,
     "mode": "rerank",
-    "output_cost_per_token": 1.8E-8
+    "output_cost_per_token": 0.0,
+    "source": "https://api.jina.ai/v1/models"
   },
   "jp.anthropic.claude-haiku-4-5-20251001-v1:0": {
     "cache_creation_input_token_cost": 0.000001375,
@@ -47985,6 +47994,45 @@
     "output_cost_per_token": 0.0000012,
     "source": "https://openrouter.ai/openai/gpt-5.6-luna",
     "supports_audio_input": false,
+    "supports_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "openrouter/openai/gpt-5.6-sol": {
+    "cache_creation_input_token_cost": 0.0000025,
+    "cache_creation_input_token_cost_above_272k_tokens": 0.000005,
+    "cache_read_input_token_cost": 2E-7,
+    "cache_read_input_token_cost_above_272k_tokens": 4E-7,
+    "default_reasoning_effort": "medium",
+    "input_cost_per_token": 0.000002,
+    "input_cost_per_token_above_272k_tokens": 0.000004,
+    "litellm_provider": "openrouter",
+    "max_input_tokens": 1050000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.00001,
+    "output_cost_per_token_above_272k_tokens": 0.000015,
+    "reasoning_effort_levels": [
+      "none",
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "source": "https://openrouter.ai/openai/gpt-5.6-sol",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
     "supports_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
@@ -62448,6 +62496,7 @@
     "output_cost_per_token": 9.6E-7,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/OpenPipe/Qwen3-14B-Instruct": {
@@ -62476,7 +62525,8 @@
     "max_output_tokens": 262144,
     "max_tokens": 262144,
     "mode": "chat",
-    "output_cost_per_token": 1E-7
+    "output_cost_per_token": 1E-7,
+    "supports_reasoning": true
   },
   "wandb/Qwen/Qwen3-30B-A3B-Instruct-2507": {
     "input_cost_per_token": 1E-7,
@@ -62506,6 +62556,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.00000125,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/Qwen/Qwen3.6-27B": {
@@ -62518,6 +62569,7 @@
     "output_cost_per_token": 0.0000036,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/Qwen/Qwen3.6-35B-A3B": {
@@ -62528,6 +62580,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.00000125,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/Qwen/Qwen3.8-27B": {
@@ -62540,6 +62593,7 @@
     "output_cost_per_token": 0.000003,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/deepseek-ai/DeepSeek-R1-0528": {
@@ -62549,7 +62603,8 @@
     "max_output_tokens": 161000,
     "max_tokens": 161000,
     "mode": "chat",
-    "output_cost_per_token": 0.0000054
+    "output_cost_per_token": 0.0000054,
+    "supports_reasoning": true
   },
   "wandb/deepseek-ai/DeepSeek-V3-0324": {
     "input_cost_per_token": 0.00000114,
@@ -62568,7 +62623,8 @@
     "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 0.00000165,
-    "source": "https://wandb.ai/site/pricing/tokens/"
+    "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true
   },
   "wandb/deepseek-ai/DeepSeek-V4-Flash": {
     "cache_read_input_token_cost": 7E-8,
@@ -62580,6 +62636,7 @@
     "output_cost_per_token": 2.8E-7,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
   },
   "wandb/deepseek-ai/DeepSeek-V4-Flash-0731": {
@@ -62592,6 +62649,7 @@
     "output_cost_per_token": 2.8E-7,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
   },
   "wandb/deepseek-ai/DeepSeek-V4-Pro": {
@@ -62604,7 +62662,18 @@
     "output_cost_per_token": 0.00000255,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
+  },
+  "wandb/deepseek-ai/DeepSeek-V4-Pro-0813": {
+    "cache_read_input_token_cost": 4.4E-8,
+    "input_cost_per_token": 0.00000131,
+    "litellm_provider": "wandb",
+    "mode": "chat",
+    "output_cost_per_token": 0.00000396,
+    "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_prompt_caching": true,
+    "supports_reasoning": true
   },
   "wandb/google/gemma-4-31B-it": {
     "input_cost_per_token": 1E-7,
@@ -62614,6 +62683,7 @@
     "mode": "chat",
     "output_cost_per_token": 3.4E-7,
     "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/ibm-granite/granite-4.1-8b": {
@@ -62625,6 +62695,16 @@
     "output_cost_per_token": 1E-7,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_vision": false
+  },
+  "wandb/ibm-granite/granite-4.2-8b": {
+    "cache_read_input_token_cost": 5E-8,
+    "input_cost_per_token": 1E-7,
+    "litellm_provider": "wandb",
+    "mode": "chat",
+    "output_cost_per_token": 1.5E-7,
+    "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_prompt_caching": true,
+    "supports_reasoning": true
   },
   "wandb/meta-llama/Llama-3.1-70B-Instruct": {
     "input_cost_per_token": 8E-7,
@@ -62708,6 +62788,7 @@
     "output_cost_per_token": 0.00000341,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/moonshotai/Kimi-K2.7-Code": {
@@ -62720,6 +62801,7 @@
     "output_cost_per_token": 0.0000035,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": true
   },
   "wandb/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B": {
@@ -62732,6 +62814,7 @@
     "output_cost_per_token": 0.00000275,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
   },
   "wandb/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B": {
@@ -62744,6 +62827,7 @@
     "output_cost_per_token": 2.5E-7,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
   },
   "wandb/openai/gpt-oss-120b": {
@@ -62754,7 +62838,8 @@
     "max_tokens": 131072,
     "mode": "chat",
     "output_cost_per_token": 1.7E-7,
-    "source": "https://wandb.ai/site/pricing/tokens/"
+    "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true
   },
   "wandb/openai/gpt-oss-20b": {
     "input_cost_per_token": 3E-8,
@@ -62764,7 +62849,8 @@
     "max_tokens": 131072,
     "mode": "chat",
     "output_cost_per_token": 1.3E-7,
-    "source": "https://wandb.ai/site/pricing/tokens/"
+    "source": "https://wandb.ai/site/pricing/tokens/",
+    "supports_reasoning": true
   },
   "wandb/zai-org/GLM-4.5": {
     "input_cost_per_token": 0.055,
@@ -62773,7 +62859,8 @@
     "max_output_tokens": 131072,
     "max_tokens": 131072,
     "mode": "chat",
-    "output_cost_per_token": 0.2
+    "output_cost_per_token": 0.2,
+    "supports_reasoning": true
   },
   "wandb/zai-org/GLM-5.2": {
     "cache_read_input_token_cost": 1.4E-7,
@@ -62785,6 +62872,7 @@
     "output_cost_per_token": 0.00000242,
     "source": "https://wandb.ai/site/pricing/tokens/",
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_vision": false
   },
   "watsonx/bigscience/mt0-xxl": {
