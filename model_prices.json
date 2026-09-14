@@ -1990,6 +1990,43 @@
     "mode": "embedding",
     "output_cost_per_token": 0.0
   },
+  "azure/chat-latest": {
+    "cache_read_input_token_cost": 5E-7,
+    "deprecation_date": "2026-12-02",
+    "input_cost_per_token": 0.000005,
+    "litellm_provider": "azure",
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.00003,
+    "reasoning_effort_levels": [
+      "medium"
+    ],
+    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
   "azure/codex-mini": {
     "cache_read_input_token_cost": 3.75E-7,
     "deprecation_date": "2026-11-15",
@@ -5656,6 +5693,43 @@
     "supports_tool_choice": true,
     "supports_vision": false
   },
+  "azure/gpt-chat-latest": {
+    "cache_read_input_token_cost": 5E-7,
+    "deprecation_date": "2026-12-02",
+    "input_cost_per_token": 0.000005,
+    "litellm_provider": "azure",
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.00003,
+    "reasoning_effort_levels": [
+      "medium"
+    ],
+    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
   "azure/gpt-image-1": {
     "cache_read_input_token_cost": 0.00000125,
     "deprecation_date": "2026-10-23",
@@ -5740,7 +5814,8 @@
   },
   "azure/gpt-realtime-1.5-2026-02-23": {
     "cache_creation_input_audio_token_cost": 0.000004,
-    "cache_read_input_token_cost": 0.000004,
+    "cache_read_input_audio_token_cost": 4E-7,
+    "cache_read_input_token_cost": 4E-7,
     "deprecation_date": "2027-08-24",
     "input_cost_per_audio_token": 0.000032,
     "input_cost_per_image_token": 0.000005,
@@ -5877,7 +5952,8 @@
   },
   "azure/gpt-realtime-2025-08-28": {
     "cache_creation_input_audio_token_cost": 0.000004,
-    "cache_read_input_token_cost": 0.000004,
+    "cache_read_input_audio_token_cost": 4E-7,
+    "cache_read_input_token_cost": 4E-7,
     "deprecation_date": "2027-03-02",
     "input_cost_per_audio_token": 0.000032,
     "input_cost_per_image_token": 0.000005,
@@ -5910,6 +5986,7 @@
   },
   "azure/gpt-realtime-mini": {
     "cache_creation_input_audio_token_cost": 3E-7,
+    "cache_read_input_audio_token_cost": 3E-7,
     "cache_read_input_token_cost": 6E-8,
     "input_cost_per_audio_token": 0.00001,
     "input_cost_per_image_token": 8E-7,
@@ -5942,6 +6019,7 @@
   },
   "azure/gpt-realtime-mini-2025-10-06": {
     "cache_creation_input_audio_token_cost": 3E-7,
+    "cache_read_input_audio_token_cost": 3E-7,
     "cache_read_input_token_cost": 6E-8,
     "input_cost_per_audio_token": 0.00001,
     "input_cost_per_image_token": 8E-7,
@@ -7615,6 +7693,43 @@
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
+  },
+  "azure/us/gpt-chat-latest": {
+    "cache_read_input_token_cost": 5.5E-7,
+    "deprecation_date": "2026-12-02",
+    "input_cost_per_token": 0.0000055,
+    "litellm_provider": "azure",
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.000033,
+    "reasoning_effort_levels": [
+      "medium"
+    ],
+    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "azure/us/o1-2024-12-17": {
     "cache_read_input_token_cost": 0.00000825,
@@ -22778,15 +22893,29 @@
         "pattern": "claude-[a-z]+-\\d+(?:[-.]\\d+)?(?:-\\d{8})?"
       },
       {
-        "description": "Claude at version 4.6 or higher, in any id shape that contains claude-<family>-: minors 4.6 through 4.99, any later major-minor, and bare 5+ majors so a new family shaped like claude-fable-5 matches. Requiring the claude- prefix keeps non-Claude names such as team-sonnet-5-1 out. The minor is capped at two digits so an 8-digit date suffix such as claude-opus-4-20250514 is never read as a >= 4.6 minor. Turns on adaptive thinking for new versions and new families with no code change.",
+        "description": "Claude at version 4.6 or higher, in any id shape that contains claude-<family>-: minors 4.6 through 4.99, any later major-minor, and bare 5+ majors so a new family shaped like claude-fable-5 matches. Requiring the claude- prefix keeps non-Claude names such as team-sonnet-5-1 out. The minor is capped at two digits so an 8-digit date suffix such as claude-opus-4-20250514 is never read as a >= 4.6 minor. Two-digit majors are deliberately not matched so ids like claude-opus-41 (4.1) are not read as major 41. Turns on adaptive thinking for new versions and new families with no code change.",
+        "fill_missing_for_providers": [
+          "anthropic",
+          "azure_ai",
+          "bedrock",
+          "bedrock_converse",
+          "vertex_ai-anthropic_models"
+        ],
         "model_info": {
           "supports_adaptive_thinking": true
         },
         "name": "claude-adaptive-thinking",
-        "pattern": "claude-[a-z]+-(?:4[-._](?:[6-9]|[1-9]\\d)(?!\\d)|(?:[5-9]|[1-9]\\d)(?!\\d)(?:[-._]\\d{1,2}(?!\\d))?)"
+        "pattern": "claude-[a-z]+-(?:4[-._](?:[6-9]|[1-9]\\d)(?!\\d)|[5-9](?!\\d)(?:[-._]\\d{1,2}(?!\\d))?)"
       },
       {
         "description": "Claude at version 4.6 exactly, in any id shape that contains claude-<family>-4-6 (dotted and underscored minors included, dated releases such as claude-sonnet-4-6-20260219 too). The 4.6 family is adaptive-thinking yet still accepts legacy thinking.type=enabled with budget_tokens, so the caller's hard budget cap is forwarded verbatim instead of being rewritten to an uncapped output_config.effort. The lookahead keeps two-digit minors such as 4-60 from matching. 4.7+ and 5+ majors reject the legacy shape and stay on the adaptive translation.",
+        "fill_missing_for_providers": [
+          "anthropic",
+          "azure_ai",
+          "bedrock",
+          "bedrock_converse",
+          "vertex_ai-anthropic_models"
+        ],
         "model_info": {
           "supports_legacy_thinking": true
         },
@@ -22802,12 +22931,19 @@
         "pattern": "claude-(?:fable|mythos)-"
       },
       {
-        "description": "Claude at version 4.8 or higher, in any id shape that contains claude-<family>-: minors 4.8 through 4.99, any later major-minor, and bare 5+ majors so a new family like claude-fable-5 matches. Anthropic introduced mid-conversation system messages with Opus 4.8 and every newer Claude keeps them; 4.7 and below reject the system role inside messages.",
+        "description": "Claude at version 4.8 or higher, in any id shape that contains claude-<family>-: minors 4.8 through 4.99, any later major-minor, and bare 5+ majors so a new family like claude-fable-5 matches. Two-digit majors are deliberately not matched so ids like claude-opus-41 (4.1) are not read as major 41. Anthropic introduced mid-conversation system messages with Opus 4.8 and every newer Claude keeps them; 4.7 and below reject the system role inside messages.",
+        "fill_missing_for_providers": [
+          "anthropic",
+          "azure_ai",
+          "bedrock",
+          "bedrock_converse",
+          "vertex_ai-anthropic_models"
+        ],
         "model_info": {
           "supports_mid_conversation_system": true
         },
         "name": "claude-mid-conversation-system",
-        "pattern": "claude-[a-z]+-(?:4[-._](?:[89]|[1-9]\\d)(?!\\d)|(?:[5-9]|[1-9]\\d)(?!\\d)(?:[-._]\\d{1,2}(?!\\d))?)"
+        "pattern": "claude-[a-z]+-(?:4[-._](?:[89]|[1-9]\\d)(?!\\d)|[5-9](?!\\d)(?:[-._]\\d{1,2}(?!\\d))?)"
       },
       {
         "description": "Any Weights & Biases Inference model id, anchored to the wandb/ namespace so only that provider's ids match. W&B's serverless catalog is reasoning-first and grows faster than this registry names it, so an id the map has not described yet is treated as reasoning-capable and keeps the caller's reasoning_effort instead of dropping it or raising UnsupportedParamsError. Rules lose to exact entries, so a mapped non-reasoning model such as wandb/meta-llama/Llama-3.1-8B-Instruct is unaffected. Carries no mode and no pricing, so cost stays on the standard unpriced behavior and the deployment does not read as catalog-mapped to the router's reasoning-effort resolver.",
@@ -22819,6 +22955,11 @@
       },
       {
         "description": "OpenAI reasoning families by id shape, under any provider namespace and with an optional ft: prefix: the o-series (o1, o3-pro, o4-mini), gpt-5 through gpt-9 majors including dotted minors and suffixed variants (gpt-5.5-cyber, gpt-6-astra), and the codex, deep-research and chat-latest lines when standalone or on a gpt base. gpt-5-search-api is excluded because it is a search-only surface. Every model here is a reasoning model, and the Responses API drops the caller's reasoning param for any mapped OpenAI model whose info lacks supports_reasoning, so an id the registry has not named yet keeps its reasoning settings instead of silently losing them. Rules lose to exact entries. Carries no mode and no pricing, so cost stays on the standard unpriced behavior.",
+        "fill_missing_for_providers": [
+          "azure",
+          "azure_ai",
+          "openai"
+        ],
         "model_info": {
           "supports_reasoning": true
         },
@@ -26502,34 +26643,6 @@
     "supports_tool_choice": true,
     "supports_video_input": false,
     "supports_vision": true
-  },
-  "friendliai/meta-llama-3.1-70b-instruct": {
-    "input_cost_per_token": 6E-7,
-    "litellm_provider": "friendliai",
-    "max_input_tokens": 8192,
-    "max_output_tokens": 8192,
-    "max_tokens": 8192,
-    "mode": "chat",
-    "output_cost_per_token": 6E-7,
-    "supports_function_calling": true,
-    "supports_parallel_function_calling": true,
-    "supports_response_schema": true,
-    "supports_system_messages": true,
-    "supports_tool_choice": true
-  },
-  "friendliai/meta-llama-3.1-8b-instruct": {
-    "input_cost_per_token": 1E-7,
-    "litellm_provider": "friendliai",
-    "max_input_tokens": 8192,
-    "max_output_tokens": 8192,
-    "max_tokens": 8192,
-    "mode": "chat",
-    "output_cost_per_token": 1E-7,
-    "supports_function_calling": true,
-    "supports_parallel_function_calling": true,
-    "supports_response_schema": true,
-    "supports_system_messages": true,
-    "supports_tool_choice": true
   },
   "friendliai/zai-org/GLM-5.1": {
     "cache_read_input_token_cost": 2.6E-7,
@@ -36208,6 +36321,7 @@
   },
   "gpt-realtime": {
     "cache_creation_input_audio_token_cost": 4E-7,
+    "cache_read_input_audio_token_cost": 4E-7,
     "cache_read_input_token_cost": 4E-7,
     "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 0.000032,
@@ -36241,6 +36355,7 @@
   },
   "gpt-realtime-1.5": {
     "cache_creation_input_audio_token_cost": 4E-7,
+    "cache_read_input_audio_token_cost": 4E-7,
     "cache_read_input_token_cost": 4E-7,
     "input_cost_per_audio_token": 0.000032,
     "input_cost_per_image_token": 0.000005,
@@ -36376,6 +36491,7 @@
   },
   "gpt-realtime-2025-08-28": {
     "cache_creation_input_audio_token_cost": 4E-7,
+    "cache_read_input_audio_token_cost": 4E-7,
     "cache_read_input_token_cost": 4E-7,
     "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 0.000032,
@@ -36410,6 +36526,7 @@
   "gpt-realtime-mini": {
     "cache_creation_input_audio_token_cost": 3E-7,
     "cache_read_input_audio_token_cost": 3E-7,
+    "cache_read_input_token_cost": 6E-8,
     "deprecation_date": "2027-01-20",
     "input_cost_per_audio_token": 0.00001,
     "input_cost_per_token": 6E-7,
