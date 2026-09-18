@@ -15480,19 +15480,19 @@
     "use_openai_responses_path": true
   },
   "bedrock_mantle/openai.gpt-5.6-sol": {
-    "cache_creation_input_token_cost": 0.000006875,
-    "cache_creation_input_token_cost_above_272k_tokens": 0.00001375,
-    "cache_read_input_token_cost": 5.5E-7,
-    "cache_read_input_token_cost_above_272k_tokens": 0.0000011,
-    "input_cost_per_token": 0.0000055,
-    "input_cost_per_token_above_272k_tokens": 0.000011,
+    "cache_creation_input_token_cost": 0.0000055,
+    "cache_creation_input_token_cost_above_272k_tokens": 0.000011,
+    "cache_read_input_token_cost": 4.4E-7,
+    "cache_read_input_token_cost_above_272k_tokens": 8.8E-7,
+    "input_cost_per_token": 0.0000044,
+    "input_cost_per_token_above_272k_tokens": 0.0000088,
     "litellm_provider": "bedrock_mantle",
     "max_input_tokens": 1050000,
     "max_output_tokens": 128000,
     "max_tokens": 128000,
     "mode": "responses",
-    "output_cost_per_token": 0.000033,
-    "output_cost_per_token_above_272k_tokens": 0.0000495,
+    "output_cost_per_token": 0.000022,
+    "output_cost_per_token_above_272k_tokens": 0.000033,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.012,
       "search_context_size_low": 0.012,
@@ -19297,6 +19297,26 @@
       }
     ]
   },
+  "dashscope/qwen3.8-flash": {
+    "cache_creation_input_token_cost": 2E-7,
+    "cache_read_input_token_cost": 1.6E-8,
+    "input_cost_per_token": 1.5E-7,
+    "litellm_provider": "dashscope",
+    "max_input_tokens": 991808,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 4.7E-7,
+    "source": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/model-pricing",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
   "dashscope/qwen3.8-max": {
     "cache_read_input_token_cost": 2.5E-7,
     "input_cost_per_token": 0.000002,
@@ -19313,6 +19333,26 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "dashscope/qwen3.8-omni-flash": {
+    "cache_read_input_token_cost": 1.6E-8,
+    "input_cost_per_token": 1.5E-7,
+    "litellm_provider": "dashscope",
+    "max_input_tokens": 991808,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 4.7E-7,
+    "source": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/model-pricing",
+    "supports_audio_input": true,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "dashscope/qwq-plus": {
     "input_cost_per_token": 8E-7,
@@ -23985,8 +24025,8 @@
   "embed-english-light-v3.0": {
     "input_cost_per_token": 1E-7,
     "litellm_provider": "cohere",
-    "max_input_tokens": 1024,
-    "max_tokens": 1024,
+    "max_input_tokens": 512,
+    "max_tokens": 512,
     "mode": "embedding",
     "output_cost_per_token": 0.0
   },
@@ -24003,8 +24043,8 @@
     "input_cost_per_image": 0.0001,
     "input_cost_per_token": 1E-7,
     "litellm_provider": "cohere",
-    "max_input_tokens": 1024,
-    "max_tokens": 1024,
+    "max_input_tokens": 512,
+    "max_tokens": 512,
     "metadata": {
       "notes": "'supports_image_input' is a deprecated field. Use 'supports_embedding_image_input' instead."
     },
@@ -24016,8 +24056,8 @@
   "embed-multilingual-light-v3.0": {
     "input_cost_per_token": 0.0001,
     "litellm_provider": "cohere",
-    "max_input_tokens": 1024,
-    "max_tokens": 1024,
+    "max_input_tokens": 512,
+    "max_tokens": 512,
     "mode": "embedding",
     "output_cost_per_token": 0.0,
     "supports_embedding_image_input": true
@@ -24034,8 +24074,8 @@
   "embed-multilingual-v3.0": {
     "input_cost_per_token": 1E-7,
     "litellm_provider": "cohere",
-    "max_input_tokens": 1024,
-    "max_tokens": 1024,
+    "max_input_tokens": 512,
+    "max_tokens": 512,
     "mode": "embedding",
     "output_cost_per_token": 0.0,
     "supports_embedding_image_input": true
@@ -57512,14 +57552,14 @@
     "supports_web_search": false
   },
   "openrouter/tencent/hy3": {
-    "cache_read_input_token_cost": 3.3E-8,
-    "input_cost_per_token": 1.32E-7,
+    "cache_read_input_token_cost": 2.0625E-8,
+    "input_cost_per_token": 8.25E-8,
     "litellm_provider": "openrouter",
     "max_input_tokens": 262144,
     "max_output_tokens": 128000,
     "max_tokens": 128000,
     "mode": "chat",
-    "output_cost_per_token": 5.28E-7,
+    "output_cost_per_token": 3.3E-7,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -58341,14 +58381,14 @@
     "supports_web_search": false
   },
   "openrouter/z-ai/glm-5.3": {
-    "cache_read_input_token_cost": 2.6E-7,
-    "input_cost_per_token": 0.0000014,
+    "cache_read_input_token_cost": 1.69E-7,
+    "input_cost_per_token": 9.1E-7,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1310720,
     "max_output_tokens": 943717,
     "max_tokens": 943717,
     "mode": "chat",
-    "output_cost_per_token": 0.0000044,
+    "output_cost_per_token": 0.00000286,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -58531,14 +58571,14 @@
     "supports_web_search": false
   },
   "openrouter/~deepseek/deepseek-flash-latest": {
-    "cache_read_input_token_cost": 1.5E-8,
-    "input_cost_per_token": 1.5E-7,
+    "cache_read_input_token_cost": 4.2E-9,
+    "input_cost_per_token": 1.4E-7,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1048576,
     "max_output_tokens": 393216,
     "max_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 6E-7,
+    "output_cost_per_token": 4.2E-7,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -58823,14 +58863,14 @@
     "supports_web_search": false
   },
   "openrouter/~z-ai/glm-latest": {
-    "cache_read_input_token_cost": 1.5E-7,
+    "cache_read_input_token_cost": 1.46625E-7,
     "input_cost_per_token": 9E-7,
     "litellm_provider": "openrouter",
     "max_input_tokens": 1310720,
     "max_output_tokens": 235929,
     "max_tokens": 235929,
     "mode": "chat",
-    "output_cost_per_token": 0.000003,
+    "output_cost_per_token": 0.000002805,
     "source": "https://openrouter.ai/api/v1/models",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -61136,6 +61176,26 @@
       }
     ]
   },
+  "qwen_ai_platform/qwen3.8-flash": {
+    "cache_creation_input_token_cost": 2E-7,
+    "cache_read_input_token_cost": 1.6E-8,
+    "input_cost_per_token": 1.5E-7,
+    "litellm_provider": "qwen_ai_platform",
+    "max_input_tokens": 991808,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 4.7E-7,
+    "source": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/model-pricing",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true,
+    "supports_web_search": true
+  },
   "qwen_ai_platform/qwen3.8-max": {
     "cache_read_input_token_cost": 2.5E-7,
     "input_cost_per_token": 0.000002,
@@ -61152,6 +61212,26 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "qwen_ai_platform/qwen3.8-omni-flash": {
+    "cache_read_input_token_cost": 1.6E-8,
+    "input_cost_per_token": 1.5E-7,
+    "litellm_provider": "qwen_ai_platform",
+    "max_input_tokens": 991808,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 4.7E-7,
+    "source": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/model-pricing",
+    "supports_audio_input": true,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true,
+    "supports_web_search": true
   },
   "qwen_ai_platform/qwq-plus": {
     "input_cost_per_token": 8E-7,
@@ -65916,6 +65996,16 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "transcribe/StartTranscriptionJob": {
+    "input_cost_per_second": 0.0001,
+    "litellm_provider": "transcribe",
+    "metadata": {
+      "notes": "Amazon Transcribe standard batch transcription, billed per second of audio with no minimum. Same rate in every region of the AWS Price List offer file for transcribe (checked 2026-09-17)"
+    },
+    "mode": "audio_transcription",
+    "output_cost_per_second": 0.0,
+    "source": "https://aws.amazon.com/transcribe/pricing/"
   },
   "tts-1": {
     "input_cost_per_character": 0.000015,
