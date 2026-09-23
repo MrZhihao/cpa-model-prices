@@ -13472,13 +13472,14 @@
     "supports_tool_choice": true
   },
   "bedrock/eu-west-3/mistral.mistral-large-2402-v1:0": {
-    "input_cost_per_token": 0.0000104,
+    "input_cost_per_token": 0.0000052,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
     "max_output_tokens": 8191,
     "max_tokens": 8191,
     "mode": "chat",
-    "output_cost_per_token": 0.0000312,
+    "output_cost_per_token": 0.0000156,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true
   },
   "bedrock/eu-west-3/mistral.mixtral-8x7b-instruct-v0:1": {
@@ -13846,13 +13847,14 @@
     "supports_tool_choice": true
   },
   "bedrock/us-east-1/mistral.mistral-large-2402-v1:0": {
-    "input_cost_per_token": 0.000008,
+    "input_cost_per_token": 0.000004,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
     "max_output_tokens": 8191,
     "max_tokens": 8191,
     "mode": "chat",
-    "output_cost_per_token": 0.000024,
+    "output_cost_per_token": 0.000012,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true
   },
   "bedrock/us-east-1/mistral.mixtral-8x7b-instruct-v0:1": {
@@ -15053,13 +15055,14 @@
     "supports_tool_choice": true
   },
   "bedrock/us-west-2/mistral.mistral-large-2402-v1:0": {
-    "input_cost_per_token": 0.000008,
+    "input_cost_per_token": 0.000004,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
     "max_output_tokens": 8191,
     "max_tokens": 8191,
     "mode": "chat",
-    "output_cost_per_token": 0.000024,
+    "output_cost_per_token": 0.000012,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true
   },
   "bedrock/us-west-2/mistral.mixtral-8x7b-instruct-v0:1": {
@@ -23266,6 +23269,7 @@
     "max_tokens": 81920,
     "mode": "chat",
     "output_cost_per_token": 0.00000168,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true,
     "supports_native_structured_output": true,
     "supports_reasoning": true,
@@ -32689,7 +32693,7 @@
       "search_context_size_low": 0.035,
       "search_context_size_medium": 0.035
     },
-    "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
     "supported_endpoints": [
       "/vertex_ai/live",
       "/v1/realtime"
@@ -36013,6 +36017,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.0000012,
     "output_cost_per_token_above_272k_tokens": 0.0000018,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supported_modalities": [
       "text",
       "image"
@@ -36043,6 +36048,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.00002,
     "output_cost_per_token_above_272k_tokens": 0.00003,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supported_modalities": [
       "text",
       "image"
@@ -36073,6 +36079,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.000012,
     "output_cost_per_token_above_272k_tokens": 0.000018,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supported_modalities": [
       "text",
       "image"
@@ -36103,7 +36110,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.00005,
     "output_cost_per_token_above_272k_tokens": 0.000075,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-astra.html",
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supported_modalities": [
       "text",
       "image"
@@ -42897,16 +42904,18 @@
     "max_tokens": 8191,
     "mode": "chat",
     "output_cost_per_token": 2E-7,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_tool_choice": true
   },
   "mistral.mistral-large-2402-v1:0": {
-    "input_cost_per_token": 0.000008,
+    "input_cost_per_token": 0.000004,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
     "max_output_tokens": 8191,
     "max_tokens": 8191,
     "mode": "chat",
-    "output_cost_per_token": 0.000024,
+    "output_cost_per_token": 0.000012,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true
   },
   "mistral.mistral-large-2407-v1:0": {
@@ -42938,12 +42947,15 @@
   },
   "mistral.mistral-small-2402-v1:0": {
     "input_cost_per_token": 0.000001,
+    "input_cost_per_token_batches": 5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
     "max_output_tokens": 8191,
     "max_tokens": 8191,
     "mode": "chat",
     "output_cost_per_token": 0.000003,
+    "output_cost_per_token_batches": 0.0000015,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true
   },
   "mistral.mixtral-8x7b-instruct-v0:1": {
@@ -42954,6 +42966,7 @@
     "max_tokens": 8191,
     "mode": "chat",
     "output_cost_per_token": 7E-7,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_tool_choice": true
   },
   "mistral.voxtral-mini-3b-2507": {
@@ -48475,6 +48488,7 @@
     "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 6E-7,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -48488,6 +48502,7 @@
     "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 3E-7,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -65627,6 +65642,7 @@
     "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 0.0000054,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": false,
     "supports_reasoning": true,
     "supports_tool_choice": false
@@ -65787,6 +65803,7 @@
     "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 0.000006,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
@@ -65824,6 +65841,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.00000132,
     "output_cost_per_token_above_272k_tokens": 0.00000198,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supported_modalities": [
       "text",
       "image"
@@ -65854,6 +65872,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.000022,
     "output_cost_per_token_above_272k_tokens": 0.000033,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supported_modalities": [
       "text",
       "image"
@@ -65884,6 +65903,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.0000132,
     "output_cost_per_token_above_272k_tokens": 0.0000198,
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supported_modalities": [
       "text",
       "image"
@@ -65914,7 +65934,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.000055,
     "output_cost_per_token_above_272k_tokens": 0.0000825,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-6-astra.html",
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supported_modalities": [
       "text",
       "image"
@@ -71554,7 +71574,7 @@
     "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 6E-7,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-vision-7b.html",
+    "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_vision": true
   },
   "writer.palmyra-x4-v1:0": {
