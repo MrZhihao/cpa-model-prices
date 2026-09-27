@@ -11704,6 +11704,21 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "azure_ai/MAI-Cyber-1-Flash": {
+    "cache_read_input_token_cost": 6E-8,
+    "input_cost_per_token": 6E-7,
+    "litellm_provider": "azure_ai",
+    "max_input_tokens": 256000,
+    "max_output_tokens": 64000,
+    "max_tokens": 64000,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000035,
+    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/microsoft/",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true
+  },
   "azure_ai/MAI-DS-R1": {
     "input_cost_per_token": 0.00000135,
     "litellm_provider": "azure_ai",
@@ -13458,7 +13473,7 @@
   "azure_ai/grok-4.6": {
     "cache_read_input_token_cost": 5E-7,
     "cache_read_input_token_cost_above_200k_tokens": 0.000001,
-    "input_cost_per_token": 0.000002,
+    "input_cost_per_token": 0.00000125,
     "input_cost_per_token_above_200k_tokens": 0.000004,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 200000,
@@ -13467,7 +13482,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.000006,
     "output_cost_per_token_above_200k_tokens": 0.000012,
-    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
+    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/grok/",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
