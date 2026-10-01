@@ -3716,7 +3716,7 @@
   },
   "azure/eu/gpt-4.1-nano": {
     "cache_read_input_token_cost": 2.8E-8,
-    "deprecation_date": "2027-04-14",
+    "deprecation_date": "2026-10-14",
     "input_cost_per_token": 1.1E-7,
     "input_cost_per_token_batches": 5.5E-8,
     "litellm_provider": "azure",
@@ -5578,7 +5578,7 @@
   },
   "azure/gpt-4.1-nano": {
     "cache_read_input_token_cost": 2.5E-8,
-    "deprecation_date": "2027-04-14",
+    "deprecation_date": "2026-10-14",
     "input_cost_per_token": 1E-7,
     "input_cost_per_token_batches": 5E-8,
     "litellm_provider": "azure",
@@ -5612,7 +5612,7 @@
   },
   "azure/gpt-4.1-nano-2025-04-14": {
     "cache_read_input_token_cost": 2.5E-8,
-    "deprecation_date": "2027-04-14",
+    "deprecation_date": "2026-10-14",
     "input_cost_per_token": 1E-7,
     "input_cost_per_token_batches": 5E-8,
     "litellm_provider": "azure",
@@ -5937,7 +5937,7 @@
     "supports_tool_choice": true
   },
   "azure/gpt-4o-transcribe": {
-    "deprecation_date": "2026-12-31",
+    "deprecation_date": "2026-10-15",
     "input_cost_per_audio_token": 0.0000025,
     "input_cost_per_token": 0.0000025,
     "litellm_provider": "azure",
@@ -8864,7 +8864,7 @@
     "cache_creation_input_audio_token_cost": 4E-7,
     "cache_read_input_audio_token_cost": 4E-7,
     "cache_read_input_token_cost": 4E-7,
-    "deprecation_date": "2027-07-31",
+    "deprecation_date": "2027-06-25",
     "input_cost_per_audio_token": 0.000032,
     "input_cost_per_image_token": 0.000005,
     "input_cost_per_token": 0.000004,
@@ -8899,7 +8899,7 @@
     "cache_creation_input_audio_token_cost": 3E-7,
     "cache_read_input_audio_token_cost": 3E-7,
     "cache_read_input_token_cost": 6E-8,
-    "deprecation_date": "2027-07-31",
+    "deprecation_date": "2027-06-25",
     "input_cost_per_audio_token": 0.00001,
     "input_cost_per_image_token": 8E-7,
     "input_cost_per_token": 6E-7,
@@ -9945,7 +9945,7 @@
   },
   "azure/us/gpt-4.1-nano": {
     "cache_read_input_token_cost": 2.8E-8,
-    "deprecation_date": "2027-04-14",
+    "deprecation_date": "2026-10-14",
     "input_cost_per_token": 1.1E-7,
     "input_cost_per_token_batches": 5.5E-8,
     "litellm_provider": "azure",
@@ -9956,7 +9956,7 @@
   },
   "azure/us/gpt-4.1-nano-2025-04-14": {
     "cache_read_input_token_cost": 2.8E-8,
-    "deprecation_date": "2027-04-14",
+    "deprecation_date": "2026-10-14",
     "input_cost_per_token": 1.1E-7,
     "input_cost_per_token_batches": 5.5E-8,
     "litellm_provider": "azure",
@@ -25637,6 +25637,7 @@
   },
   "deepseek-chat": {
     "cache_read_input_token_cost": 2.8E-8,
+    "deprecation_date": "2026-07-24",
     "input_cost_per_token": 2.8E-7,
     "litellm_provider": "deepseek",
     "max_input_tokens": 131072,
@@ -25712,6 +25713,7 @@
   },
   "deepseek-reasoner": {
     "cache_read_input_token_cost": 2.8E-8,
+    "deprecation_date": "2026-07-24",
     "input_cost_per_token": 2.8E-7,
     "litellm_provider": "deepseek",
     "max_input_tokens": 131072,
@@ -25955,6 +25957,7 @@
   "deepseek/deepseek-chat": {
     "cache_creation_input_token_cost": 0.0,
     "cache_read_input_token_cost": 2.8E-8,
+    "deprecation_date": "2026-07-24",
     "input_cost_per_token": 2.8E-7,
     "input_cost_per_token_cache_hit": 2.8E-8,
     "litellm_provider": "deepseek",
@@ -26063,6 +26066,7 @@
   },
   "deepseek/deepseek-reasoner": {
     "cache_read_input_token_cost": 2.8E-8,
+    "deprecation_date": "2026-07-24",
     "input_cost_per_token": 2.8E-7,
     "input_cost_per_token_cache_hit": 2.8E-8,
     "litellm_provider": "deepseek",
@@ -30438,18 +30442,18 @@
     "supports_vision": false
   },
   "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash": {
-    "cache_read_input_token_cost": 7E-9,
-    "cache_read_input_token_cost_priority": 8.75E-9,
-    "input_cost_per_token": 2.2E-7,
-    "input_cost_per_token_priority": 2.75E-7,
+    "cache_read_input_token_cost": 6E-9,
+    "cache_read_input_token_cost_priority": 7.5E-9,
+    "input_cost_per_token": 3E-7,
+    "input_cost_per_token_priority": 3.75E-7,
     "litellm_provider": "fireworks_ai",
     "max_input_tokens": 1048576,
     "max_output_tokens": 393216,
     "max_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 6.6E-7,
-    "output_cost_per_token_priority": 8.25E-7,
-    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "output_cost_per_token": 0.0000012,
+    "output_cost_per_token_priority": 0.0000015,
+    "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -33044,18 +33048,18 @@
     "supports_vision": false
   },
   "fireworks_ai/deepseek-v4p1-flash": {
-    "cache_read_input_token_cost": 7E-9,
-    "cache_read_input_token_cost_priority": 8.75E-9,
-    "input_cost_per_token": 2.2E-7,
-    "input_cost_per_token_priority": 2.75E-7,
+    "cache_read_input_token_cost": 6E-9,
+    "cache_read_input_token_cost_priority": 7.5E-9,
+    "input_cost_per_token": 3E-7,
+    "input_cost_per_token_priority": 3.75E-7,
     "litellm_provider": "fireworks_ai",
     "max_input_tokens": 1048576,
     "max_output_tokens": 393216,
     "max_tokens": 393216,
     "mode": "chat",
-    "output_cost_per_token": 6.6E-7,
-    "output_cost_per_token_priority": 8.25E-7,
-    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "output_cost_per_token": 0.0000012,
+    "output_cost_per_token_priority": 0.0000015,
+    "source": "https://docs.fireworks.ai/serverless/pricing",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
@@ -36097,6 +36101,7 @@
     "tpm": 250000
   },
   "gemini/gemini-2.5-computer-use-preview-10-2025": {
+    "deprecation_date": "2026-07-28",
     "input_cost_per_token": 0.00000125,
     "input_cost_per_token_above_200k_tokens": 0.0000025,
     "litellm_provider": "gemini",
@@ -36384,6 +36389,7 @@
     "supports_audio_input": true,
     "supports_audio_output": true,
     "supports_function_calling": true,
+    "supports_reasoning": true,
     "supports_response_schema": false,
     "supports_vision": true,
     "supports_web_search": true,
@@ -36465,6 +36471,7 @@
     "supports_response_schema": true,
     "supports_system_messages": true,
     "supports_tool_choice": true,
+    "supports_url_context": true,
     "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
@@ -36947,6 +36954,7 @@
     "supports_audio_input": true,
     "supports_audio_output": true,
     "supports_function_calling": true,
+    "supports_reasoning": true,
     "supports_response_schema": false,
     "supports_vision": true,
     "supports_web_search": true,
@@ -37496,7 +37504,8 @@
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
     "supported_endpoints": [
       "/v1/audio/speech"
-    ]
+    ],
+    "supports_prompt_caching": true
   },
   "gemini/gemini-3.8-flash-tts": {
     "cache_read_input_token_cost": 1.25E-7,
@@ -37520,7 +37529,8 @@
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
     "supported_endpoints": [
       "/v1/audio/speech"
-    ]
+    ],
+    "supports_prompt_caching": true
   },
   "gemini/gemini-3.8-live": {
     "input_cost_per_audio_token": 0.000003,
@@ -37538,6 +37548,7 @@
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
     "supports_audio_input": true,
     "supports_function_calling": true,
+    "supports_reasoning": true,
     "supports_response_schema": false,
     "supports_vision": true,
     "supports_web_search": true,
@@ -37559,6 +37570,7 @@
     "source": "https://ai.google.dev/gemini-api/docs/pricing",
     "supports_audio_input": true,
     "supports_function_calling": true,
+    "supports_reasoning": true,
     "supports_response_schema": false,
     "supports_vision": true,
     "supports_web_search": true,
@@ -38224,7 +38236,7 @@
   "gemini/lyria-3.5": {
     "input_cost_per_token": 0,
     "litellm_provider": "gemini",
-    "max_input_tokens": 1048576,
+    "max_input_tokens": 131072,
     "max_output_tokens": 65536,
     "max_tokens": 65536,
     "mode": "chat",
@@ -48788,6 +48800,16 @@
     "supports_function_calling": true,
     "supports_reasoning": true
   },
+  "nebius/Qwen/Qwen3.8-27B": {
+    "input_cost_per_token": 4.5E-7,
+    "litellm_provider": "nebius",
+    "max_input_tokens": 262144,
+    "mode": "chat",
+    "output_cost_per_token": 0.000003,
+    "source": "https://tokenfactory.nebius.com/models/catalog/text2text/Qwen%2FQwen3.8-27B",
+    "supports_function_calling": true,
+    "supports_reasoning": true
+  },
   "nebius/deepseek-ai/DeepSeek-R1": {
     "input_cost_per_token": 8E-7,
     "litellm_provider": "nebius",
@@ -48884,6 +48906,7 @@
   "nebius/deepseek-ai/DeepSeek-V4-Pro-0813": {
     "input_cost_per_token": 0.00000132,
     "litellm_provider": "nebius",
+    "max_input_tokens": 979000,
     "mode": "chat",
     "output_cost_per_token": 0.00000396,
     "source": "https://tokenfactory.nebius.com/models/catalog/text2text/deepseek-ai%2FDeepSeek-V4-Pro-0813",
@@ -48893,7 +48916,7 @@
   "nebius/deepseek-ai/DeepSeek-V4.1-Flash": {
     "input_cost_per_token": 3E-7,
     "litellm_provider": "nebius",
-    "max_input_tokens": 1048576,
+    "max_input_tokens": 1048000,
     "max_output_tokens": 384000,
     "max_tokens": 384000,
     "mode": "chat",
@@ -49185,8 +49208,8 @@
   "nebius/zai-org/GLM-5.3": {
     "input_cost_per_token": 0.0000014,
     "litellm_provider": "nebius",
-    "max_input_tokens": 1048576,
-    "max_tokens": 1048576,
+    "max_input_tokens": 1024000,
+    "max_tokens": 1024000,
     "mode": "chat",
     "output_cost_per_token": 0.0000044,
     "source": "https://tokenfactory.nebius.com/models/catalog/text2text/zai-org%2FGLM-5.3",
@@ -49203,7 +49226,8 @@
     "output_cost_per_token": 5E-7,
     "source": "https://tokenfactory.nebius.com/models/catalog/text2text/zai-org%2FGLM-5.3-Flash",
     "supports_function_calling": true,
-    "supports_reasoning": true
+    "supports_reasoning": true,
+    "supports_vision": true
   },
   "nimble/search": {
     "input_cost_per_query": 0.005,
@@ -53904,6 +53928,21 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_web_search": true
+  },
+  "openrouter/apodex/apodex-1.1-mini:free": {
+    "input_cost_per_token": 0.0,
+    "litellm_provider": "openrouter",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 235929,
+    "max_tokens": 235929,
+    "mode": "chat",
+    "output_cost_per_token": 0.0,
+    "source": "https://openrouter.ai/api/v1/models",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "openrouter/arcee-ai/trinity-large-thinking": {
     "cache_read_input_token_cost": 6E-8,
@@ -61949,6 +61988,21 @@
     "supports_vision": true,
     "supports_web_search": false
   },
+  "openrouter/unbiased/pareto-26.10-preview": {
+    "cache_read_input_token_cost": 3E-8,
+    "input_cost_per_token": 8E-7,
+    "litellm_provider": "openrouter",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000032,
+    "source": "https://openrouter.ai/api/v1/models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "openrouter/undi95/remm-slerp-l2-13b": {
     "input_cost_per_token": 3.5E-7,
     "litellm_provider": "openrouter",
@@ -63505,6 +63559,14 @@
     "supports_web_search": true,
     "thinking_always_on": true
   },
+  "perplexity/anthropic/claude-fable-5-1": {
+    "cache_read_input_token_cost": 2.5E-7,
+    "input_cost_per_token": 0.00001,
+    "litellm_provider": "perplexity",
+    "mode": "responses",
+    "output_cost_per_token": 0.00005,
+    "source": "https://docs.perplexity.ai/docs/agent-api/models"
+  },
   "perplexity/anthropic/claude-haiku-4-5": {
     "cache_read_input_token_cost": 1E-7,
     "input_cost_per_token": 0.000001,
@@ -63577,6 +63639,14 @@
     "supports_adaptive_thinking": true,
     "supports_function_calling": true,
     "supports_web_search": true
+  },
+  "perplexity/anthropic/claude-opus-5-5": {
+    "cache_read_input_token_cost": 2E-7,
+    "input_cost_per_token": 0.000004,
+    "litellm_provider": "perplexity",
+    "mode": "responses",
+    "output_cost_per_token": 0.00002,
+    "source": "https://docs.perplexity.ai/docs/agent-api/models"
   },
   "perplexity/anthropic/claude-sonnet-4-5": {
     "cache_read_input_token_cost": 3E-7,
@@ -63735,6 +63805,14 @@
     "supports_function_calling": true,
     "supports_web_search": true
   },
+  "perplexity/google/gemini-3.8-flash": {
+    "cache_read_input_token_cost": 7.5E-8,
+    "input_cost_per_token": 7.5E-7,
+    "litellm_provider": "perplexity",
+    "mode": "responses",
+    "output_cost_per_token": 0.00000375,
+    "source": "https://docs.perplexity.ai/docs/agent-api/models"
+  },
   "perplexity/llama-2-70b-chat": {
     "input_cost_per_token": 7E-7,
     "litellm_provider": "perplexity",
@@ -63881,14 +63959,14 @@
     "supports_web_search": true
   },
   "perplexity/openai/gpt-5.6-sol": {
-    "cache_read_input_token_cost": 5E-7,
-    "cache_read_input_token_cost_above_272k_tokens": 0.000001,
-    "input_cost_per_token": 0.000005,
-    "input_cost_per_token_above_272k_tokens": 0.00001,
+    "cache_read_input_token_cost": 4E-7,
+    "cache_read_input_token_cost_above_272k_tokens": 8E-7,
+    "input_cost_per_token": 0.000004,
+    "input_cost_per_token_above_272k_tokens": 0.000008,
     "litellm_provider": "perplexity",
     "mode": "responses",
-    "output_cost_per_token": 0.00003,
-    "output_cost_per_token_above_272k_tokens": 0.000045,
+    "output_cost_per_token": 0.00002,
+    "output_cost_per_token_above_272k_tokens": 0.00003,
     "source": "https://docs.perplexity.ai/docs/agent-api/models",
     "supports_function_calling": true,
     "supports_web_search": true
@@ -63905,6 +63983,39 @@
     "source": "https://docs.perplexity.ai/docs/agent-api/models",
     "supports_function_calling": true,
     "supports_web_search": true
+  },
+  "perplexity/openai/gpt-6-luna": {
+    "cache_read_input_token_cost": 1E-8,
+    "cache_read_input_token_cost_above_272k_tokens": 2E-8,
+    "input_cost_per_token": 1E-7,
+    "input_cost_per_token_above_272k_tokens": 2E-7,
+    "litellm_provider": "perplexity",
+    "mode": "responses",
+    "output_cost_per_token": 5E-7,
+    "output_cost_per_token_above_272k_tokens": 7.5E-7,
+    "source": "https://docs.perplexity.ai/docs/agent-api/models"
+  },
+  "perplexity/openai/gpt-6-sol": {
+    "cache_read_input_token_cost": 2E-7,
+    "cache_read_input_token_cost_above_272k_tokens": 4E-7,
+    "input_cost_per_token": 0.000002,
+    "input_cost_per_token_above_272k_tokens": 0.000004,
+    "litellm_provider": "perplexity",
+    "mode": "responses",
+    "output_cost_per_token": 0.00001,
+    "output_cost_per_token_above_272k_tokens": 0.000015,
+    "source": "https://docs.perplexity.ai/docs/agent-api/models"
+  },
+  "perplexity/openai/gpt-6.1-sol": {
+    "cache_read_input_token_cost": 1E-7,
+    "cache_read_input_token_cost_above_272k_tokens": 2E-7,
+    "input_cost_per_token": 0.000002,
+    "input_cost_per_token_above_272k_tokens": 0.000004,
+    "litellm_provider": "perplexity",
+    "mode": "responses",
+    "output_cost_per_token": 0.00001,
+    "output_cost_per_token_above_272k_tokens": 0.000015,
+    "source": "https://docs.perplexity.ai/docs/agent-api/models"
   },
   "perplexity/perplexity/deepseek-v4-flash-0731": {
     "cache_read_input_token_cost": 2.8E-8,
@@ -64312,6 +64423,17 @@
     "source": "https://docs.perplexity.ai/docs/agent-api/models",
     "supports_function_calling": true,
     "supports_web_search": true
+  },
+  "perplexity/xai/grok-4.7": {
+    "cache_read_input_token_cost": 5E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 0.000001,
+    "input_cost_per_token": 0.000002,
+    "input_cost_per_token_above_200k_tokens": 0.000004,
+    "litellm_provider": "perplexity",
+    "mode": "responses",
+    "output_cost_per_token": 0.000006,
+    "output_cost_per_token_above_200k_tokens": 0.000012,
+    "source": "https://docs.perplexity.ai/docs/agent-api/models"
   },
   "pinstripes/ps/deepseek-v4-flash": {
     "input_cost_per_token": 1E-7,
@@ -76747,6 +76869,26 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "vertex_ai/xai/grok-4.7": {
+    "cache_read_input_token_cost": 5E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 0.000001,
+    "input_cost_per_token": 0.000002,
+    "input_cost_per_token_above_200k_tokens": 0.000004,
+    "litellm_provider": "vertex_ai",
+    "max_input_tokens": 524288,
+    "max_output_tokens": 524288,
+    "max_tokens": 524288,
+    "mode": "chat",
+    "output_cost_per_token": 0.000006,
+    "output_cost_per_token_above_200k_tokens": 0.000012,
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "vertex_ai/zai-org/glm-4.7-maas": {
     "cache_read_input_token_cost": 6E-8,
     "deprecation_date": "2026-10-21",
@@ -76987,6 +77129,16 @@
     "supports_tool_choice": false,
     "supports_vision": true
   },
+  "voyage/rerank-1": {
+    "input_cost_per_token": 5E-8,
+    "litellm_provider": "voyage",
+    "max_input_tokens": 8000,
+    "max_output_tokens": 8000,
+    "max_tokens": 8000,
+    "mode": "rerank",
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.voyageai.com/docs/pricing"
+  },
   "voyage/rerank-2": {
     "input_cost_per_token": 5E-8,
     "litellm_provider": "voyage",
@@ -77039,6 +77191,16 @@
     "max_input_tokens": 32000,
     "max_output_tokens": 32000,
     "max_tokens": 32000,
+    "mode": "rerank",
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.voyageai.com/docs/pricing"
+  },
+  "voyage/rerank-lite-1": {
+    "input_cost_per_token": 2E-8,
+    "litellm_provider": "voyage",
+    "max_input_tokens": 4000,
+    "max_output_tokens": 4000,
+    "max_tokens": 4000,
     "mode": "rerank",
     "output_cost_per_token": 0.0,
     "source": "https://docs.voyageai.com/docs/pricing"
@@ -77180,6 +77342,16 @@
     "max_tokens": 16000,
     "mode": "embedding",
     "output_cost_per_token": 0.0
+  },
+  "voyage/voyage-large-2-instruct": {
+    "input_cost_per_token": 1.2E-7,
+    "litellm_provider": "voyage",
+    "max_input_tokens": 16000,
+    "max_tokens": 16000,
+    "mode": "embedding",
+    "output_cost_per_token": 0.0,
+    "output_vector_size": 1024,
+    "source": "https://docs.voyageai.com/docs/pricing"
   },
   "voyage/voyage-law-2": {
     "input_cost_per_token": 1.2E-7,
