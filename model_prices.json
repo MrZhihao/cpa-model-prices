@@ -40811,6 +40811,7 @@
     ]
   },
   "gpt-4o-mini-tts-2025-03-20": {
+    "deprecation_date": "2027-01-06",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "openai",
     "mode": "audio_speech",
@@ -40830,6 +40831,7 @@
     ]
   },
   "gpt-4o-mini-tts-2025-12-15": {
+    "deprecation_date": "2027-01-06",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "openai",
     "mode": "audio_speech",
@@ -41455,6 +41457,7 @@
     "cache_read_input_token_cost_flex": 6.25E-8,
     "cache_read_input_token_cost_priority": 2.5E-7,
     "default_reasoning_effort": "none",
+    "deprecation_date": "2027-04-01",
     "input_cost_per_token": 0.00000125,
     "input_cost_per_token_batches": 6.25E-7,
     "input_cost_per_token_flex": 6.25E-7,
@@ -41969,6 +41972,7 @@
   "gpt-5.3-codex": {
     "cache_read_input_token_cost": 1.75E-7,
     "cache_read_input_token_cost_priority": 3.5E-7,
+    "deprecation_date": "2027-04-01",
     "input_cost_per_token": 0.00000175,
     "input_cost_per_token_priority": 0.0000035,
     "litellm_provider": "openai",
@@ -42236,6 +42240,7 @@
     "cache_read_input_token_cost_batches": 1E-8,
     "cache_read_input_token_cost_flex": 1E-8,
     "default_reasoning_effort": "none",
+    "deprecation_date": "2027-04-01",
     "input_cost_per_token": 2E-7,
     "input_cost_per_token_batches": 1E-7,
     "input_cost_per_token_flex": 1E-7,
@@ -45627,6 +45632,45 @@
     "supports_reasoning": true,
     "supports_system_messages": true,
     "supports_tool_choice": true
+  },
+  "laya/english": {
+    "input_cost_per_token": 0.0,
+    "litellm_provider": "laya",
+    "metadata": {
+      "notes": "Self-hosted decision model; infrastructure costs are paid separately"
+    },
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://github.com/NandhaKishorM/laya",
+    "supported_endpoints": [
+      "/v1/systemone"
+    ]
+  },
+  "laya/multilingual": {
+    "input_cost_per_token": 0.0,
+    "litellm_provider": "laya",
+    "metadata": {
+      "notes": "Self-hosted decision model; infrastructure costs are paid separately"
+    },
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://github.com/NandhaKishorM/laya",
+    "supported_endpoints": [
+      "/v1/systemone"
+    ]
+  },
+  "laya/typed-decisions": {
+    "input_cost_per_token": 0.0,
+    "litellm_provider": "laya",
+    "metadata": {
+      "notes": "Self-hosted decision model; infrastructure costs are paid separately"
+    },
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://github.com/NandhaKishorM/laya",
+    "supported_endpoints": [
+      "/v1/systemone"
+    ]
   },
   "lemonade/Gemma-3-4b-it-GGUF": {
     "input_cost_per_token": 0,
@@ -70358,6 +70402,7 @@
     "source": "https://aws.amazon.com/transcribe/pricing/"
   },
   "tts-1": {
+    "deprecation_date": "2027-01-06",
     "input_cost_per_character": 0.000015,
     "litellm_provider": "openai",
     "mode": "audio_speech",
@@ -70375,6 +70420,7 @@
     ]
   },
   "tts-1-hd": {
+    "deprecation_date": "2027-01-06",
     "input_cost_per_character": 0.00003,
     "litellm_provider": "openai",
     "mode": "audio_speech",
@@ -79473,6 +79519,7 @@
     ]
   },
   "xai/grok-voice-transcribe-1.0": {
+    "deprecation_date": "2026-10-02",
     "input_cost_per_second": 0.00002778,
     "litellm_provider": "xai",
     "metadata": {
