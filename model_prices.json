@@ -12925,9 +12925,11 @@
   },
   "azure_ai/flux.2-pro": {
     "litellm_provider": "azure_ai",
+    "max_input_tokens": 32000,
+    "max_tokens": 32000,
     "mode": "image_generation",
     "output_cost_per_image": 0.04,
-    "source": "https://ai.azure.com/explore/models/flux.2-pro/version/1/registry/azureml-blackforestlabs",
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
     "supported_endpoints": [
       "/v1/images/generations"
     ]
@@ -13876,6 +13878,28 @@
     "mode": "chat",
     "output_cost_per_token": 7E-7,
     "supports_tool_choice": true
+  },
+  "azure_ai/kimi-k2-thinking": {
+    "input_cost_per_token": 6E-7,
+    "litellm_provider": "azure_ai",
+    "max_input_tokens": 262144,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000025,
+    "source": "https://azure.microsoft.com/en-us/pricing/details/ai-foundry-models/kimi/",
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_function_calling": true,
+    "supports_prompt_caching": false,
+    "supports_reasoning": true,
+    "supports_tool_choice": true,
+    "supports_video_input": false,
+    "supports_vision": false
   },
   "azure_ai/kimi-k2.5": {
     "cache_read_input_token_cost": 1E-7,
@@ -19921,6 +19945,22 @@
     "output_cost_per_token": 5.55E-7,
     "rpm": 300
   },
+  "cloudflare/@cf/cloudflare/clef": {
+    "input_cost_per_token": 2.4E-7,
+    "litellm_provider": "cloudflare",
+    "max_input_tokens": 65536,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  },
+  "cloudflare/@cf/cloudflare/clef-flash": {
+    "input_cost_per_token": 9E-8,
+    "litellm_provider": "cloudflare",
+    "max_input_tokens": 65536,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  },
   "cloudflare/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b": {
     "input_cost_per_token": 4.97E-7,
     "litellm_provider": "cloudflare",
@@ -20261,6 +20301,22 @@
     "output_cost_per_token": 0.000001923,
     "rpm": 300
   },
+  "cloudflare/clef": {
+    "input_cost_per_token": 2.4E-7,
+    "litellm_provider": "cloudflare",
+    "max_input_tokens": 65536,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  },
+  "cloudflare/clef-flash": {
+    "input_cost_per_token": 9E-8,
+    "litellm_provider": "cloudflare",
+    "max_input_tokens": 65536,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+  },
   "codestral/codestral-2405": {
     "input_cost_per_token": 0.0,
     "litellm_provider": "codestral",
@@ -20401,6 +20457,28 @@
     "mode": "embedding",
     "output_cost_per_token": 0.0,
     "output_vector_size": 1536,
+    "source": "https://cohere.com/pricing",
+    "supports_embedding_image_input": true
+  },
+  "cohere/embed-v5.0-fast": {
+    "input_cost_per_token": 8E-8,
+    "litellm_provider": "cohere",
+    "max_input_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "embedding",
+    "output_cost_per_token": 0.0,
+    "output_vector_size": 2048,
+    "source": "https://cohere.com/pricing",
+    "supports_embedding_image_input": true
+  },
+  "cohere/embed-v5.0-pro": {
+    "input_cost_per_token": 1.2E-7,
+    "litellm_provider": "cohere",
+    "max_input_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "embedding",
+    "output_cost_per_token": 0.0,
+    "output_vector_size": 2048,
     "source": "https://cohere.com/pricing",
     "supports_embedding_image_input": true
   },
@@ -37355,6 +37433,9 @@
     "input_cost_per_audio_token": 0.000002,
     "input_cost_per_token": 0.000002,
     "litellm_provider": "gemini",
+    "max_input_tokens": 98304,
+    "max_output_tokens": 32768,
+    "max_tokens": 32768,
     "mode": "audio_transcription",
     "output_cost_per_token": 0.000012,
     "rpm": 2000,
@@ -37377,6 +37458,9 @@
     "input_cost_per_audio_token": 0.0000035,
     "input_cost_per_token": 0.0000035,
     "litellm_provider": "gemini",
+    "max_input_tokens": 131072,
+    "max_output_tokens": 65536,
+    "max_tokens": 65536,
     "mode": "audio_transcription",
     "output_cost_per_token": 0.000021,
     "rpm": 10,
@@ -39580,6 +39664,7 @@
     "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_audio_input": false,
     "supports_function_calling": true,
+    "supports_prompt_cache_breakpoint": false,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_regex_lookaround": false,
@@ -48614,6 +48699,7 @@
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
     "supports_audio_input": false,
     "supports_function_calling": true,
+    "supports_prompt_cache_breakpoint": false,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_regex_lookaround": false,
@@ -59813,6 +59899,42 @@
     "supports_vision": true,
     "supports_web_search": true
   },
+  "openrouter/openai/gpt-image-2": {
+    "input_cost_per_image_token": 0.000008,
+    "input_cost_per_token": 0.000005,
+    "litellm_provider": "openrouter",
+    "mode": "image_generation",
+    "output_cost_per_image_token": 0.00003,
+    "source": "https://openrouter.ai/api/v1/images/models/openai/gpt-image-2/endpoints",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "openrouter/openai/gpt-image-2.5-flare": {
+    "input_cost_per_image_token": 0.000008,
+    "input_cost_per_token": 0.000005,
+    "litellm_provider": "openrouter",
+    "mode": "image_generation",
+    "output_cost_per_image_token": 0.00003,
+    "source": "https://openrouter.ai/api/v1/images/models/openai/gpt-image-2.5-flare/endpoints",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "openrouter/openai/gpt-image-2.5-sunburst": {
+    "input_cost_per_image_token": 0.000008,
+    "input_cost_per_token": 0.000005,
+    "litellm_provider": "openrouter",
+    "mode": "image_generation",
+    "output_cost_per_image_token": 0.00003,
+    "source": "https://openrouter.ai/api/v1/images/models/openai/gpt-image-2.5-sunburst/endpoints",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
   "openrouter/openai/gpt-oss-120b": {
     "input_cost_per_token": 3.7E-8,
     "litellm_provider": "openrouter",
@@ -64360,6 +64482,14 @@
     "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 2.8E-7
+  },
+  "perplexity/pplx-decider-v1-27b": {
+    "input_cost_per_token": 4E-8,
+    "litellm_provider": "perplexity",
+    "max_input_tokens": 262144,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.perplexity.ai/api-reference/decisions-post"
   },
   "perplexity/pplx-embed-context-v1-0.6b": {
     "input_cost_per_token": 8E-9,
@@ -69180,6 +69310,16 @@
     "supports_pdf_input": true,
     "supports_vision": true
   },
+  "strands_decider/strands-decider-2B-hobson-v19": {
+    "input_cost_per_token": 0.0,
+    "litellm_provider": "strands_decider",
+    "metadata": {
+      "notes": "Self-hosted decision model; infrastructure costs are paid separately"
+    },
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19"
+  },
   "tavily/search": {
     "input_cost_per_query": 0.008,
     "litellm_provider": "tavily",
@@ -72013,6 +72153,7 @@
     "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_audio_input": false,
     "supports_function_calling": true,
+    "supports_prompt_cache_breakpoint": false,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_regex_lookaround": false,
@@ -79665,6 +79806,23 @@
       "text",
       "image",
       "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "xai/grok-imagine-video-1.5-lite": {
+    "input_cost_per_image": 0.01,
+    "litellm_provider": "xai",
+    "mode": "video_generation",
+    "output_cost_per_second": 0.02,
+    "output_cost_per_second_1080p": 0.14,
+    "output_cost_per_second_480p": 0.02,
+    "output_cost_per_second_720p": 0.03,
+    "source": "https://docs.x.ai/developers/pricing",
+    "supported_modalities": [
+      "text",
+      "image"
     ],
     "supported_output_modalities": [
       "video"
