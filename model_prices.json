@@ -3677,7 +3677,7 @@
     "deprecation_date": "2026-11-15",
     "input_cost_per_token": 0.00000165,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.0000066,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
@@ -3925,7 +3925,7 @@
     "deprecation_date": "2027-03-17",
     "input_cost_per_token": 0.000001375,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.000011,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
@@ -4038,7 +4038,7 @@
     "input_cost_per_token": 0.0000165,
     "input_cost_per_token_batches": 0.00000825,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.000132,
     "output_cost_per_token_batches": 0.000066,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
@@ -4145,7 +4145,7 @@
     "deprecation_date": "2027-05-18",
     "input_cost_per_token": 0.000001375,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.000011,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
@@ -4222,7 +4222,7 @@
     "deprecation_date": "2027-07-13",
     "input_cost_per_token": 0.000001925,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.0000154,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
@@ -4230,7 +4230,7 @@
     "input_cost_per_token": 0.0000231,
     "input_cost_per_token_batches": 0.00001155,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.0001848,
     "output_cost_per_token_batches": 0.0000924,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
@@ -4263,7 +4263,7 @@
     "input_cost_per_token": 0.000001925,
     "input_cost_per_token_priority": 0.00000385,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.0000154,
     "output_cost_per_token_priority": 0.0000308,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
@@ -4402,7 +4402,7 @@
     "input_cost_per_token_above_272k_tokens_batches": 0.000033,
     "input_cost_per_token_batches": 0.0000165,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.000198,
     "output_cost_per_token_above_272k_tokens": 0.000297,
     "output_cost_per_token_above_272k_tokens_batches": 0.0001485,
@@ -9833,7 +9833,7 @@
     "deprecation_date": "2026-11-15",
     "input_cost_per_token": 0.00000165,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.0000066,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
@@ -10191,7 +10191,7 @@
     "deprecation_date": "2027-03-17",
     "input_cost_per_token": 0.000001375,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.000011,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
@@ -10304,7 +10304,7 @@
     "input_cost_per_token": 0.0000165,
     "input_cost_per_token_batches": 0.00000825,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.000132,
     "output_cost_per_token_batches": 0.000066,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
@@ -10411,7 +10411,7 @@
     "deprecation_date": "2027-05-18",
     "input_cost_per_token": 0.000001375,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.000011,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
@@ -10488,7 +10488,7 @@
     "deprecation_date": "2027-07-13",
     "input_cost_per_token": 0.000001925,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.0000154,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
   },
@@ -10496,7 +10496,7 @@
     "input_cost_per_token": 0.0000231,
     "input_cost_per_token_batches": 0.00001155,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.0001848,
     "output_cost_per_token_batches": 0.0000924,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
@@ -10529,7 +10529,7 @@
     "input_cost_per_token": 0.000001925,
     "input_cost_per_token_priority": 0.00000385,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.0000154,
     "output_cost_per_token_priority": 0.0000308,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
@@ -10668,7 +10668,7 @@
     "input_cost_per_token_above_272k_tokens_batches": 0.000033,
     "input_cost_per_token_batches": 0.0000165,
     "litellm_provider": "azure",
-    "mode": "chat",
+    "mode": "responses",
     "output_cost_per_token": 0.000198,
     "output_cost_per_token_above_272k_tokens": 0.000297,
     "output_cost_per_token_above_272k_tokens_batches": 0.0001485,
