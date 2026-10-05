@@ -3821,6 +3821,7 @@
   "azure/eu/gpt-4o-realtime-preview-2024-10-01": {
     "cache_creation_input_audio_token_cost": 0.000022,
     "cache_read_input_token_cost": 0.00000275,
+    "deprecation_date": "2025-03-26",
     "input_cost_per_audio_token": 0.00011,
     "input_cost_per_token": 0.0000055,
     "litellm_provider": "azure",
@@ -3830,6 +3831,7 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.00022,
     "output_cost_per_token": 0.000022,
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models",
     "supports_audio_input": true,
     "supports_audio_output": true,
     "supports_function_calling": true,
@@ -5895,6 +5897,7 @@
   "azure/gpt-4o-realtime-preview-2024-10-01": {
     "cache_creation_input_audio_token_cost": 0.00002,
     "cache_read_input_token_cost": 0.0000025,
+    "deprecation_date": "2025-03-26",
     "input_cost_per_audio_token": 0.0001,
     "input_cost_per_token": 0.000005,
     "litellm_provider": "azure",
@@ -5904,6 +5907,7 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.0002,
     "output_cost_per_token": 0.00002,
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models",
     "supports_audio_input": true,
     "supports_audio_output": true,
     "supports_function_calling": true,
@@ -10087,6 +10091,7 @@
   "azure/us/gpt-4o-realtime-preview-2024-10-01": {
     "cache_creation_input_audio_token_cost": 0.000022,
     "cache_read_input_token_cost": 0.00000275,
+    "deprecation_date": "2025-03-26",
     "input_cost_per_audio_token": 0.00011,
     "input_cost_per_token": 0.0000055,
     "litellm_provider": "azure",
@@ -10096,6 +10101,7 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.00022,
     "output_cost_per_token": 0.000022,
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models",
     "supports_audio_input": true,
     "supports_audio_output": true,
     "supports_function_calling": true,
@@ -13870,6 +13876,7 @@
     "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models"
   },
   "azure_ai/jamba-instruct": {
+    "deprecation_date": "2025-03-01",
     "input_cost_per_token": 5E-7,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 70000,
@@ -13877,6 +13884,7 @@
     "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 7E-7,
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models",
     "supports_tool_choice": true
   },
   "azure_ai/kimi-k2-thinking": {
