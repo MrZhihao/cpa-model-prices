@@ -4864,11 +4864,40 @@
     "input_cost_per_token": 0.000012,
     "input_cost_per_token_above_272k_tokens": 0.000024,
     "litellm_provider": "azure",
+    "max_input_tokens": 922000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 0.00006,
     "output_cost_per_token_above_272k_tokens": 0.00009,
-    "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'swedencentral'%20and%20priceType%20eq%20'Consumption'",
-    "supports_reasoning": true
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_computer_use": true,
+    "supports_function_calling": true,
+    "supports_max_reasoning_effort": false,
+    "supports_minimal_reasoning_effort": false,
+    "supports_native_streaming": true,
+    "supports_none_reasoning_effort": true,
+    "supports_parallel_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_web_search": true,
+    "supports_xhigh_reasoning_effort": true
   },
   "azure/eu/gpt-6-luna": {
     "cache_creation_input_token_cost": 1.5E-7,
@@ -12760,6 +12789,7 @@
     "cache_creation_input_token_cost": 0.000005,
     "cache_creation_input_token_cost_above_1hr": 0.000008,
     "cache_read_input_token_cost": 2E-7,
+    "deprecation_date": "2027-09-18",
     "input_cost_per_token": 0.000004,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 1000000,
@@ -12773,6 +12803,7 @@
       "search_context_size_low": 0.01,
       "search_context_size_medium": 0.01
     },
+    "source": "https://management.azure.com/subscriptions/c873328e-b572-4770-8dff-aaeb6f1f0e79/providers/Microsoft.CognitiveServices/locations/eastus2/models?api-version=2024-10-01",
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
     "supports_computer_use": true,
@@ -12880,6 +12911,7 @@
     "cache_creation_input_token_cost": 0.0000025,
     "cache_creation_input_token_cost_above_1hr": 0.000004,
     "cache_read_input_token_cost": 2E-7,
+    "deprecation_date": "2027-09-29",
     "input_cost_per_token": 0.000002,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 1000000,
@@ -12893,6 +12925,7 @@
       "search_context_size_low": 0.01,
       "search_context_size_medium": 0.01
     },
+    "source": "https://management.azure.com/subscriptions/c873328e-b572-4770-8dff-aaeb6f1f0e79/providers/Microsoft.CognitiveServices/locations/eastus2/models?api-version=2024-10-01",
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
     "supports_computer_use": true,
@@ -76543,7 +76576,7 @@
   },
   "vertex_ai/gemini-3.5-live-translate-preview": {
     "input_cost_per_audio_token": 0.0000035,
-    "input_cost_per_second": 0.0000883333333333,
+    "input_cost_per_second": 0.0000875,
     "input_cost_per_token": 0.0000035,
     "litellm_provider": "vertex_ai",
     "mode": "realtime",
@@ -76573,7 +76606,7 @@
   },
   "vertex_ai/gemini-3.5-transcribe-live": {
     "input_cost_per_audio_token": 0.0000035,
-    "input_cost_per_second": 0.0000833333333333,
+    "input_cost_per_second": 0.0000875,
     "litellm_provider": "vertex_ai",
     "mode": "audio_transcription",
     "output_cost_per_token": 0.000021,
