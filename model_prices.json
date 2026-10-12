@@ -139,22 +139,22 @@
     "input_cost_per_token": 0.000002,
     "litellm_provider": "bedrock",
     "max_input_tokens": 256000,
-    "max_output_tokens": 256000,
-    "max_tokens": 256000,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 0.000008,
-    "source": "https://aws.amazon.com/bedrock/pricing/"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-ai21-labs-jamba-1-5-large.md"
   },
   "ai21.jamba-1-5-mini-v1:0": {
     "deprecation_date": "2026-11-26",
     "input_cost_per_token": 2E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 256000,
-    "max_output_tokens": 256000,
-    "max_tokens": 256000,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 4E-7,
-    "source": "https://aws.amazon.com/bedrock/pricing/"
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-ai21-labs-jamba-1-5-mini.md"
   },
   "ai21.jamba-instruct-v1:0": {
     "input_cost_per_token": 5E-7,
@@ -15362,22 +15362,26 @@
     "supports_vision": false
   },
   "bedrock/ap-south-1/meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000318,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.0000042
+    "output_cost_per_token": 0.0000042,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
   },
   "bedrock/ap-south-1/meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 3.6E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 7.2E-7
+    "output_cost_per_token": 7.2E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
   },
   "bedrock/ap-south-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -15613,22 +15617,26 @@
     "supports_vision": false
   },
   "bedrock/ca-central-1/meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000305,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.00000403
+    "output_cost_per_token": 0.00000403,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
   },
   "bedrock/ca-central-1/meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 3.5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 6.9E-7
+    "output_cost_per_token": 6.9E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
   },
   "bedrock/eu-central-1/1-month-commitment/anthropic.claude-instant-v1": {
     "cost_per_second": 0.01635,
@@ -15905,22 +15913,26 @@
     "supports_vision": false
   },
   "bedrock/eu-west-1/meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000286,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.00000378
+    "output_cost_per_token": 0.00000378,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
   },
   "bedrock/eu-west-1/meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 3.2E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 6.5E-7
+    "output_cost_per_token": 6.5E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
   },
   "bedrock/eu-west-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -15995,22 +16007,26 @@
     "supports_vision": false
   },
   "bedrock/eu-west-2/meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000345,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.00000455
+    "output_cost_per_token": 0.00000455,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
   },
   "bedrock/eu-west-2/meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 3.9E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 7.8E-7
+    "output_cost_per_token": 7.8E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
   },
   "bedrock/eu-west-2/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -16104,34 +16120,38 @@
     "supports_vision": false
   },
   "bedrock/eu-west-3/mistral.mistral-7b-instruct-v0:2": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 2E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 2.6E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-7b-instruct.md",
     "supports_tool_choice": true
   },
   "bedrock/eu-west-3/mistral.mistral-large-2402-v1:0": {
     "input_cost_per_token": 0.0000052,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 0.0000156,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-large.md",
     "supports_function_calling": true
   },
   "bedrock/eu-west-3/mistral.mixtral-8x7b-instruct-v0:1": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 5.9E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 9.1E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mixtral-8x7b-instruct.md",
     "supports_tool_choice": true
   },
   "bedrock/guardrails": {
@@ -16222,22 +16242,26 @@
     "supports_vision": false
   },
   "bedrock/sa-east-1/meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000445,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.00000588
+    "output_cost_per_token": 0.00000588,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
   },
   "bedrock/sa-east-1/meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.00000101
+    "output_cost_per_token": 0.00000101,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
   },
   "bedrock/sa-east-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -16452,22 +16476,26 @@
     "supports_vision": false
   },
   "bedrock/us-east-1/meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000265,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.0000035
+    "output_cost_per_token": 0.0000035,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
   },
   "bedrock/us-east-1/meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 3E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 6E-7
+    "output_cost_per_token": 6E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
   },
   "bedrock/us-east-1/minimax.minimax-m2.1": {
     "deprecation_date": "2027-03-30",
@@ -16507,34 +16535,38 @@
     "supports_vision": false
   },
   "bedrock/us-east-1/mistral.mistral-7b-instruct-v0:2": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 1.5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 2E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-7b-instruct.md",
     "supports_tool_choice": true
   },
   "bedrock/us-east-1/mistral.mistral-large-2402-v1:0": {
     "input_cost_per_token": 0.000004,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 0.000012,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-large.md",
     "supports_function_calling": true
   },
   "bedrock/us-east-1/mistral.mixtral-8x7b-instruct-v0:1": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 4.5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 7E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mixtral-8x7b-instruct.md",
     "supports_tool_choice": true
   },
   "bedrock/us-east-1/moonshotai.kimi-k2-thinking": {
@@ -17769,22 +17801,26 @@
     "supports_tool_choice": true
   },
   "bedrock/us-west-1/meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000265,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.0000035
+    "output_cost_per_token": 0.0000035,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
   },
   "bedrock/us-west-1/meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 3E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 6E-7
+    "output_cost_per_token": 6E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
   },
   "bedrock/us-west-2/1-month-commitment/anthropic.claude-instant-v1": {
     "cost_per_second": 0.011,
@@ -17931,34 +17967,38 @@
     "supports_vision": false
   },
   "bedrock/us-west-2/mistral.mistral-7b-instruct-v0:2": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 1.5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 2E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-7b-instruct.md",
     "supports_tool_choice": true
   },
   "bedrock/us-west-2/mistral.mistral-large-2402-v1:0": {
     "input_cost_per_token": 0.000004,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 0.000012,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-large.md",
     "supports_function_calling": true
   },
   "bedrock/us-west-2/mistral.mixtral-8x7b-instruct-v0:1": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 4.5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 7E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mixtral-8x7b-instruct.md",
     "supports_tool_choice": true
   },
   "bedrock/us-west-2/moonshotai.kimi-k2-thinking": {
@@ -21542,11 +21582,12 @@
     "input_cost_per_query": 0.002,
     "input_cost_per_token": 0.0,
     "litellm_provider": "bedrock",
-    "max_input_tokens": 32000,
-    "max_output_tokens": 32000,
-    "max_tokens": 32000,
+    "max_input_tokens": 4096,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "rerank",
-    "output_cost_per_token": 0.0
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-rerank-3-5.md"
   },
   "cohere/embed-v4.0": {
     "input_cost_per_image_token": 4.7E-7,
@@ -28601,10 +28642,11 @@
     "input_cost_per_token": 0.000002,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
-    "max_output_tokens": 4096,
-    "max_tokens": 4096,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
     "mode": "chat",
     "output_cost_per_token": 0.000006,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-pixtral-large.md",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
@@ -48362,25 +48404,28 @@
     "supports_tool_choice": false
   },
   "meta.llama3-1-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 7.2E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 128000,
-    "max_output_tokens": 2048,
-    "max_tokens": 2048,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 7.2E-7,
-    "source": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/bedrock/USD/current/bedrock.json",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-70b-instruct.md",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
   "meta.llama3-1-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 2.2E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 128000,
-    "max_output_tokens": 2048,
-    "max_tokens": 2048,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 2.2E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-8b-instruct.md",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
@@ -48433,6 +48478,7 @@
     "supports_vision": true
   },
   "meta.llama3-3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 7.2E-7,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
@@ -48440,37 +48486,44 @@
     "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 7.2E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-3-70b-instruct.md",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
   "meta.llama3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 0.00000265,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 0.0000035
+    "output_cost_per_token": 0.0000035,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-70b-instruct.md"
   },
   "meta.llama3-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 3E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 8192,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
-    "output_cost_per_token": 6E-7
+    "output_cost_per_token": 6E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
   },
   "meta.llama4-maverick-17b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 2.4E-7,
     "input_cost_per_token_batches": 1.2E-7,
     "litellm_provider": "bedrock_converse",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 4096,
-    "max_tokens": 4096,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 8192,
+    "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 9.7E-7,
     "output_cost_per_token_batches": 4.85E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.md",
     "supported_modalities": [
       "text",
       "image"
@@ -48483,15 +48536,17 @@
     "supports_tool_choice": false
   },
   "meta.llama4-scout-17b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 1.7E-7,
     "input_cost_per_token_batches": 8.5E-8,
     "litellm_provider": "bedrock_converse",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 4096,
-    "max_tokens": 4096,
+    "max_input_tokens": 10000000,
+    "max_output_tokens": 8192,
+    "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 6.6E-7,
     "output_cost_per_token_batches": 3.3E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-scout-17b-instruct.md",
     "supported_modalities": [
       "text",
       "image"
@@ -49070,25 +49125,26 @@
     "supports_vision": true
   },
   "mistral.mistral-7b-instruct-v0:2": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 1.5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 2E-7,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-7b-instruct.md",
     "supports_tool_choice": true
   },
   "mistral.mistral-large-2402-v1:0": {
     "input_cost_per_token": 0.000004,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 0.000012,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-large.md",
     "supports_function_calling": true
   },
   "mistral.mistral-large-2407-v1:0": {
@@ -49126,23 +49182,24 @@
     "input_cost_per_token_batches": 5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 0.000003,
     "output_cost_per_token_batches": 0.0000015,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-small.md",
     "supports_function_calling": true
   },
   "mistral.mixtral-8x7b-instruct-v0:1": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 4.5E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 32000,
-    "max_output_tokens": 8191,
-    "max_tokens": 8191,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 7E-7,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mixtral-8x7b-instruct.md",
     "supports_tool_choice": true
   },
   "mistral.pixtral-large-2502-v1:0": {
@@ -63581,25 +63638,28 @@
     "supports_tool_choice": false
   },
   "us.meta.llama3-1-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 7.2E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 128000,
-    "max_output_tokens": 2048,
-    "max_tokens": 2048,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 7.2E-7,
-    "source": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/bedrock/USD/current/bedrock.json",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-70b-instruct.md",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
   "us.meta.llama3-1-8b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 2.2E-7,
     "litellm_provider": "bedrock",
     "max_input_tokens": 128000,
-    "max_output_tokens": 2048,
-    "max_tokens": 2048,
+    "max_output_tokens": 4096,
+    "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 2.2E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-8b-instruct.md",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
@@ -63652,6 +63712,7 @@
     "supports_vision": true
   },
   "us.meta.llama3-3-70b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 7.2E-7,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
@@ -63659,19 +63720,22 @@
     "max_tokens": 4096,
     "mode": "chat",
     "output_cost_per_token": 7.2E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-3-70b-instruct.md",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
   "us.meta.llama4-maverick-17b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 2.4E-7,
     "input_cost_per_token_batches": 1.2E-7,
     "litellm_provider": "bedrock_converse",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 4096,
-    "max_tokens": 4096,
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 8192,
+    "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 9.7E-7,
     "output_cost_per_token_batches": 4.85E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-maverick-17b-instruct.md",
     "supported_modalities": [
       "text",
       "image"
@@ -63684,15 +63748,17 @@
     "supports_tool_choice": false
   },
   "us.meta.llama4-scout-17b-instruct-v1:0": {
+    "deprecation_date": "2027-03-30",
     "input_cost_per_token": 1.7E-7,
     "input_cost_per_token_batches": 8.5E-8,
     "litellm_provider": "bedrock_converse",
-    "max_input_tokens": 128000,
-    "max_output_tokens": 4096,
-    "max_tokens": 4096,
+    "max_input_tokens": 10000000,
+    "max_output_tokens": 8192,
+    "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 6.6E-7,
     "output_cost_per_token_batches": 3.3E-7,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-4-scout-17b-instruct.md",
     "supported_modalities": [
       "text",
       "image"
@@ -63708,11 +63774,11 @@
     "input_cost_per_token": 0.000002,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
-    "max_output_tokens": 4096,
-    "max_tokens": 4096,
+    "max_output_tokens": 16384,
+    "max_tokens": 16384,
     "mode": "chat",
     "output_cost_per_token": 0.000006,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-pixtral-large.md",
     "supports_function_calling": true,
     "supports_tool_choice": false
   },
@@ -64154,12 +64220,12 @@
   "us.writer.palmyra-x5-v1:0": {
     "input_cost_per_token": 6E-7,
     "litellm_provider": "bedrock_converse",
-    "max_input_tokens": 1000000,
+    "max_input_tokens": 128000,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 0.000006,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-x5.md",
     "supports_function_calling": true,
     "supports_pdf_input": true
   },
@@ -70432,12 +70498,12 @@
   "writer.palmyra-x5-v1:0": {
     "input_cost_per_token": 6E-7,
     "litellm_provider": "bedrock_converse",
-    "max_input_tokens": 1000000,
+    "max_input_tokens": 128000,
     "max_output_tokens": 8192,
     "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 0.000006,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-x5.md",
     "supports_function_calling": true,
     "supports_pdf_input": true
   },
