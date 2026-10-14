@@ -12813,43 +12813,6 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
-  "azure_ai/claude-fable-5-5": {
-    "cache_creation_input_token_cost": 0.0000125,
-    "cache_creation_input_token_cost_above_1hr": 0.00002,
-    "cache_read_input_token_cost": 2.5E-7,
-    "deprecation_date": "2027-12-05",
-    "input_cost_per_token": 0.00001,
-    "litellm_provider": "azure_ai",
-    "max_input_tokens": 1000000,
-    "max_output_tokens": 128000,
-    "max_tokens": 128000,
-    "mode": "chat",
-    "output_cost_per_token": 0.00005,
-    "prompt_cache_min_tokens": 512.0,
-    "search_context_cost_per_query": {
-      "search_context_size_high": 0.01,
-      "search_context_size_low": 0.01,
-      "search_context_size_medium": 0.01
-    },
-    "source": "https://management.azure.com/subscriptions/c873328e-b572-4770-8dff-aaeb6f1f0e79/providers/Microsoft.CognitiveServices/locations/eastus2/models?api-version=2024-10-01",
-    "supports_adaptive_thinking": true,
-    "supports_assistant_prefill": false,
-    "supports_computer_use": true,
-    "supports_forced_tool_use": false,
-    "supports_function_calling": true,
-    "supports_max_reasoning_effort": true,
-    "supports_mid_conversation_system": true,
-    "supports_native_structured_output": true,
-    "supports_pdf_input": true,
-    "supports_prompt_caching": true,
-    "supports_reasoning": true,
-    "supports_response_schema": true,
-    "supports_sampling_params": false,
-    "supports_tool_choice": true,
-    "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
-  },
   "azure_ai/claude-haiku-4-5": {
     "cache_creation_input_token_cost": 0.00000125,
     "cache_creation_input_token_cost_above_1hr": 0.000002,
@@ -21127,7 +21090,8 @@
     "max_input_tokens": 65536,
     "mode": "evaluation",
     "output_cost_per_token": 0.0,
-    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "supports_vision": true
   },
   "cloudflare/@cf/cloudflare/clef-flash": {
     "input_cost_per_token": 9E-8,
@@ -21135,7 +21099,8 @@
     "max_input_tokens": 65536,
     "mode": "evaluation",
     "output_cost_per_token": 0.0,
-    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "supports_vision": true
   },
   "cloudflare/@cf/cloudflare/clef-omni": {
     "input_cost_per_token": 1.5E-7,
@@ -21145,7 +21110,8 @@
     "output_cost_per_token": 0.0,
     "source": "https://developers.cloudflare.com/workers-ai/models/clef-omni/",
     "supports_audio_input": true,
-    "supports_video_input": true
+    "supports_video_input": true,
+    "supports_vision": true
   },
   "cloudflare/@cf/deepseek-ai/deepseek-r1-distill-qwen-32b": {
     "input_cost_per_token": 4.97E-7,
@@ -21493,7 +21459,8 @@
     "max_input_tokens": 65536,
     "mode": "evaluation",
     "output_cost_per_token": 0.0,
-    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "supports_vision": true
   },
   "cloudflare/clef-flash": {
     "input_cost_per_token": 9E-8,
@@ -21501,7 +21468,8 @@
     "max_input_tokens": 65536,
     "mode": "evaluation",
     "output_cost_per_token": 0.0,
-    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/"
+    "source": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+    "supports_vision": true
   },
   "cloudflare/clef-omni": {
     "input_cost_per_token": 1.5E-7,
@@ -21511,7 +21479,8 @@
     "output_cost_per_token": 0.0,
     "source": "https://developers.cloudflare.com/workers-ai/models/clef-omni/",
     "supports_audio_input": true,
-    "supports_video_input": true
+    "supports_video_input": true,
+    "supports_vision": true
   },
   "codestral/codestral-2405": {
     "input_cost_per_token": 0.0,
@@ -22160,6 +22129,151 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true
+  },
+  "dashscope/happyhorse-1.0-i2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "HappyHorse 1.0 image-to-video from a first frame. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.220034,
+    "output_cost_per_second_1080p": 0.220034,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/happyhorse-1.0-r2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "HappyHorse 1.0 reference-to-video. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.220034,
+    "output_cost_per_second_1080p": 0.220034,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/happyhorse-1.0-t2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "HappyHorse 1.0 text-to-video. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.220034,
+    "output_cost_per_second_1080p": 0.220034,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/happyhorse-1.1-i2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "HappyHorse 1.1 image-to-video from a first frame. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.165026,
+    "output_cost_per_second_1080p": 0.165026,
+    "output_cost_per_second_480p": 0.0618845,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/happyhorse-1.1-r2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "HappyHorse 1.1 reference-to-video, 1 to 9 reference images. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.165026,
+    "output_cost_per_second_1080p": 0.165026,
+    "output_cost_per_second_480p": 0.0618845,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/happyhorse-1.1-t2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "HappyHorse 1.1 text-to-video. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.165026,
+    "output_cost_per_second_1080p": 0.165026,
+    "output_cost_per_second_480p": 0.0618845,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
   },
   "dashscope/kimi-k2.7-code": {
     "cache_read_input_token_cost": 1.9E-7,
@@ -23072,6 +23186,136 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
+  },
+  "dashscope/wan2.7-i2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "Wan 2.7 image-to-video (first frame, first and last frame, continuation). No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.143353,
+    "output_cost_per_second_1080p": 0.143353,
+    "output_cost_per_second_720p": 0.086012,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/wan2.7-r2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "Wan 2.7 reference-to-video. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.143353,
+    "output_cost_per_second_1080p": 0.143353,
+    "output_cost_per_second_720p": 0.086012,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/wan2.7-t2v": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "Wan 2.7 text-to-video. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.143353,
+    "output_cost_per_second_1080p": 0.143353,
+    "output_cost_per_second_720p": 0.086012,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/wan3.0-video": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "Wan 3.0 all-in-one video generation (text, first/last frame, multimodal reference, edit, extend). Billed duration is usage.duration, which adds input video seconds for the edit and extend modes. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.165025,
+    "output_cost_per_second_1080p": 0.165025,
+    "output_cost_per_second_480p": 0.041256,
+    "output_cost_per_second_720p": 0.082513,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "dashscope/wan3.0-video-prime": {
+    "litellm_provider": "dashscope",
+    "metadata": {
+      "comment": "Wan 3.0 fast tier. Billed duration is usage.duration, which adds input video seconds for the edit and extend modes. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.254399,
+    "output_cost_per_second_1080p": 0.254399,
+    "output_cost_per_second_480p": 0.0636,
+    "output_cost_per_second_720p": 0.127199,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video-prime",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
   },
   "databricks/ai_decide": {
     "cache_creation_input_token_cost": 0.0,
@@ -57247,6 +57491,151 @@
     "supports_response_schema": true,
     "supports_tool_choice": true
   },
+  "qwen_ai_platform/happyhorse-1.0-i2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "HappyHorse 1.0 image-to-video from a first frame. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.220034,
+    "output_cost_per_second_1080p": 0.220034,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/happyhorse-1.0-r2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "HappyHorse 1.0 reference-to-video. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.220034,
+    "output_cost_per_second_1080p": 0.220034,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/happyhorse-1.0-t2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "HappyHorse 1.0 text-to-video. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.220034,
+    "output_cost_per_second_1080p": 0.220034,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/happyhorse-1.1-i2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "HappyHorse 1.1 image-to-video from a first frame. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.165026,
+    "output_cost_per_second_1080p": 0.165026,
+    "output_cost_per_second_480p": 0.0618845,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/happyhorse-1.1-r2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "HappyHorse 1.1 reference-to-video, 1 to 9 reference images. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.165026,
+    "output_cost_per_second_1080p": 0.165026,
+    "output_cost_per_second_480p": 0.0618845,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/happyhorse-1.1-t2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "HappyHorse 1.1 text-to-video. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.165026,
+    "output_cost_per_second_1080p": 0.165026,
+    "output_cost_per_second_480p": 0.0618845,
+    "output_cost_per_second_720p": 0.123769,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "qwen_ai_platform/kimi-k2.7-code": {
     "cache_read_input_token_cost": 1.9E-7,
     "input_cost_per_token": 9.5E-7,
@@ -58159,6 +58548,136 @@
     "supports_reasoning": true,
     "supports_tool_choice": true
   },
+  "qwen_ai_platform/wan2.7-i2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "Wan 2.7 image-to-video (first frame, first and last frame, continuation). No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.143353,
+    "output_cost_per_second_1080p": 0.143353,
+    "output_cost_per_second_720p": 0.086012,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/wan2.7-r2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "Wan 2.7 reference-to-video. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.143353,
+    "output_cost_per_second_1080p": 0.143353,
+    "output_cost_per_second_720p": 0.086012,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/wan2.7-t2v": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "Wan 2.7 text-to-video. No 480P tier. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.143353,
+    "output_cost_per_second_1080p": 0.143353,
+    "output_cost_per_second_720p": 0.086012,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/wan3.0-video": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "Wan 3.0 all-in-one video generation (text, first/last frame, multimodal reference, edit, extend). Billed duration is usage.duration, which adds input video seconds for the edit and extend modes. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.165025,
+    "output_cost_per_second_1080p": 0.165025,
+    "output_cost_per_second_480p": 0.041256,
+    "output_cost_per_second_720p": 0.082513,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwen_ai_platform/wan3.0-video-prime": {
+    "litellm_provider": "qwen_ai_platform",
+    "metadata": {
+      "comment": "Wan 3.0 fast tier. Billed duration is usage.duration, which adds input video seconds for the edit and extend modes. China (Beijing) list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.254399,
+    "output_cost_per_second_1080p": 0.254399,
+    "output_cost_per_second_480p": 0.0636,
+    "output_cost_per_second_720p": 0.127199,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video-prime",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "qwencloud/deepseek-v4-flash": {
     "cache_read_input_token_cost": 4E-8,
     "input_cost_per_token": 2E-7,
@@ -58238,6 +58757,151 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true
+  },
+  "qwencloud/happyhorse-1.0-i2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "HappyHorse 1.0 image-to-video from a first frame. No 480P tier. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.24,
+    "output_cost_per_second_1080p": 0.24,
+    "output_cost_per_second_720p": 0.14,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/happyhorse-1.0-r2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "HappyHorse 1.0 reference-to-video. No 480P tier. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.24,
+    "output_cost_per_second_1080p": 0.24,
+    "output_cost_per_second_720p": 0.14,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/happyhorse-1.0-t2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "HappyHorse 1.0 text-to-video. No 480P tier. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.24,
+    "output_cost_per_second_1080p": 0.24,
+    "output_cost_per_second_720p": 0.14,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-0-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/happyhorse-1.1-i2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "HappyHorse 1.1 image-to-video from a first frame. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.18,
+    "output_cost_per_second_1080p": 0.18,
+    "output_cost_per_second_480p": 0.07,
+    "output_cost_per_second_720p": 0.14,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/happyhorse-1.1-r2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "HappyHorse 1.1 reference-to-video, 1 to 9 reference images. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.18,
+    "output_cost_per_second_1080p": 0.18,
+    "output_cost_per_second_480p": 0.07,
+    "output_cost_per_second_720p": 0.14,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/happyhorse-1.1-t2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "HappyHorse 1.1 text-to-video. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.18,
+    "output_cost_per_second_1080p": 0.18,
+    "output_cost_per_second_480p": 0.07,
+    "output_cost_per_second_720p": 0.14,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/happyhorse-1-1-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
   },
   "qwencloud/kimi-k2.7-code": {
     "cache_read_input_token_cost": 1.9E-7,
@@ -59110,6 +59774,136 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
+  },
+  "qwencloud/wan2.7-i2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "Wan 2.7 image-to-video (first frame, first and last frame, continuation). No 480P tier. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.15,
+    "output_cost_per_second_1080p": 0.15,
+    "output_cost_per_second_720p": 0.1,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-i2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/wan2.7-r2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "Wan 2.7 reference-to-video. No 480P tier. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.15,
+    "output_cost_per_second_1080p": 0.15,
+    "output_cost_per_second_720p": 0.1,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "reference_image"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-r2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/wan2.7-t2v": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "Wan 2.7 text-to-video. No 480P tier. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.15,
+    "output_cost_per_second_1080p": 0.15,
+    "output_cost_per_second_720p": 0.1,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan2-7-t2v",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/wan3.0-video": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "Wan 3.0 all-in-one video generation (text, first/last frame, multimodal reference, edit, extend). Billed duration is usage.duration, which adds input video seconds for the edit and extend modes. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.2,
+    "output_cost_per_second_1080p": 0.2,
+    "output_cost_per_second_480p": 0.05,
+    "output_cost_per_second_720p": 0.1,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "qwencloud/wan3.0-video-prime": {
+    "litellm_provider": "qwencloud",
+    "metadata": {
+      "comment": "Wan 3.0 fast tier. Billed duration is usage.duration, which adds input video seconds for the edit and extend modes. Singapore list price per output second, USD, matching this prefix's default host. The base rate is the 1080P default tier."
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.28,
+    "output_cost_per_second_1080p": 0.28,
+    "output_cost_per_second_480p": 0.068,
+    "output_cost_per_second_720p": 0.14,
+    "provider_specific_entry": {
+      "dashscope_video_reference_input": "first_frame"
+    },
+    "source": "https://www.alibabacloud.com/help/en/model-studio/wan3-0-video-prime",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
   },
   "recraft/recraftv2": {
     "litellm_provider": "recraft",
