@@ -33522,6 +33522,17 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "fireworks_ai/accounts/fireworks/models/muse-spark-open": {
+    "cache_read_input_token_cost": 1.5E-7,
+    "input_cost_per_token": 0.00000125,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.00000425,
+    "source": "https://fireworks.ai/models/fireworks/muse-spark-open",
+    "supports_function_calling": true,
+    "supports_vision": true
+  },
   "fireworks_ai/accounts/fireworks/models/mythomax-l2-13b": {
     "input_cost_per_token": 2E-7,
     "litellm_provider": "fireworks_ai",
@@ -45139,6 +45150,15 @@
     "source": "https://developers.openai.com/api/docs/pricing",
     "supports_reasoning": true
   },
+  "gpt-5.5-cyber-preview": {
+    "cache_read_input_token_cost": 0.00000125,
+    "input_cost_per_token": 0.0000125,
+    "litellm_provider": "openai",
+    "mode": "chat",
+    "output_cost_per_token": 0.000075,
+    "source": "https://developers.openai.com/api/docs/pricing",
+    "supports_reasoning": true
+  },
   "gpt-5.5-pro": {
     "input_cost_per_token": 0.00003,
     "input_cost_per_token_above_272k_tokens": 0.00006,
@@ -48399,6 +48419,33 @@
     "mode": "rerank",
     "output_cost_per_token": 0.0,
     "source": "https://api.jina.ai/v1/models"
+  },
+  "jp.amazon.nova-2-lite-v1:0": {
+    "cache_read_input_token_cost": 9.9E-8,
+    "cache_read_input_token_cost_flex": 4.95E-8,
+    "cache_read_input_token_cost_priority": 1.7325E-7,
+    "input_cost_per_token": 3.96E-7,
+    "input_cost_per_token_batches": 1.98E-7,
+    "input_cost_per_token_flex": 1.98E-7,
+    "input_cost_per_token_priority": 6.93E-7,
+    "litellm_provider": "bedrock_converse",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 64000,
+    "max_tokens": 64000,
+    "mode": "chat",
+    "output_cost_per_token": 0.000003311,
+    "output_cost_per_token_batches": 0.0000016555,
+    "output_cost_per_token_flex": 0.0000016555,
+    "output_cost_per_token_priority": 0.00000579425,
+    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/ap-northeast-1/index.json",
+    "supports_function_calling": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true
   },
   "jp.anthropic.claude-haiku-4-5-20251001-v1:0": {
     "cache_creation_input_token_cost": 0.000001375,
@@ -56589,13 +56636,17 @@
   },
   "openai.gpt-oss-120b-1:0": {
     "input_cost_per_token": 1.5E-7,
+    "input_cost_per_token_flex": 7.5E-8,
+    "input_cost_per_token_priority": 2.625E-7,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
     "mode": "chat",
     "output_cost_per_token": 6E-7,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-120b.html",
+    "output_cost_per_token_flex": 3E-7,
+    "output_cost_per_token_priority": 0.00000105,
+    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -56608,13 +56659,17 @@
   },
   "openai.gpt-oss-20b-1:0": {
     "input_cost_per_token": 7E-8,
+    "input_cost_per_token_flex": 3.5E-8,
+    "input_cost_per_token_priority": 1.225E-7,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
     "mode": "chat",
     "output_cost_per_token": 3E-7,
-    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-20b.html",
+    "output_cost_per_token_flex": 1.5E-7,
+    "output_cost_per_token_priority": 5.25E-7,
+    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/index.json",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -64415,6 +64470,19 @@
     "source": "https://api.together.ai/v1/models",
     "supports_prompt_caching": true
   },
+  "together_ai/meta-models/Muse-Spark-Open-816B-A42B": {
+    "cache_read_input_token_cost": 1.5E-7,
+    "input_cost_per_token": 0.00000125,
+    "litellm_provider": "together_ai",
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.00000425,
+    "source": "https://docs.together.ai/docs/serverless-models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_response_schema": true
+  },
   "together_ai/mistralai/Ministral-3-14B-Instruct-2512": {
     "input_cost_per_token": 2E-7,
     "litellm_provider": "together_ai",
@@ -66731,6 +66799,97 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
+  },
+  "us.stability.stable-conservative-upscale-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.4,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-creative-upscale-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.6,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-fast-upscale-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.03,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-image-control-sketch-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.07,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-image-control-structure-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.07,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-image-erase-object-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.07,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-image-inpaint-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.07,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-image-remove-background-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.07,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-image-search-recolor-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.07,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-image-search-replace-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.07,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-image-style-guide-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.07,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-outpaint-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.06,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
+  },
+  "us.stability.stable-style-transfer-v1:0": {
+    "litellm_provider": "bedrock",
+    "max_input_tokens": 77,
+    "mode": "image_edit",
+    "output_cost_per_image": 0.08,
+    "source": "https://aws.amazon.com/bedrock/pricing/"
   },
   "us.twelvelabs.marengo-embed-2-7-v1:0": {
     "deprecation_date": "2026-11-30",
@@ -69555,6 +69714,27 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
+  },
+  "vertex_ai/deepseek-ai/deepseek-v4.1-flash-maas": {
+    "cache_read_input_token_cost": 0.0,
+    "input_cost_per_token": 0.0,
+    "litellm_provider": "vertex_ai-deepseek_models",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.0,
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "supported_regions": [
+      "global"
+    ],
+    "supports_assistant_prefill": true,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "vertex_ai/gemini-2.0-flash": {
     "deprecation_date": "2026-06-01",
