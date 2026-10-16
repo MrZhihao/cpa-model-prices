@@ -13070,6 +13070,43 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
+  "azure_ai/claude-opus-5-5-fast": {
+    "cache_creation_input_token_cost": 0.00001,
+    "cache_creation_input_token_cost_above_1hr": 0.000016,
+    "cache_read_input_token_cost": 4E-7,
+    "deprecation_date": "2027-10-01",
+    "input_cost_per_token": 0.000008,
+    "litellm_provider": "azure_ai",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.00004,
+    "prompt_cache_min_tokens": 512.0,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.02,
+      "search_context_size_low": 0.02,
+      "search_context_size_medium": 0.02
+    },
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/claude-models",
+    "supports_adaptive_thinking": true,
+    "supports_assistant_prefill": false,
+    "supports_computer_use": true,
+    "supports_forced_tool_use": false,
+    "supports_function_calling": true,
+    "supports_max_reasoning_effort": true,
+    "supports_mid_conversation_system": true,
+    "supports_native_structured_output": true,
+    "supports_pdf_input": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true,
+    "thinking_always_on": true
+  },
   "azure_ai/claude-sonnet-4-5": {
     "cache_creation_input_token_cost": 0.00000375,
     "cache_creation_input_token_cost_above_1hr": 0.000006,
@@ -14818,6 +14855,24 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "baseten/meta-models/muse-spark-open": {
+    "cache_read_input_token_cost": 1.5E-7,
+    "input_cost_per_token": 0.00000125,
+    "litellm_provider": "baseten",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.00000425,
+    "source": "https://inference.baseten.co/v1/models",
+    "supports_audio_input": true,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": false,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "baseten/moonshotai/Kimi-K2-Instruct-0905": {
     "input_cost_per_token": 6E-7,
     "litellm_provider": "baseten",
@@ -14903,6 +14958,23 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": false
+  },
+  "baseten/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B": {
+    "cache_read_input_token_cost": 4E-8,
+    "input_cost_per_token": 2E-7,
+    "litellm_provider": "baseten",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 5E-7,
+    "source": "https://inference.baseten.co/v1/models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "baseten/nvidia/Nemotron-120B-A12B": {
     "input_cost_per_token": 3E-7,
@@ -36418,7 +36490,6 @@
   "gemini-3-flash-preview": {
     "cache_read_input_audio_token_cost": 1E-7,
     "cache_read_input_token_cost": 5E-8,
-    "cache_read_input_token_cost_flex": 5E-8,
     "cache_read_input_token_cost_priority": 9E-8,
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_audio_token": 0.000001,
@@ -36874,7 +36945,6 @@
     "cache_read_input_token_cost": 2E-7,
     "cache_read_input_token_cost_above_200k_tokens": 4E-7,
     "cache_read_input_token_cost_above_200k_tokens_priority": 7.2E-7,
-    "cache_read_input_token_cost_flex": 2E-7,
     "cache_read_input_token_cost_priority": 3.6E-7,
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_token": 0.000002,
@@ -36895,7 +36965,7 @@
     "output_cost_per_token_batches": 0.000006,
     "output_cost_per_token_flex": 0.000006,
     "output_cost_per_token_priority": 0.0000216,
-    "prompt_cache_min_tokens": 4096,
+    "prompt_cache_min_tokens": 4096.0,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.014,
       "search_context_size_low": 0.014,
@@ -39607,8 +39677,8 @@
     "input_cost_per_token_priority": 0.0000036,
     "litellm_provider": "gemini",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 65536,
-    "max_tokens": 65536,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
     "mode": "chat",
     "output_cost_per_reasoning_token": 0.00001,
     "output_cost_per_token": 0.00001,
@@ -40769,11 +40839,13 @@
     "supports_vision": true
   },
   "github_copilot/claude-opus-5": {
+    "deprecation_date": "2026-11-16",
     "litellm_provider": "github_copilot",
     "max_input_tokens": 200000,
     "max_output_tokens": 64000,
     "max_tokens": 64000,
     "mode": "chat",
+    "source": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/messages"
@@ -41117,11 +41189,13 @@
     "supports_vision": true
   },
   "github_copilot/gpt-5.6-terra": {
+    "deprecation_date": "2026-11-16",
     "litellm_provider": "github_copilot",
     "max_input_tokens": 272000,
     "max_output_tokens": 128000,
     "max_tokens": 128000,
     "mode": "responses",
+    "source": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
     "supported_endpoints": [
       "/v1/responses"
     ],
@@ -56145,6 +56219,32 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
+  "oci/openai.gpt-oss-120b": {
+    "input_cost_per_token": 1.5E-7,
+    "litellm_provider": "oci",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 6E-7,
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_reasoning": true
+  },
+  "oci/openai.gpt-oss-20b": {
+    "input_cost_per_token": 7E-8,
+    "litellm_provider": "oci",
+    "max_input_tokens": 128000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 3E-7,
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "supports_function_calling": true,
+    "supports_native_streaming": true,
+    "supports_reasoning": true
+  },
   "oci/xai.grok-3": {
     "input_cost_per_token": 0.000003,
     "litellm_provider": "oci",
@@ -56242,9 +56342,43 @@
     "max_tokens": 131072,
     "mode": "chat",
     "output_cost_per_token": 0.000015,
+    "reasoning_effort_levels": [],
     "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
     "supports_function_calling": true,
     "supports_response_schema": false
+  },
+  "oci/xai.grok-4.20-0309-non-reasoning": {
+    "cache_read_input_token_cost": 2E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 4E-7,
+    "input_cost_per_token": 0.00000125,
+    "input_cost_per_token_above_200k_tokens": 0.0000025,
+    "litellm_provider": "oci",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 1000000,
+    "max_tokens": 1000000,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000025,
+    "output_cost_per_token_above_200k_tokens": 0.000005,
+    "reasoning_effort_levels": [],
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "supports_function_calling": true
+  },
+  "oci/xai.grok-4.20-0309-reasoning": {
+    "cache_read_input_token_cost": 2E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 4E-7,
+    "input_cost_per_token": 0.00000125,
+    "input_cost_per_token_above_200k_tokens": 0.0000025,
+    "litellm_provider": "oci",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 1000000,
+    "max_tokens": 1000000,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000025,
+    "output_cost_per_token_above_200k_tokens": 0.000005,
+    "reasoning_effort_levels": [],
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "supports_function_calling": true,
+    "supports_reasoning": true
   },
   "oci/xai.grok-4.20-multi-agent": {
     "input_cost_per_token": 0.000003,
@@ -56257,6 +56391,39 @@
     "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
     "supports_function_calling": true,
     "supports_response_schema": false
+  },
+  "oci/xai.grok-4.20-non-reasoning": {
+    "cache_read_input_token_cost": 2E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 4E-7,
+    "input_cost_per_token": 0.00000125,
+    "input_cost_per_token_above_200k_tokens": 0.0000025,
+    "litellm_provider": "oci",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 1000000,
+    "max_tokens": 1000000,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000025,
+    "output_cost_per_token_above_200k_tokens": 0.000005,
+    "reasoning_effort_levels": [],
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "supports_function_calling": true
+  },
+  "oci/xai.grok-4.20-reasoning": {
+    "cache_read_input_token_cost": 2E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 4E-7,
+    "input_cost_per_token": 0.00000125,
+    "input_cost_per_token_above_200k_tokens": 0.0000025,
+    "litellm_provider": "oci",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 1000000,
+    "max_tokens": 1000000,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000025,
+    "output_cost_per_token_above_200k_tokens": 0.000005,
+    "reasoning_effort_levels": [],
+    "source": "https://www.oracle.com/artificial-intelligence/generative-ai/generative-ai-service/pricing",
+    "supports_function_calling": true,
+    "supports_reasoning": true
   },
   "oci/xai.grok-code-fast-1": {
     "input_cost_per_token": 0.000005,
@@ -69716,14 +69883,14 @@
     "supports_tool_choice": true
   },
   "vertex_ai/deepseek-ai/deepseek-v4.1-flash-maas": {
-    "cache_read_input_token_cost": 0.0,
-    "input_cost_per_token": 0.0,
+    "cache_read_input_token_cost": 3E-8,
+    "input_cost_per_token": 3E-7,
     "litellm_provider": "vertex_ai-deepseek_models",
     "max_input_tokens": 1048576,
     "max_output_tokens": 1048576,
     "max_tokens": 1048576,
     "mode": "chat",
-    "output_cost_per_token": 0.0,
+    "output_cost_per_token": 0.0000012,
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
     "supported_regions": [
       "global"
@@ -69854,7 +70021,6 @@
   "vertex_ai/gemini-3-flash-preview": {
     "cache_read_input_audio_token_cost": 1E-7,
     "cache_read_input_token_cost": 5E-8,
-    "cache_read_input_token_cost_flex": 5E-8,
     "cache_read_input_token_cost_priority": 9E-8,
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_audio_token": 0.000001,
@@ -70261,7 +70427,6 @@
     "cache_read_input_token_cost": 2E-7,
     "cache_read_input_token_cost_above_200k_tokens": 4E-7,
     "cache_read_input_token_cost_above_200k_tokens_priority": 7.2E-7,
-    "cache_read_input_token_cost_flex": 2E-7,
     "cache_read_input_token_cost_priority": 3.6E-7,
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_token": 0.000002,
@@ -70282,7 +70447,7 @@
     "output_cost_per_token_batches": 0.000006,
     "output_cost_per_token_flex": 0.000006,
     "output_cost_per_token_priority": 0.0000216,
-    "prompt_cache_min_tokens": 4096,
+    "prompt_cache_min_tokens": 4096.0,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.014,
       "search_context_size_low": 0.014,
@@ -73013,6 +73178,22 @@
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_vision": false
+  },
+  "wandb/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B": {
+    "cache_read_input_token_cost": 2E-8,
+    "input_cost_per_token": 1.5E-7,
+    "litellm_provider": "wandb",
+    "max_input_tokens": 1049000,
+    "max_tokens": 943718,
+    "mode": "chat",
+    "output_cost_per_token": 7.5E-7,
+    "source": "https://openrouter.ai/api/v1/models/nvidia/nemotron-3.5-super-vl/endpoints",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "wandb/openai/gpt-oss-120b": {
     "input_cost_per_token": 3E-8,
