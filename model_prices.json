@@ -64833,6 +64833,19 @@
     "output_cost_per_token": 2E-7,
     "source": "https://api.together.ai/v1/models"
   },
+  "together_ai/reflection/Beam-1.0-501B-A23B": {
+    "cache_read_input_token_cost": 4E-8,
+    "input_cost_per_token": 4E-7,
+    "litellm_provider": "together_ai",
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000012,
+    "source": "https://api.together.ai/v1/models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_response_schema": true
+  },
   "together_ai/thinkingmachines/Inkling": {
     "cache_read_input_token_cost": 1.7E-7,
     "input_cost_per_token": 0.000001,
