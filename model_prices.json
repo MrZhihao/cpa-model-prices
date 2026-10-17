@@ -14580,6 +14580,7 @@
     "supports_vision": true
   },
   "azure_ai/ministral-3b": {
+    "deprecation_date": "2026-12-09",
     "input_cost_per_token": 4E-8,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 128000,
@@ -14652,6 +14653,7 @@
     "supports_tool_choice": true
   },
   "azure_ai/mistral-medium-2505": {
+    "deprecation_date": "2026-12-09",
     "input_cost_per_token": 4E-7,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 131072,
@@ -14730,6 +14732,7 @@
     "supports_tool_choice": true
   },
   "azure_ai/mistral-small-2503": {
+    "deprecation_date": "2026-12-09",
     "input_cost_per_token": 1E-7,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 128000,
@@ -26783,6 +26786,40 @@
     "supports_tool_choice": true,
     "supports_vision": false
   },
+  "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash": {
+    "cache_read_input_token_cost": 4.2E-9,
+    "input_cost_per_token": 1.4E-7,
+    "litellm_provider": "deepinfra",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 4.2E-7,
+    "source": "https://deepinfra.com/deepseek-ai/DeepSeek-V4.1-Flash",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "deepinfra/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+    "cache_read_input_token_cost": 4.2E-9,
+    "input_cost_per_token": 1.4E-7,
+    "litellm_provider": "deepinfra",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 131072,
+    "max_tokens": 131072,
+    "mode": "chat",
+    "output_cost_per_token": 4.2E-7,
+    "source": "https://deepinfra.com/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "deepinfra/google/gemini-2.5-flash": {
     "input_cost_per_token": 3E-7,
     "litellm_provider": "deepinfra",
@@ -37423,6 +37460,7 @@
     "cache_read_input_token_cost_batches": 3.75E-8,
     "cache_read_input_token_cost_flex": 3.75E-8,
     "cache_read_input_token_cost_priority": 1.35E-7,
+    "deprecation_date": "2027-09-02",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_token": 7.5E-7,
     "input_cost_per_token_batches": 3.75E-7,
@@ -58216,6 +58254,30 @@
     "mode": "chat",
     "output_cost_per_token": 2.8E-7
   },
+  "perplexity/pplx-decider-flash-latest": {
+    "input_cost_per_token": 1E-8,
+    "litellm_provider": "perplexity",
+    "max_input_tokens": 262144,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.perplexity.ai/docs/decisions/quickstart"
+  },
+  "perplexity/pplx-decider-flash-v1.2": {
+    "input_cost_per_token": 1E-8,
+    "litellm_provider": "perplexity",
+    "max_input_tokens": 262144,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.perplexity.ai/docs/decisions/quickstart"
+  },
+  "perplexity/pplx-decider-latest": {
+    "input_cost_per_token": 2E-8,
+    "litellm_provider": "perplexity",
+    "max_input_tokens": 262144,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.perplexity.ai/docs/decisions/quickstart"
+  },
   "perplexity/pplx-decider-v1-27b": {
     "input_cost_per_token": 2E-8,
     "litellm_provider": "perplexity",
@@ -58231,6 +58293,14 @@
     "mode": "evaluation",
     "output_cost_per_token": 0.0,
     "source": "https://docs.perplexity.ai/docs/getting-started/pricing"
+  },
+  "perplexity/pplx-decider-v1.2": {
+    "input_cost_per_token": 2E-8,
+    "litellm_provider": "perplexity",
+    "max_input_tokens": 262144,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.perplexity.ai/docs/decisions/quickstart"
   },
   "perplexity/pplx-embed-context-v1-0.6b": {
     "input_cost_per_token": 8E-9,
@@ -71334,6 +71404,7 @@
     "cache_read_input_token_cost_batches": 3.75E-8,
     "cache_read_input_token_cost_flex": 3.75E-8,
     "cache_read_input_token_cost_priority": 1.35E-7,
+    "deprecation_date": "2027-09-02",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_token": 7.5E-7,
     "input_cost_per_token_batches": 3.75E-7,
@@ -71466,6 +71537,7 @@
     ]
   },
   "vertex_ai/gemini-3.8-live": {
+    "deprecation_date": "2027-09-25",
     "gemini_audio_only_live": true,
     "input_cost_per_audio_token": 0.000003,
     "input_cost_per_image_token": 0.000001,
@@ -71507,6 +71579,7 @@
     "cache_read_input_token_cost_batches": 5E-8,
     "cache_read_input_token_cost_flex": 5E-8,
     "cache_read_input_token_cost_priority": 1.8E-7,
+    "deprecation_date": "2027-10-13",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_audio_token": 0.000002,
     "input_cost_per_audio_token_batches": 0.000001,
