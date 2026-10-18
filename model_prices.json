@@ -14894,6 +14894,40 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "baseten/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+    "cache_read_input_token_cost": 7E-9,
+    "input_cost_per_token": 3E-7,
+    "litellm_provider": "baseten",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000012,
+    "source": "https://inference.baseten.co/v1/models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "baseten/deepseek-ai/DeepSeek-V4.1-Flash-1017-Fast": {
+    "cache_read_input_token_cost": 1.4E-8,
+    "input_cost_per_token": 6E-7,
+    "litellm_provider": "baseten",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 262144,
+    "max_tokens": 262144,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000024,
+    "source": "https://inference.baseten.co/v1/models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "baseten/deepseek-ai/DeepSeek-V4.1-Flash-Fast": {
     "cache_read_input_token_cost": 1.4E-8,
     "input_cost_per_token": 6E-7,
@@ -32592,6 +32626,26 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "fireworks_ai/accounts/fireworks/models/deepseek-v4p1-flash-1017": {
+    "cache_read_input_token_cost": 6E-9,
+    "cache_read_input_token_cost_priority": 7.5E-9,
+    "input_cost_per_token": 3E-7,
+    "input_cost_per_token_priority": 3.75E-7,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 393216,
+    "max_tokens": 393216,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000012,
+    "output_cost_per_token_priority": 0.0000015,
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
+    "supports_function_calling": false,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": false,
+    "supports_vision": true
+  },
   "fireworks_ai/accounts/fireworks/models/devstral-small-2505": {
     "input_cost_per_token": 9E-7,
     "litellm_provider": "fireworks_ai",
@@ -41043,11 +41097,16 @@
     "supports_vision": true
   },
   "github_copilot/claude-opus-4.8-fast": {
+    "cache_creation_input_token_cost": 0.0000125,
+    "cache_read_input_token_cost": 0.000001,
+    "input_cost_per_token": 0.00001,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 200000,
     "max_output_tokens": 64000,
     "max_tokens": 64000,
     "mode": "chat",
+    "output_cost_per_token": 0.00005,
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/messages"
@@ -41104,6 +41163,30 @@
     "supports_response_schema": true,
     "supports_vision": true,
     "thinking_always_on": true
+  },
+  "github_copilot/claude-sonnet-4.6": {
+    "cache_creation_input_token_cost": 0.00000375,
+    "cache_read_input_token_cost": 3E-7,
+    "deprecation_date": "2026-09-01",
+    "input_cost_per_token": 0.000003,
+    "litellm_provider": "github_copilot",
+    "max_input_tokens": 200000,
+    "max_output_tokens": 64000,
+    "max_tokens": 64000,
+    "mode": "chat",
+    "output_cost_per_token": 0.000015,
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/messages"
+    ],
+    "supports_adaptive_thinking": true,
+    "supports_function_calling": true,
+    "supports_legacy_thinking": true,
+    "supports_parallel_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
   },
   "github_copilot/claude-sonnet-5": {
     "cache_creation_input_token_cost": 0.0000025,
@@ -41402,6 +41485,25 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
+  "github_copilot/gpt-5.4-nano": {
+    "cache_read_input_token_cost": 2E-8,
+    "input_cost_per_token": 2E-7,
+    "litellm_provider": "github_copilot",
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "max_tokens": 128000,
+    "mode": "responses",
+    "output_cost_per_token": 0.00000125,
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "supported_endpoints": [
+      "/v1/responses"
+    ],
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
   "github_copilot/gpt-5.5": {
     "cache_read_input_token_cost": 5E-7,
     "cache_read_input_token_cost_above_272k_tokens": 0.000001,
@@ -41586,6 +41688,72 @@
     "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
     "supported_endpoints": [
       "/v1/responses"
+    ],
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "github_copilot/grok-4.5": {
+    "cache_read_input_token_cost": 5E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 0.000001,
+    "input_cost_per_token": 0.000002,
+    "input_cost_per_token_above_200k_tokens": 0.000004,
+    "litellm_provider": "github_copilot",
+    "max_input_tokens": 500000,
+    "max_output_tokens": 500000,
+    "max_tokens": 500000,
+    "mode": "chat",
+    "output_cost_per_token": 0.000006,
+    "output_cost_per_token_above_200k_tokens": 0.000012,
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "github_copilot/grok-4.6": {
+    "cache_read_input_token_cost": 5E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 0.000001,
+    "input_cost_per_token": 0.000002,
+    "input_cost_per_token_above_200k_tokens": 0.000004,
+    "litellm_provider": "github_copilot",
+    "max_input_tokens": 500000,
+    "max_output_tokens": 500000,
+    "max_tokens": 500000,
+    "mode": "chat",
+    "output_cost_per_token": 0.000006,
+    "output_cost_per_token_above_200k_tokens": 0.000012,
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "supported_endpoints": [
+      "/v1/chat/completions"
+    ],
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "github_copilot/grok-4.7": {
+    "cache_read_input_token_cost": 5E-7,
+    "cache_read_input_token_cost_above_200k_tokens": 0.000001,
+    "input_cost_per_token": 0.000002,
+    "input_cost_per_token_above_200k_tokens": 0.000004,
+    "litellm_provider": "github_copilot",
+    "max_input_tokens": 500000,
+    "max_output_tokens": 500000,
+    "max_tokens": 500000,
+    "mode": "chat",
+    "output_cost_per_token": 0.000006,
+    "output_cost_per_token_above_200k_tokens": 0.000012,
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "supported_endpoints": [
+      "/v1/chat/completions"
     ],
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
