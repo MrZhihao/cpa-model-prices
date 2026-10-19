@@ -3937,9 +3937,10 @@
     "supports_vision": true
   },
   "azure/container": {
-    "code_interpreter_cost_per_session": 0.03,
+    "code_interpreter_cost_per_session": 0.033,
     "litellm_provider": "azure",
-    "mode": "chat"
+    "mode": "chat",
+    "source": "https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/"
   },
   "azure/eu/codex-mini": {
     "cache_read_input_token_cost": 4.13E-7,
@@ -19171,7 +19172,7 @@
     "input_cost_per_token_flex": 2.25E-7,
     "input_cost_per_token_priority": 7.875E-7,
     "litellm_provider": "bedrock_mantle",
-    "max_input_tokens": 128000,
+    "max_input_tokens": 262144,
     "max_output_tokens": 16000,
     "max_tokens": 16000,
     "mode": "chat",
@@ -19179,7 +19180,7 @@
     "output_cost_per_token_batches": 9E-7,
     "output_cost_per_token_flex": 9E-7,
     "output_cost_per_token_priority": 0.00000315,
-    "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-qwen-qwen3-coder-480b-a35b-instruct.html",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -59148,7 +59149,7 @@
     "deprecation_date": "2027-03-30",
     "input_cost_per_token": 4.5E-7,
     "litellm_provider": "bedrock_converse",
-    "max_input_tokens": 131072,
+    "max_input_tokens": 262144,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
     "mode": "chat",
@@ -65250,6 +65251,22 @@
     "supports_prompt_caching": true,
     "supports_response_schema": true,
     "supports_tool_choice": true
+  },
+  "together_ai/deepseek-ai/DeepSeek-V4.1-Flash-1017": {
+    "cache_read_input_token_cost": 6E-9,
+    "input_cost_per_token": 3E-7,
+    "litellm_provider": "together_ai",
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000012,
+    "source": "https://api.together.ai/v1/models",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "together_ai/deepseek-ai/deepseek-coder-33b-instruct": {
     "deprecation_date": "2024-08-22",
