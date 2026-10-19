@@ -5097,7 +5097,7 @@
     "supports_max_reasoning_effort": false,
     "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
-    "supports_none_reasoning_effort": true,
+    "supports_none_reasoning_effort": false,
     "supports_parallel_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
@@ -8348,7 +8348,7 @@
     "supports_max_reasoning_effort": false,
     "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
-    "supports_none_reasoning_effort": true,
+    "supports_none_reasoning_effort": false,
     "supports_parallel_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
@@ -8397,7 +8397,7 @@
     "supports_max_reasoning_effort": false,
     "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
-    "supports_none_reasoning_effort": true,
+    "supports_none_reasoning_effort": false,
     "supports_parallel_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
@@ -11510,7 +11510,7 @@
     "supports_max_reasoning_effort": false,
     "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
-    "supports_none_reasoning_effort": true,
+    "supports_none_reasoning_effort": false,
     "supports_parallel_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
@@ -14074,7 +14074,7 @@
     "supports_max_reasoning_effort": false,
     "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
-    "supports_none_reasoning_effort": true,
+    "supports_none_reasoning_effort": false,
     "supports_parallel_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_cache_breakpoint": true,
@@ -14810,18 +14810,21 @@
     "source": "https://developers.openai.com/api/docs/pricing"
   },
   "baseten/MiniMaxAI/MiniMax-M2.5": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 3E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
     "output_cost_per_token": 0.0000012
   },
   "baseten/deepseek-ai/DeepSeek-V3-0324": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 7.7E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
     "output_cost_per_token": 7.7E-7
   },
   "baseten/deepseek-ai/DeepSeek-V3.1": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 5E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -14846,6 +14849,7 @@
   },
   "baseten/deepseek-ai/DeepSeek-V4-Pro": {
     "cache_read_input_token_cost": 1.45E-7,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 0.00000174,
     "litellm_provider": "baseten",
     "max_input_tokens": 1048576,
@@ -14965,18 +14969,21 @@
     "supports_vision": true
   },
   "baseten/moonshotai/Kimi-K2-Instruct-0905": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
     "output_cost_per_token": 0.0000025
   },
   "baseten/moonshotai/Kimi-K2-Thinking": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
     "output_cost_per_token": 0.0000025
   },
   "baseten/moonshotai/Kimi-K2.5": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -14984,6 +14991,7 @@
   },
   "baseten/moonshotai/Kimi-K2.6": {
     "cache_read_input_token_cost": 1.6E-7,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 9.5E-7,
     "litellm_provider": "baseten",
     "max_input_tokens": 262000,
@@ -15001,6 +15009,7 @@
   },
   "baseten/moonshotai/Kimi-K2.7-Code": {
     "cache_read_input_token_cost": 1.6E-7,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 9.5E-7,
     "litellm_provider": "baseten",
     "max_input_tokens": 262000,
@@ -15068,6 +15077,7 @@
     "supports_vision": true
   },
   "baseten/nvidia/Nemotron-120B-A12B": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 3E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -15108,6 +15118,7 @@
   },
   "baseten/thinkingmachines/inkling": {
     "cache_read_input_token_cost": 1.7E-7,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 0.000001,
     "litellm_provider": "baseten",
     "max_input_tokens": 1048576,
@@ -15125,6 +15136,7 @@
   },
   "baseten/thinkingmachines/inkling-small": {
     "cache_read_input_token_cost": 1E-7,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 5E-7,
     "litellm_provider": "baseten",
     "max_input_tokens": 1048576,
@@ -15141,6 +15153,7 @@
     "supports_vision": true
   },
   "baseten/zai-org/GLM-4.6": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -15148,6 +15161,7 @@
   },
   "baseten/zai-org/GLM-4.7": {
     "cache_read_input_token_cost": 1.2E-7,
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "baseten",
     "max_input_tokens": 200000,
@@ -15164,6 +15178,7 @@
     "supports_vision": false
   },
   "baseten/zai-org/GLM-5": {
+    "deprecation_date": "2026-10-16",
     "input_cost_per_token": 9.5E-7,
     "litellm_provider": "baseten",
     "mode": "chat",
@@ -20111,13 +20126,13 @@
       "/v1/responses"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
-    "supports_none_reasoning_effort": false,
+    "supports_minimal_reasoning_effort": false,
+    "supports_none_reasoning_effort": true,
     "supports_parallel_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": false
+    "supports_xhigh_reasoning_effort": true
   },
   "chatgpt/gpt-5.3-codex-spark": {
     "litellm_provider": "chatgpt",
@@ -28395,6 +28410,11 @@
     "supports_tool_choice": true,
     "supports_vision": false
   },
+  "deepseek/search": {
+    "input_cost_per_query": 0.00075,
+    "litellm_provider": "deepseek",
+    "mode": "search"
+  },
   "dolphin": {
     "input_cost_per_token": 5E-7,
     "litellm_provider": "nlp_cloud",
@@ -32640,11 +32660,11 @@
     "output_cost_per_token": 0.0000012,
     "output_cost_per_token_priority": 0.0000015,
     "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
-    "supports_function_calling": false,
+    "supports_function_calling": true,
     "supports_prompt_caching": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": false,
+    "supports_tool_choice": true,
     "supports_vision": true
   },
   "fireworks_ai/accounts/fireworks/models/devstral-small-2505": {
@@ -33667,6 +33687,25 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": false
+  },
+  "fireworks_ai/accounts/fireworks/models/minimax-m3p1-flash": {
+    "cache_read_input_token_cost": 1.5E-8,
+    "cache_read_input_token_cost_priority": 2.25E-8,
+    "input_cost_per_token": 1.5E-7,
+    "input_cost_per_token_priority": 2.25E-7,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 6E-7,
+    "output_cost_per_token_priority": 9E-7,
+    "source": "https://platform.minimax.io/docs/guides/pricing",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
   },
   "fireworks_ai/accounts/fireworks/models/ministral-3-14b-instruct-2512": {
     "input_cost_per_token": 2E-7,
@@ -41077,6 +41116,7 @@
   "github_copilot/claude-opus-4.8": {
     "cache_creation_input_token_cost": 0.00000625,
     "cache_read_input_token_cost": 5E-7,
+    "deprecation_date": "2026-11-16",
     "input_cost_per_token": 0.000005,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 200000,
@@ -45176,9 +45216,9 @@
       "text"
     ],
     "supports_function_calling": true,
-    "supports_minimal_reasoning_effort": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_native_streaming": true,
-    "supports_none_reasoning_effort": false,
+    "supports_none_reasoning_effort": true,
     "supports_parallel_function_calling": true,
     "supports_pdf_input": true,
     "supports_prompt_caching": true,
@@ -45189,7 +45229,7 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_web_search": true,
-    "supports_xhigh_reasoning_effort": false
+    "supports_xhigh_reasoning_effort": true
   },
   "gpt-5.4": {
     "cache_read_input_token_cost": 2.5E-7,
@@ -50990,6 +51030,23 @@
     "supports_vision": true,
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
+  },
+  "meta/sam-3.1": {
+    "input_cost_per_image": 0.0025,
+    "litellm_provider": "meta",
+    "mode": "responses",
+    "source": "https://dev.meta.ai/docs/pricing-rate-limits.md",
+    "supported_endpoints": [
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ]
   },
   "meta_llama/Llama-3.3-70B-Instruct": {
     "litellm_provider": "meta_llama",
@@ -71907,7 +71964,6 @@
     "cache_read_input_token_cost_batches": 5E-8,
     "cache_read_input_token_cost_flex": 5E-8,
     "cache_read_input_token_cost_priority": 1.8E-7,
-    "deprecation_date": "2027-10-13",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_audio_token": 0.000002,
     "input_cost_per_audio_token_batches": 0.000001,
