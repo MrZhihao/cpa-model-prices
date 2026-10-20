@@ -1922,7 +1922,12 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-fable-5",
+      "region": "us-east-1"
+    }
   },
   "anthropic.claude-fable-5-1": {
     "bedrock_output_config_effort_ceiling": "xhigh",
@@ -1989,7 +1994,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "anthropic.claude-haiku-4-5@20251001": {
     "cache_creation_input_token_cost": 0.00000125,
@@ -2065,6 +2074,7 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": false,
     "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
       "model": "anthropic.claude-opus-5-5",
       "region": "us-east-1"
     }
@@ -2157,7 +2167,11 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-1-20250805-v1:0"
+    }
   },
   "anthropic.claude-opus-4-20250514-v1:0": {
     "cache_creation_input_token_cost": 0.00001875,
@@ -2216,7 +2230,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-5-20251101-v1:0"
+    }
   },
   "anthropic.claude-opus-4-6-v1": {
     "bedrock_output_config_effort_ceiling": "max",
@@ -2252,7 +2270,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-6-v1"
+    }
   },
   "anthropic.claude-opus-4-7": {
     "bedrock_converse_supports_strict_tools": false,
@@ -2290,7 +2312,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-7",
+      "region": "us-east-1"
+    }
   },
   "anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -2330,7 +2357,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-8",
+      "region": "us-east-1"
+    }
   },
   "anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -2368,7 +2400,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5",
+      "region": "us-east-1"
+    }
   },
   "anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -2408,7 +2445,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5-5",
+      "region": "us-east-1"
+    }
   },
   "anthropic.claude-sonnet-4-20250514-v1:0": {
     "bedrock_converse_supports_strict_tools": false,
@@ -2441,7 +2483,11 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-20250514-v1:0"
+    }
   },
   "anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.00000375,
@@ -2480,7 +2526,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "anthropic.claude-sonnet-4-6": {
     "cache_creation_input_token_cost": 0.00000375,
@@ -2515,7 +2565,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-6"
+    }
   },
   "anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -2555,7 +2609,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5",
+      "region": "us-east-1"
+    }
   },
   "anthropic.claude-sonnet-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -2599,6 +2658,7 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true,
     "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
       "model": "anthropic.claude-opus-5-5",
       "region": "us-east-1"
     }
@@ -2886,7 +2946,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "apac.anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -2981,7 +3045,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-7",
+      "region": "ap-northeast-1"
+    }
   },
   "apac.anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3016,7 +3085,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-8",
+      "region": "ap-northeast-1"
+    }
   },
   "apac.anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3049,7 +3123,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5",
+      "region": "ap-southeast-4"
+    }
   },
   "apac.anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3084,7 +3163,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5-5",
+      "region": "ap-southeast-4"
+    }
   },
   "apac.anthropic.claude-sonnet-4-20250514-v1:0": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3117,7 +3201,11 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-20250514-v1:0"
+    }
   },
   "apac.anthropic.claude-sonnet-4-6": {
     "cache_creation_input_token_cost": 0.000004125,
@@ -3147,7 +3235,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-6"
+    }
   },
   "apac.anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3182,7 +3274,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5",
+      "region": "ap-southeast-4"
+    }
   },
   "apac.anthropic.claude-sonnet-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3308,7 +3405,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "au.anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3357,6 +3458,7 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": false,
     "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
       "model": "au.anthropic.claude-opus-5-5",
       "region": "ap-southeast-4"
     }
@@ -3415,7 +3517,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-6-v1"
+    }
   },
   "au.anthropic.claude-opus-4-7": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3453,7 +3559,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-7",
+      "region": "ap-southeast-4"
+    }
   },
   "au.anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3493,7 +3604,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-8",
+      "region": "ap-southeast-4"
+    }
   },
   "au.anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3531,7 +3647,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5",
+      "region": "ap-southeast-4"
+    }
   },
   "au.anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3571,7 +3692,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5-5",
+      "region": "ap-southeast-4"
+    }
   },
   "au.anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.000004125,
@@ -3610,7 +3736,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "au.anthropic.claude-sonnet-4-6": {
     "cache_creation_input_token_cost": 0.000004125,
@@ -3645,7 +3775,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-6"
+    }
   },
   "au.anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3685,7 +3819,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5",
+      "region": "ap-southeast-4"
+    }
   },
   "au.anthropic.claude-sonnet-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -3729,6 +3868,7 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true,
     "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
       "model": "au.anthropic.claude-opus-5-5",
       "region": "ap-southeast-4"
     }
@@ -17057,7 +17197,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "bedrock/us-gov-east-1/anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -17225,7 +17369,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "bedrock/us-gov-east-1/anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -17585,7 +17733,12 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-fable-5-1",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock/us-gov-west-1/anthropic.claude-haiku-4-5-20251001-v1:0": {
     "cache_creation_input_token_cost": 0.0000015,
@@ -17611,7 +17764,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "bedrock/us-gov-west-1/anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -17653,7 +17810,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": false
+    "thinking_always_on": false,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-haiku-5-5",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock/us-gov-west-1/anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -17687,7 +17849,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-8",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock/us-gov-west-1/anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -17719,7 +17886,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock/us-gov-west-1/anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -17754,7 +17926,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5-5",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock/us-gov-west-1/anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.0000045,
@@ -17779,7 +17956,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "bedrock/us-gov-west-1/anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -17813,7 +17994,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock/us-gov-west-1/anthropic.claude-sonnet-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -17850,7 +18036,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5-5",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock/us-gov-west-1/claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.0000045,
@@ -28878,7 +29069,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "eu.anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -28952,7 +29147,11 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-1-20250805-v1:0"
+    }
   },
   "eu.anthropic.claude-opus-4-20250514-v1:0": {
     "cache_creation_input_token_cost": 0.00001875,
@@ -29011,7 +29210,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-5-20251101-v1:0"
+    }
   },
   "eu.anthropic.claude-opus-4-6-v1": {
     "bedrock_output_config_effort_ceiling": "max",
@@ -29047,7 +29250,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-6-v1"
+    }
   },
   "eu.anthropic.claude-opus-4-7": {
     "bedrock_converse_supports_strict_tools": false,
@@ -29085,7 +29292,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-7",
+      "region": "eu-west-1"
+    }
   },
   "eu.anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -29125,7 +29337,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-8",
+      "region": "eu-west-1"
+    }
   },
   "eu.anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -29163,7 +29380,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5",
+      "region": "eu-west-1"
+    }
   },
   "eu.anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -29236,7 +29458,11 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-20250514-v1:0"
+    }
   },
   "eu.anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.000004125,
@@ -29275,7 +29501,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "eu.anthropic.claude-sonnet-4-6": {
     "cache_creation_input_token_cost": 0.000004125,
@@ -29310,7 +29540,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-6"
+    }
   },
   "eu.anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -29350,7 +29584,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5",
+      "region": "eu-west-1"
+    }
   },
   "eu.anthropic.claude-sonnet-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -29480,10 +29719,12 @@
     "supports_image_input": true
   },
   "eu.twelvelabs.pegasus-1-2-v1:0": {
+    "deprecation_date": "2027-03-22",
     "input_cost_per_video_per_second": 0.00049,
     "litellm_provider": "bedrock",
     "mode": "chat",
     "output_cost_per_token": 0.0000075,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-2.md",
     "supports_video_input": true
   },
   "exa_ai/search": {
@@ -41275,6 +41516,7 @@
   },
   "github_copilot/gemini-3.7-flash": {
     "cache_read_input_token_cost": 7.5E-8,
+    "deprecation_date": "2026-10-19",
     "input_cost_per_token": 7.5E-7,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 200000,
@@ -41453,6 +41695,7 @@
   },
   "github_copilot/gpt-5-mini": {
     "cache_read_input_token_cost": 2.5E-8,
+    "deprecation_date": "2026-10-19",
     "input_cost_per_token": 2.5E-7,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 128000,
@@ -41460,6 +41703,7 @@
     "max_tokens": 64000,
     "mode": "chat",
     "output_cost_per_token": 0.000002,
+    "source": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
     "supports_response_schema": true,
@@ -41486,6 +41730,7 @@
   "github_copilot/gpt-5.4": {
     "cache_read_input_token_cost": 2.5E-7,
     "cache_read_input_token_cost_above_272k_tokens": 5E-7,
+    "deprecation_date": "2026-10-19",
     "input_cost_per_token": 0.0000025,
     "input_cost_per_token_above_272k_tokens": 0.000005,
     "litellm_provider": "github_copilot",
@@ -41508,6 +41753,7 @@
   },
   "github_copilot/gpt-5.4-mini": {
     "cache_read_input_token_cost": 7.5E-8,
+    "deprecation_date": "2026-10-19",
     "input_cost_per_token": 7.5E-7,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 272000,
@@ -41547,6 +41793,7 @@
   "github_copilot/gpt-5.5": {
     "cache_read_input_token_cost": 5E-7,
     "cache_read_input_token_cost_above_272k_tokens": 0.000001,
+    "deprecation_date": "2026-10-19",
     "input_cost_per_token": 0.000005,
     "input_cost_per_token_above_272k_tokens": 0.00001,
     "litellm_provider": "github_copilot",
@@ -41738,6 +41985,7 @@
   "github_copilot/grok-4.5": {
     "cache_read_input_token_cost": 5E-7,
     "cache_read_input_token_cost_above_200k_tokens": 0.000001,
+    "deprecation_date": "2026-10-19",
     "input_cost_per_token": 0.000002,
     "input_cost_per_token_above_200k_tokens": 0.000004,
     "litellm_provider": "github_copilot",
@@ -41929,7 +42177,12 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "global.anthropic.claude-fable-5",
+      "region": "us-east-1"
+    }
   },
   "global.anthropic.claude-fable-5-1": {
     "bedrock_output_config_effort_ceiling": "xhigh",
@@ -41996,7 +42249,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "global.anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -42045,6 +42302,7 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": false,
     "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
       "model": "global.anthropic.claude-opus-5-5",
       "region": "us-east-1"
     }
@@ -42113,7 +42371,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-5-20251101-v1:0"
+    }
   },
   "global.anthropic.claude-opus-4-6-v1": {
     "bedrock_output_config_effort_ceiling": "max",
@@ -42149,7 +42411,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-6-v1"
+    }
   },
   "global.anthropic.claude-opus-4-7": {
     "bedrock_converse_supports_strict_tools": false,
@@ -42187,7 +42453,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "global.anthropic.claude-opus-4-7",
+      "region": "us-east-1"
+    }
   },
   "global.anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -42227,7 +42498,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "global.anthropic.claude-opus-4-8",
+      "region": "us-east-1"
+    }
   },
   "global.anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -42265,7 +42541,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "global.anthropic.claude-opus-5",
+      "region": "us-east-1"
+    }
   },
   "global.anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -42305,7 +42586,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "global.anthropic.claude-opus-5-5",
+      "region": "us-east-1"
+    }
   },
   "global.anthropic.claude-sonnet-4-20250514-v1:0": {
     "bedrock_converse_supports_strict_tools": false,
@@ -42338,7 +42624,11 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-20250514-v1:0"
+    }
   },
   "global.anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.00000375,
@@ -42377,7 +42667,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "global.anthropic.claude-sonnet-4-6": {
     "cache_creation_input_token_cost": 0.00000375,
@@ -42412,7 +42706,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-6"
+    }
   },
   "global.anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -42452,7 +42750,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "global.anthropic.claude-sonnet-5",
+      "region": "us-east-1"
+    }
   },
   "global.anthropic.claude-sonnet-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -42496,6 +42799,7 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true,
     "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
       "model": "global.anthropic.claude-opus-5-5",
       "region": "us-east-1"
     }
@@ -42891,11 +43195,12 @@
     "supports_xhigh_reasoning_effort": true
   },
   "global.twelvelabs.pegasus-1-2-v1:0": {
+    "deprecation_date": "2027-03-22",
     "input_cost_per_video_per_second": 0.00049,
     "litellm_provider": "bedrock",
     "mode": "chat",
     "output_cost_per_token": 0.0000075,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-2.md",
     "supports_video_input": true
   },
   "global.twelvelabs.pegasus-1-5-v1:0": {
@@ -49126,7 +49431,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "jp.anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -49210,7 +49519,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-7",
+      "region": "ap-northeast-1"
+    }
   },
   "jp.anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -49250,7 +49564,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-8",
+      "region": "ap-northeast-1"
+    }
   },
   "jp.anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -49367,7 +49686,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "jp.anthropic.claude-sonnet-4-6": {
     "cache_creation_input_token_cost": 0.000004125,
@@ -49402,7 +49725,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-6"
+    }
   },
   "jp.anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -65917,10 +66244,12 @@
     "supports_image_input": true
   },
   "twelvelabs.pegasus-1-2-v1:0": {
+    "deprecation_date": "2027-03-22",
     "input_cost_per_video_per_second": 0.00049,
     "litellm_provider": "bedrock",
     "mode": "chat",
     "output_cost_per_token": 0.0000075,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-2.md",
     "supports_video_input": true
   },
   "twelvelabs.pegasus-1-5-v1:0": {
@@ -66000,7 +66329,12 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-fable-5-1",
+      "region": "us-gov-west-1"
+    }
   },
   "us-gov.anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -66042,7 +66376,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": false
+    "thinking_always_on": false,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-haiku-5-5",
+      "region": "us-gov-west-1"
+    }
   },
   "us-gov.anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -66077,7 +66416,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-8",
+      "region": "us-gov-west-1"
+    }
   },
   "us-gov.anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -66110,7 +66454,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5",
+      "region": "us-gov-west-1"
+    }
   },
   "us-gov.anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -66145,7 +66494,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5-5",
+      "region": "us-gov-west-1"
+    }
   },
   "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.0000045,
@@ -66176,7 +66530,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "us-gov.anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -66211,7 +66569,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5",
+      "region": "us-gov-west-1"
+    }
   },
   "us-gov.anthropic.claude-sonnet-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -66248,7 +66611,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5-5",
+      "region": "us-gov-west-1"
+    }
   },
   "us-gov.nvidia.nemotron-nano-12b-v2": {
     "deprecation_date": "2027-03-30",
@@ -66620,7 +66988,12 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-fable-5",
+      "region": "us-east-1"
+    }
   },
   "us.anthropic.claude-fable-5-1": {
     "bedrock_output_config_effort_ceiling": "xhigh",
@@ -66687,7 +67060,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "us.anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -66736,6 +67113,7 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": false,
     "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
       "model": "us.anthropic.claude-opus-5-5",
       "region": "us-east-1"
     }
@@ -66771,7 +67149,12 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-mythos-5",
+      "region": "us-east-1"
+    }
   },
   "us.anthropic.claude-mythos-5-1": {
     "bedrock_output_config_effort_ceiling": "xhigh",
@@ -66852,7 +67235,11 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-1-20250805-v1:0"
+    }
   },
   "us.anthropic.claude-opus-4-20250514-v1:0": {
     "cache_creation_input_token_cost": 0.00001875,
@@ -66911,7 +67298,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-5-20251101-v1:0"
+    }
   },
   "us.anthropic.claude-opus-4-6-v1": {
     "bedrock_output_config_effort_ceiling": "max",
@@ -66947,7 +67338,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-opus-4-6-v1"
+    }
   },
   "us.anthropic.claude-opus-4-7": {
     "bedrock_converse_supports_strict_tools": false,
@@ -66985,7 +67380,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-7",
+      "region": "us-east-1"
+    }
   },
   "us.anthropic.claude-opus-4-8": {
     "bedrock_converse_supports_strict_tools": false,
@@ -67025,7 +67425,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-4-8",
+      "region": "us-east-1"
+    }
   },
   "us.anthropic.claude-opus-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -67063,7 +67468,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5",
+      "region": "us-east-1"
+    }
   },
   "us.anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -67103,7 +67513,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-opus-5-5",
+      "region": "us-east-1"
+    }
   },
   "us.anthropic.claude-sonnet-4-20250514-v1:0": {
     "bedrock_converse_supports_strict_tools": false,
@@ -67136,7 +67551,11 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_tool_choice": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-20250514-v1:0"
+    }
   },
   "us.anthropic.claude-sonnet-4-5-20250929-v1:0": {
     "cache_creation_input_token_cost": 0.000004125,
@@ -67175,7 +67594,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-5-20250929-v1:0"
+    }
   },
   "us.anthropic.claude-sonnet-4-6": {
     "cache_creation_input_token_cost": 0.000004125,
@@ -67210,7 +67633,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-sonnet-4-6"
+    }
   },
   "us.anthropic.claude-sonnet-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -67250,7 +67677,12 @@
     "supports_tool_choice": true,
     "supports_tool_search": true,
     "supports_vision": true,
-    "supports_xhigh_reasoning_effort": true
+    "supports_xhigh_reasoning_effort": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5",
+      "region": "us-east-1"
+    }
   },
   "us.anthropic.claude-sonnet-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -67294,6 +67726,7 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true,
     "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
       "model": "us.anthropic.claude-opus-5-5",
       "region": "us-east-1"
     }
@@ -68016,10 +68449,12 @@
     "supports_image_input": true
   },
   "us.twelvelabs.pegasus-1-2-v1:0": {
+    "deprecation_date": "2027-03-22",
     "input_cost_per_video_per_second": 0.00049,
     "litellm_provider": "bedrock",
     "mode": "chat",
     "output_cost_per_token": 0.0000075,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-2.md",
     "supports_video_input": true
   },
   "us.twelvelabs.pegasus-1-5-v1:0": {
@@ -68034,6 +68469,7 @@
     "supports_video_input": true
   },
   "us.writer.palmyra-x4-v1:0": {
+    "deprecation_date": "2027-03-09",
     "input_cost_per_token": 0.0000025,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
@@ -68041,11 +68477,12 @@
     "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 0.00001,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-x4.md",
     "supports_function_calling": true,
     "supports_pdf_input": true
   },
   "us.writer.palmyra-x5-v1:0": {
+    "deprecation_date": "2027-03-21",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
@@ -71922,7 +72359,6 @@
     ]
   },
   "vertex_ai/gemini-3.8-live": {
-    "deprecation_date": "2027-09-25",
     "gemini_audio_only_live": true,
     "input_cost_per_audio_token": 0.000003,
     "input_cost_per_image_token": 0.000001,
@@ -74766,6 +75202,7 @@
     "supports_vision": true
   },
   "writer.palmyra-x4-v1:0": {
+    "deprecation_date": "2027-03-09",
     "input_cost_per_token": 0.0000025,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
@@ -74773,11 +75210,12 @@
     "max_tokens": 8192,
     "mode": "chat",
     "output_cost_per_token": 0.00001,
-    "source": "https://aws.amazon.com/bedrock/pricing/",
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-x4.md",
     "supports_function_calling": true,
     "supports_pdf_input": true
   },
   "writer.palmyra-x5-v1:0": {
+    "deprecation_date": "2027-03-21",
     "input_cost_per_token": 6E-7,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 128000,
