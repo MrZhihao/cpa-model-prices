@@ -23528,7 +23528,9 @@
     ]
   },
   "dashscope/qwen3.7-max": {
+    "cache_creation_input_token_cost": 0.000003125,
     "cache_read_input_token_cost": 5E-7,
+    "explicit_cache_read_input_token_cost": 2.5E-7,
     "input_cost_per_token": 0.0000025,
     "litellm_provider": "dashscope",
     "max_input_tokens": 991808,
@@ -33305,6 +33307,7 @@
   "fireworks_ai/accounts/fireworks/models/gpt-oss-120b": {
     "cache_read_input_token_cost": 1.5E-8,
     "cache_read_input_token_cost_priority": 1.8E-8,
+    "deprecation_date": "2026-11-07",
     "input_cost_per_token": 1.5E-7,
     "input_cost_per_token_priority": 1.8E-7,
     "litellm_provider": "fireworks_ai",
@@ -33314,7 +33317,7 @@
     "mode": "chat",
     "output_cost_per_token": 6E-7,
     "output_cost_per_token_priority": 7.2E-7,
-    "source": "https://api.fireworks.ai/v1/serverless/models",
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -33367,6 +33370,7 @@
   "fireworks_ai/accounts/fireworks/models/inkling": {
     "cache_read_input_token_cost": 1.7E-7,
     "cache_read_input_token_cost_priority": 1.7E-7,
+    "deprecation_date": "2026-11-07",
     "input_cost_per_token": 0.000001,
     "input_cost_per_token_priority": 0.000001,
     "litellm_provider": "fireworks_ai",
@@ -34157,6 +34161,7 @@
   "fireworks_ai/accounts/fireworks/models/nemotron-3-ultra-nvfp4": {
     "cache_read_input_token_cost": 1.2E-7,
     "cache_read_input_token_cost_priority": 1.5E-7,
+    "deprecation_date": "2026-11-07",
     "input_cost_per_token": 6E-7,
     "input_cost_per_token_priority": 7.5E-7,
     "litellm_provider": "fireworks_ai",
@@ -34166,7 +34171,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.0000024,
     "output_cost_per_token_priority": 0.000003,
-    "source": "https://api.fireworks.ai/v1/serverless/models",
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -34176,6 +34181,7 @@
   "fireworks_ai/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b": {
     "cache_read_input_token_cost": 1E-8,
     "cache_read_input_token_cost_priority": 1.25E-8,
+    "deprecation_date": "2026-11-07",
     "input_cost_per_token": 5E-8,
     "input_cost_per_token_priority": 6.25E-8,
     "litellm_provider": "fireworks_ai",
@@ -34185,7 +34191,7 @@
     "mode": "chat",
     "output_cost_per_token": 2E-7,
     "output_cost_per_token_priority": 2.5E-7,
-    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -35764,6 +35770,7 @@
   "fireworks_ai/gpt-oss-120b": {
     "cache_read_input_token_cost": 1.5E-8,
     "cache_read_input_token_cost_priority": 1.8E-8,
+    "deprecation_date": "2026-11-07",
     "input_cost_per_token": 1.5E-7,
     "input_cost_per_token_priority": 1.8E-7,
     "litellm_provider": "fireworks_ai",
@@ -35773,7 +35780,7 @@
     "mode": "chat",
     "output_cost_per_token": 6E-7,
     "output_cost_per_token_priority": 7.2E-7,
-    "source": "https://api.fireworks.ai/v1/serverless/models",
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -36009,6 +36016,7 @@
   "fireworks_ai/nemotron-3-ultra-nvfp4": {
     "cache_read_input_token_cost": 1.2E-7,
     "cache_read_input_token_cost_priority": 1.5E-7,
+    "deprecation_date": "2026-11-07",
     "input_cost_per_token": 6E-7,
     "input_cost_per_token_priority": 7.5E-7,
     "litellm_provider": "fireworks_ai",
@@ -36018,7 +36026,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.0000024,
     "output_cost_per_token_priority": 0.000003,
-    "source": "https://api.fireworks.ai/v1/serverless/models",
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -36028,6 +36036,7 @@
   "fireworks_ai/nemotron-lightning-3p5-30b-a3b": {
     "cache_read_input_token_cost": 1E-8,
     "cache_read_input_token_cost_priority": 1.25E-8,
+    "deprecation_date": "2026-11-07",
     "input_cost_per_token": 5E-8,
     "input_cost_per_token_priority": 6.25E-8,
     "litellm_provider": "fireworks_ai",
@@ -36037,7 +36046,7 @@
     "mode": "chat",
     "output_cost_per_token": 2E-7,
     "output_cost_per_token_priority": 2.5E-7,
-    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "source": "https://api.fireworks.ai/v1/serverless/models?format=nested",
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
@@ -41611,22 +41620,26 @@
     "supports_parallel_function_calling": true
   },
   "github_copilot/gpt-4.1": {
+    "deprecation_date": "2026-06-01",
     "litellm_provider": "github_copilot",
     "max_input_tokens": 128000,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
     "mode": "chat",
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/model-deprecation-history.yml",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
     "supports_response_schema": true,
     "supports_vision": true
   },
   "github_copilot/gpt-4.1-2025-04-14": {
+    "deprecation_date": "2026-06-01",
     "litellm_provider": "github_copilot",
     "max_input_tokens": 128000,
     "max_output_tokens": 16384,
     "max_tokens": 16384,
     "mode": "chat",
+    "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/model-deprecation-history.yml",
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
     "supports_response_schema": true,
@@ -60637,7 +60650,9 @@
     ]
   },
   "qwen_ai_platform/qwen3.7-max": {
+    "cache_creation_input_token_cost": 0.000003125,
     "cache_read_input_token_cost": 5E-7,
+    "explicit_cache_read_input_token_cost": 2.5E-7,
     "input_cost_per_token": 0.0000025,
     "litellm_provider": "qwen_ai_platform",
     "max_input_tokens": 991808,
@@ -61904,7 +61919,9 @@
     ]
   },
   "qwencloud/qwen3.7-max": {
+    "cache_creation_input_token_cost": 0.000003125,
     "cache_read_input_token_cost": 5E-7,
+    "explicit_cache_read_input_token_cost": 2.5E-7,
     "input_cost_per_token": 0.0000025,
     "litellm_provider": "qwencloud",
     "max_input_tokens": 991808,
