@@ -13140,6 +13140,7 @@
     "supports_vision": true
   },
   "azure_ai/Phi-4": {
+    "deprecation_date": "2027-01-17",
     "input_cost_per_token": 1.25E-7,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 16384,
@@ -13153,6 +13154,7 @@
     "supports_vision": false
   },
   "azure_ai/Phi-4-mini-instruct": {
+    "deprecation_date": "2027-01-17",
     "input_cost_per_token": 7.5E-8,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 131072,
@@ -13164,6 +13166,7 @@
     "supports_function_calling": true
   },
   "azure_ai/Phi-4-mini-reasoning": {
+    "deprecation_date": "2027-01-17",
     "input_cost_per_token": 7.5E-8,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 131072,
@@ -13175,6 +13178,7 @@
     "supports_function_calling": true
   },
   "azure_ai/Phi-4-multimodal-instruct": {
+    "deprecation_date": "2027-01-17",
     "input_cost_per_audio_token": 0.000004,
     "input_cost_per_token": 8E-8,
     "litellm_provider": "azure_ai",
@@ -13189,6 +13193,7 @@
     "supports_vision": true
   },
   "azure_ai/Phi-4-reasoning": {
+    "deprecation_date": "2027-01-17",
     "input_cost_per_token": 1.25E-7,
     "litellm_provider": "azure_ai",
     "max_input_tokens": 32768,
@@ -17838,7 +17843,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock/us-gov-east-1/openai.gpt-oss-20b-1:0": {
     "input_cost_per_token": 8.4E-8,
@@ -17857,7 +17863,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock/us-gov-west-1/amazon.nova-2-multimodal-embeddings-v1:0": {
     "input_cost_per_audio_per_second": 0.000168,
@@ -18435,7 +18442,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock/us-gov-west-1/openai.gpt-oss-20b-1:0": {
     "input_cost_per_token": 8.4E-8,
@@ -18454,7 +18462,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock/us-west-1/meta.llama3-70b-instruct-v1:0": {
     "deprecation_date": "2027-03-30",
@@ -19496,7 +19505,8 @@
     "supports_parallel_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock_mantle/openai.gpt-oss-20b": {
     "input_cost_per_token": 7E-8,
@@ -19521,7 +19531,8 @@
     "supports_parallel_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock_mantle/openai.gpt-oss-safeguard-120b": {
     "input_cost_per_token": 1.5E-7,
@@ -19544,7 +19555,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock_mantle/openai.gpt-oss-safeguard-20b": {
     "input_cost_per_token": 7E-8,
@@ -19567,7 +19579,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock_mantle/qwen.qwen3-235b-a22b-2507": {
     "input_cost_per_token": 2.2E-7,
@@ -19747,7 +19760,8 @@
     "supports_parallel_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock_mantle/us-gov-east-1/openai.gpt-oss-20b": {
     "input_cost_per_token": 8.4E-8,
@@ -19766,7 +19780,8 @@
     "supports_parallel_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock_mantle/us-gov-east-1/xai.grok-4.6": {
     "cache_read_input_token_cost": 6.6E-7,
@@ -20077,7 +20092,8 @@
     "supports_parallel_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock_mantle/us-gov-west-1/openai.gpt-oss-20b": {
     "input_cost_per_token": 8.4E-8,
@@ -20096,7 +20112,8 @@
     "supports_parallel_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "bedrock_mantle/us-gov-west-1/xai.grok-4.3": {
     "cache_read_input_token_cost": 2.4E-7,
@@ -28972,28 +28989,119 @@
     },
     "mode": "search"
   },
-  "elevenlabs/eleven_multilingual_v2": {
-    "input_cost_per_character": 0.00018,
+  "elevenlabs/eleven_flash_v2": {
+    "input_cost_per_character": 0.00004,
     "litellm_provider": "elevenlabs",
     "metadata": {
-      "calculation": "$0.18/1000 characters (Scale plan pricing, 1 credit per character)",
+      "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+      "notes": "ElevenLabs Eleven Flash v2 - low-latency English-only TTS model"
+    },
+    "mode": "audio_speech",
+    "source": "https://elevenlabs.io/pricing/api",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "elevenlabs/eleven_flash_v2_5": {
+    "input_cost_per_character": 0.00004,
+    "litellm_provider": "elevenlabs",
+    "metadata": {
+      "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+      "notes": "ElevenLabs Eleven Flash v2.5 - low-latency multilingual TTS model"
+    },
+    "mode": "audio_speech",
+    "source": "https://elevenlabs.io/pricing/api",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "elevenlabs/eleven_multilingual_v2": {
+    "input_cost_per_character": 0.00008,
+    "litellm_provider": "elevenlabs",
+    "metadata": {
+      "calculation": "$0.08/1000 characters (API usage pricing, billed in USD per character)",
       "notes": "ElevenLabs Eleven Multilingual v2 - default TTS model with 29 languages support"
     },
     "mode": "audio_speech",
-    "source": "https://elevenlabs.io/pricing",
+    "source": "https://elevenlabs.io/pricing/api",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "elevenlabs/eleven_turbo_v2": {
+    "input_cost_per_character": 0.00004,
+    "litellm_provider": "elevenlabs",
+    "metadata": {
+      "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+      "notes": "ElevenLabs Eleven Turbo v2 - English-only TTS model"
+    },
+    "mode": "audio_speech",
+    "source": "https://elevenlabs.io/pricing/api",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "elevenlabs/eleven_turbo_v2_5": {
+    "input_cost_per_character": 0.00004,
+    "litellm_provider": "elevenlabs",
+    "metadata": {
+      "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+      "notes": "ElevenLabs Eleven Turbo v2.5 - multilingual TTS model"
+    },
+    "mode": "audio_speech",
+    "source": "https://elevenlabs.io/pricing/api",
     "supported_endpoints": [
       "/v1/audio/speech"
     ]
   },
   "elevenlabs/eleven_v3": {
-    "input_cost_per_character": 0.00018,
+    "input_cost_per_character": 0.00008,
     "litellm_provider": "elevenlabs",
     "metadata": {
-      "calculation": "$0.18/1000 characters (Scale plan pricing, 1 credit per character)",
+      "calculation": "$0.08/1000 characters (API usage pricing, billed in USD per character)",
       "notes": "ElevenLabs Eleven v3 - most expressive TTS model with 70+ languages and audio tags support"
     },
     "mode": "audio_speech",
-    "source": "https://elevenlabs.io/pricing",
+    "source": "https://elevenlabs.io/pricing/api",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "elevenlabs/eleven_v3_conversational": {
+    "input_cost_per_character": 0.00004,
+    "litellm_provider": "elevenlabs",
+    "metadata": {
+      "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+      "notes": "ElevenLabs Eleven v3 Conversational - low-latency v3 tuned for realtime conversation"
+    },
+    "mode": "audio_speech",
+    "source": "https://elevenlabs.io/pricing/api",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "elevenlabs/eleven_v4": {
+    "input_cost_per_character": 0.00008,
+    "litellm_provider": "elevenlabs",
+    "metadata": {
+      "calculation": "$0.08/1000 characters (API usage pricing, billed in USD per character)",
+      "notes": "ElevenLabs Eleven v4 - most emotive TTS model with audio tags and 90+ languages"
+    },
+    "mode": "audio_speech",
+    "source": "https://elevenlabs.io/pricing/api",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ]
+  },
+  "elevenlabs/eleven_v4_turbo": {
+    "input_cost_per_character": 0.00004,
+    "litellm_provider": "elevenlabs",
+    "metadata": {
+      "calculation": "$0.04/1000 characters (API usage pricing, billed in USD per character)",
+      "notes": "ElevenLabs Eleven v4 Turbo - low-latency v4 tuned for real-time and agents"
+    },
+    "mode": "audio_speech",
+    "source": "https://elevenlabs.io/pricing/api",
     "supported_endpoints": [
       "/v1/audio/speech"
     ]
@@ -53388,11 +53496,75 @@
     ],
     "supports_audio_input": true
   },
+  "mistral/voxtral-mini-transcribe-3": {
+    "input_cost_per_second": 0.0000583333,
+    "litellm_provider": "mistral",
+    "mode": "audio_transcription",
+    "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
+  "mistral/voxtral-mini-transcribe-3-0": {
+    "input_cost_per_second": 0.0000583333,
+    "litellm_provider": "mistral",
+    "mode": "audio_transcription",
+    "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-3-0",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
   "mistral/voxtral-mini-transcribe-realtime-2602": {
     "input_cost_per_second": 0.0001,
     "litellm_provider": "mistral",
     "mode": "audio_transcription",
     "source": "https://docs.mistral.ai/models/model-cards/voxtral-mini-transcribe-realtime-26-02",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
+  "mistral/voxtral-mini-transcribe-realtime-3": {
+    "input_cost_per_second": 0.000133333,
+    "litellm_provider": "mistral",
+    "mode": "audio_transcription",
+    "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
+  "mistral/voxtral-mini-transcribe-realtime-3-0": {
+    "input_cost_per_second": 0.000133333,
+    "litellm_provider": "mistral",
+    "mode": "audio_transcription",
+    "source": "https://docs.mistral.ai/models/voxtral-mini-transcribe-realtime-3-0",
     "supported_endpoints": [
       "/v1/audio/transcriptions"
     ],
@@ -53425,6 +53597,38 @@
     "litellm_provider": "mistral",
     "mode": "audio_speech",
     "source": "https://docs.mistral.ai/models/model-cards/voxtral-tts-26-03",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "audio"
+    ],
+    "supports_audio_output": true
+  },
+  "mistral/voxtral-mini-tts-3": {
+    "input_cost_per_character": 0.000013,
+    "litellm_provider": "mistral",
+    "mode": "audio_speech",
+    "source": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
+    "supported_endpoints": [
+      "/v1/audio/speech"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "audio"
+    ],
+    "supports_audio_output": true
+  },
+  "mistral/voxtral-mini-tts-3-0": {
+    "input_cost_per_character": 0.000013,
+    "litellm_provider": "mistral",
+    "mode": "audio_speech",
+    "source": "https://docs.mistral.ai/models/voxtral-mini-tts-3-0",
     "supported_endpoints": [
       "/v1/audio/speech"
     ],
@@ -53481,6 +53685,38 @@
     "supports_function_calling": true,
     "supports_response_schema": true,
     "supports_tool_choice": true
+  },
+  "mistral/voxtral-small-transcribe-3": {
+    "input_cost_per_second": 0.0000666667,
+    "litellm_provider": "mistral",
+    "mode": "audio_transcription",
+    "source": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
+  "mistral/voxtral-small-transcribe-3-0": {
+    "input_cost_per_second": 0.0000666667,
+    "litellm_provider": "mistral",
+    "mode": "audio_transcription",
+    "source": "https://docs.mistral.ai/models/voxtral-small-transcribe-3-0",
+    "supported_endpoints": [
+      "/v1/audio/transcriptions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
   },
   "mistral/zai-glm-5": {
     "cache_read_input_token_cost": 1.4E-7,
@@ -58409,7 +58645,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "openai.gpt-oss-20b-1:0": {
     "input_cost_per_token": 7E-8,
@@ -58434,7 +58671,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "openai.gpt-oss-safeguard-120b": {
     "input_cost_per_token": 1.5E-7,
@@ -65784,6 +66022,17 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "together_ai/MiniMaxAI/MiniMax-M3.1-Flash": {
+    "cache_read_input_token_cost": 1.5E-8,
+    "input_cost_per_token": 1.5E-7,
+    "litellm_provider": "together_ai",
+    "max_input_tokens": 1048576,
+    "max_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 6E-7,
+    "source": "https://www.together.ai/pricing",
+    "supports_prompt_caching": true
+  },
   "together_ai/NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO": {
     "deprecation_date": "2025-08-28",
     "input_cost_per_token": 6E-7,
@@ -67223,7 +67472,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "us-gov.openai.gpt-oss-20b-1:0": {
     "input_cost_per_token": 8.4E-8,
@@ -67242,7 +67492,8 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_response_schema": true,
-    "supports_tool_choice": true
+    "supports_tool_choice": true,
+    "supports_vision": false
   },
   "us-gov.xai.grok-4.6": {
     "cache_read_input_token_cost": 6.6E-7,
@@ -73551,12 +73802,14 @@
   },
   "vertex_ai/meta/llama-4-maverick-17b-16e-instruct-maas": {
     "input_cost_per_token": 3.5E-7,
+    "input_cost_per_token_batches": 1.75E-7,
     "litellm_provider": "vertex_ai-llama_models",
     "max_input_tokens": 1000000,
     "max_output_tokens": 1000000,
     "max_tokens": 1000000,
     "mode": "chat",
     "output_cost_per_token": 0.00000115,
+    "output_cost_per_token_batches": 5.75E-7,
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#partner-models",
     "supported_modalities": [
       "text",
@@ -73571,12 +73824,14 @@
   },
   "vertex_ai/meta/llama-4-scout-17b-128e-instruct-maas": {
     "input_cost_per_token": 2.5E-7,
+    "input_cost_per_token_batches": 1.25E-7,
     "litellm_provider": "vertex_ai-llama_models",
     "max_input_tokens": 10000000,
     "max_output_tokens": 10000000,
     "max_tokens": 10000000,
     "mode": "chat",
     "output_cost_per_token": 7E-7,
+    "output_cost_per_token_batches": 3.5E-7,
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing#partner-models",
     "supported_modalities": [
       "text",
