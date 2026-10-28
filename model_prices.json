@@ -18770,7 +18770,11 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_tool_search": true,
-    "supports_vision": true
+    "supports_vision": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock",
+      "model": "anthropic.claude-haiku-4-5-20251001-v1:0"
+    }
   },
   "bedrock_mantle/anthropic.claude-haiku-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -19844,7 +19848,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": false
+    "thinking_always_on": false,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-haiku-5-5",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock_mantle/us-gov-west-1/anthropic.claude-opus-5-5": {
     "bedrock_converse_supports_strict_tools": false,
@@ -19918,7 +19927,12 @@
     "supports_tool_search": true,
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
-    "thinking_always_on": true
+    "thinking_always_on": true,
+    "token_count_model": {
+      "litellm_provider": "bedrock_mantle",
+      "model": "anthropic.claude-sonnet-5-5",
+      "region": "us-gov-west-1"
+    }
   },
   "bedrock_mantle/us-gov-west-1/google.gemma-4-26b-a4b": {
     "input_cost_per_token": 1.56E-7,
@@ -25433,15 +25447,17 @@
     "supports_tool_choice": true
   },
   "databricks/databricks-openjev-qwen35-4b": {
-    "cache_creation_input_token_cost": 0.0,
-    "cache_read_input_token_cost": 0.0,
-    "input_cost_per_token": 0.0,
+    "cache_creation_input_token_cost": 4.2E-8,
+    "cache_read_input_token_cost": 4.2E-8,
+    "input_cost_per_token": 4.2E-8,
+    "input_dbu_cost_per_token": 6E-7,
     "litellm_provider": "databricks",
     "metadata": {
-      "notes": "Pay-per-token Foundation Model API decision endpoint (OpenJev, Qwen 3.5 4B) queried through the System One API. Databricks published no DBU rate for it as of 2026-10-07, so a deployment's model_info prices set the billed cost."
+      "notes": "Pay-per-token Foundation Model API decision endpoint (OpenJev, Qwen 3.5 4B) queried through the System One API. The serving-endpoints API lists it at 0.6 DBUs per 1M input tokens (input_price on the foundation_model entry, read 2026-10-27); input_cost_per_token is that dbu cost * $0.070, the same conversion as the other databricks rows. Output is free. Databricks publishes no cache rates for it, so cache tokens bill at the input rate."
     },
     "mode": "evaluation",
     "output_cost_per_token": 0.0,
+    "output_dbu_cost_per_token": 0.0,
     "source": "https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models"
   },
   "databricks/databricks-qwen3-embedding-0-6b": {
@@ -53097,6 +53113,132 @@
     "supports_vision": true,
     "token_count_framing": 64,
     "token_count_tokenizer": "kimi_k3"
+  },
+  "morph/morph-dsv41flash": {
+    "cache_read_input_token_cost": 8E-9,
+    "input_cost_per_token": 1.2E-7,
+    "litellm_provider": "morph",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 8E-7,
+    "source": "https://www.morphllm.com/pricing",
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "morph/morph-dsv41flash-1017": {
+    "cache_read_input_token_cost": 8E-9,
+    "input_cost_per_token": 1.2E-7,
+    "litellm_provider": "morph",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 8E-7,
+    "source": "https://www.morphllm.com/pricing",
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "morph/morph-dsv41flash-abliterated": {
+    "cache_read_input_token_cost": 3E-8,
+    "input_cost_per_token": 3E-7,
+    "litellm_provider": "morph",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000012,
+    "source": "https://www.morphllm.com/pricing",
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "morph/morph-dsv4flash": {
+    "cache_read_input_token_cost": 3.59375E-8,
+    "input_cost_per_token": 1.41953125E-7,
+    "litellm_provider": "morph",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 3.99625E-7,
+    "source": "https://www.morphllm.com/pricing",
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true
+  },
+  "morph/morph-glm53-744b": {
+    "cache_read_input_token_cost": 1.955E-7,
+    "input_cost_per_token": 0.00000119,
+    "litellm_provider": "morph",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.000006,
+    "source": "https://www.morphllm.com/pricing",
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true
+  },
+  "morph/morph-glm53flash": {
+    "cache_read_input_token_cost": 4E-8,
+    "input_cost_per_token": 2E-7,
+    "litellm_provider": "morph",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 7E-7,
+    "source": "https://www.morphllm.com/pricing",
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "morph/morph-kimik3": {
+    "cache_read_input_token_cost": 2.9E-7,
+    "input_cost_per_token": 0.0000025,
+    "litellm_provider": "morph",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.000014,
+    "source": "https://www.morphllm.com/pricing",
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "morph/morph-kimik3-fast": {
+    "cache_read_input_token_cost": 6E-7,
+    "input_cost_per_token": 0.000006,
+    "litellm_provider": "morph",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000225,
+    "source": "https://www.morphllm.com/pricing",
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
   },
   "morph/morph-v3-fast": {
     "input_cost_per_token": 8E-7,
