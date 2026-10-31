@@ -51130,6 +51130,63 @@
     "supports_pdf_input": true,
     "supports_vision": true
   },
+  "hostinger_router/claude-sonnet-5": {
+    "cache_creation_input_token_cost": 0.0000033,
+    "cache_creation_input_token_cost_above_1hr": 0.00000528,
+    "cache_read_input_token_cost": 2.64E-7,
+    "input_cost_per_token": 0.00000264,
+    "litellm_provider": "hostinger_router",
+    "max_input_tokens": 1000000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000132,
+    "source": "https://router.hostinger.com/v1/models",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/messages"
+    ],
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "hostinger_router/gpt-5.2": {
+    "cache_read_input_token_cost": 2.1E-7,
+    "input_cost_per_token": 0.0000021,
+    "litellm_provider": "hostinger_router",
+    "max_input_tokens": 272000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000168,
+    "source": "https://router.hostinger.com/v1/models",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
+  "hostinger_router/text-embedding-3-large": {
+    "input_cost_per_token": 1.716E-7,
+    "litellm_provider": "hostinger_router",
+    "max_input_tokens": 8191,
+    "mode": "embedding",
+    "output_cost_per_token": 0.0,
+    "source": "https://router.hostinger.com/v1/models"
+  },
+  "hostinger_router/text-embedding-3-small": {
+    "input_cost_per_token": 3E-8,
+    "litellm_provider": "hostinger_router",
+    "max_input_tokens": 8191,
+    "mode": "embedding",
+    "output_cost_per_token": 0.0,
+    "source": "https://router.hostinger.com/v1/models"
+  },
   "hyperbolic/NousResearch/Hermes-3-Llama-3.1-70B": {
     "input_cost_per_token": 1.2E-7,
     "litellm_provider": "hyperbolic",
@@ -75019,6 +75076,11 @@
     "output_cost_per_token_batches": 0.0000025,
     "prompt_cache_min_tokens": 4096,
     "regional_endpoint_uplift_multiplier": 1.1,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
@@ -75047,6 +75109,11 @@
     "output_cost_per_token_batches": 0.0000025,
     "prompt_cache_min_tokens": 4096,
     "regional_endpoint_uplift_multiplier": 1.1,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
@@ -75617,6 +75684,11 @@
     "output_cost_per_token_batches": 0.0000075,
     "prompt_cache_min_tokens": 1024,
     "regional_endpoint_uplift_multiplier": 1.1,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
     "supports_assistant_prefill": true,
     "supports_computer_use": true,
@@ -75650,6 +75722,11 @@
     "output_cost_per_token_batches": 0.0000075,
     "prompt_cache_min_tokens": 1024,
     "regional_endpoint_uplift_multiplier": 1.1,
+    "search_context_cost_per_query": {
+      "search_context_size_high": 0.01,
+      "search_context_size_low": 0.01,
+      "search_context_size_medium": 0.01
+    },
     "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
     "supports_assistant_prefill": true,
     "supports_computer_use": true,
