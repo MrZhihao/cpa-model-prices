@@ -79431,11 +79431,11 @@
   "wandb/deepseek-ai/DeepSeek-V3.1": {
     "input_cost_per_token": 5.5E-7,
     "litellm_provider": "wandb",
-    "max_input_tokens": 161000,
+    "max_input_tokens": 128000,
     "max_output_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 0.00000165,
-    "source": "https://wandb.ai/site/pricing/tokens/",
+    "source": "https://www.coreweave.com/products/coreweave-forge/serverless-inference",
     "supports_reasoning": true
   },
   "wandb/deepseek-ai/DeepSeek-V4-Flash": {
@@ -79565,11 +79565,11 @@
   "wandb/meta-llama/Llama-3.1-8B-Instruct": {
     "input_cost_per_token": 2.2E-7,
     "litellm_provider": "wandb",
-    "max_input_tokens": 131000,
+    "max_input_tokens": 128000,
     "max_output_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 2.2E-7,
-    "source": "https://wandb.ai/site/pricing/tokens/"
+    "source": "https://www.coreweave.com/products/coreweave-forge/serverless-inference"
   },
   "wandb/meta-llama/Llama-3.3-70B-Instruct": {
     "input_cost_per_token": 7.1E-7,
