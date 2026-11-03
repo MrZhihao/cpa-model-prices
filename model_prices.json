@@ -9756,6 +9756,9 @@
     "max_input_tokens": 32000,
     "max_output_tokens": 4096,
     "mode": "audio_transcription",
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_endpoints": [
       "/v1/realtime",
@@ -9768,7 +9771,8 @@
     "supported_output_modalities": [
       "text"
     ],
-    "supports_audio_input": true
+    "supports_audio_input": true,
+    "supports_native_streaming": true
   },
   "azure/gpt-realtime": {
     "cache_creation_input_audio_token_cost": 0.000004,
@@ -9784,6 +9788,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.000064,
     "output_cost_per_token": 0.000016,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
     "supported_endpoints": [
       "/v1/realtime"
@@ -9818,6 +9825,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.000064,
     "output_cost_per_token": 0.000016,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
     "supported_endpoints": [
       "/v1/realtime"
@@ -9852,6 +9862,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.000064,
     "output_cost_per_token": 0.000016,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "supported_endpoints": [
       "/v1/realtime"
     ],
@@ -9885,6 +9898,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.000064,
     "output_cost_per_token": 0.000024,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_endpoints": [
       "/v1/realtime"
@@ -9908,6 +9924,7 @@
   "azure/gpt-realtime-2.1": {
     "cache_creation_input_audio_token_cost": 4E-7,
     "cache_read_input_audio_token_cost": 4E-7,
+    "cache_read_input_image_token_cost": 5E-7,
     "cache_read_input_token_cost": 4E-7,
     "deprecation_date": "2027-06-25",
     "input_cost_per_audio_token": 0.000032,
@@ -9919,6 +9936,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.000064,
     "output_cost_per_token": 0.000024,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule",
     "supported_endpoints": [
       "/v1/realtime"
@@ -9936,12 +9956,54 @@
     "supports_audio_output": true,
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true
+  },
+  "azure/gpt-realtime-2.1-2026-07-07": {
+    "cache_creation_input_audio_token_cost": 4E-7,
+    "cache_read_input_audio_token_cost": 4E-7,
+    "cache_read_input_image_token_cost": 5E-7,
+    "cache_read_input_token_cost": 4E-7,
+    "input_cost_per_audio_token": 0.000032,
+    "input_cost_per_image_token": 0.000005,
+    "input_cost_per_token": 0.000004,
+    "litellm_provider": "azure",
+    "max_input_tokens": 32000,
+    "max_output_tokens": 4096,
+    "mode": "realtime",
+    "output_cost_per_audio_token": 0.000064,
+    "output_cost_per_token": 0.000024,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+    "supported_endpoints": [
+      "/v1/realtime"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "audio"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_system_messages": true,
     "supports_tool_choice": true
   },
   "azure/gpt-realtime-2.1-mini": {
     "cache_creation_input_audio_token_cost": 3E-7,
     "cache_read_input_audio_token_cost": 3E-7,
+    "cache_read_input_image_token_cost": 8E-8,
     "cache_read_input_token_cost": 6E-8,
     "deprecation_date": "2027-06-25",
     "input_cost_per_audio_token": 0.00001,
@@ -9953,6 +10015,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.00002,
     "output_cost_per_token": 0.0000024,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule",
     "supported_endpoints": [
       "/v1/realtime"
@@ -9970,6 +10035,47 @@
     "supports_audio_output": true,
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_system_messages": true,
+    "supports_tool_choice": true
+  },
+  "azure/gpt-realtime-2.1-mini-2026-07-07": {
+    "cache_creation_input_audio_token_cost": 3E-7,
+    "cache_read_input_audio_token_cost": 3E-7,
+    "cache_read_input_image_token_cost": 8E-8,
+    "cache_read_input_token_cost": 6E-8,
+    "input_cost_per_audio_token": 0.00001,
+    "input_cost_per_image_token": 8E-7,
+    "input_cost_per_token": 6E-7,
+    "litellm_provider": "azure",
+    "max_input_tokens": 32000,
+    "max_output_tokens": 4096,
+    "mode": "realtime",
+    "output_cost_per_audio_token": 0.00002,
+    "output_cost_per_token": 0.0000024,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure",
+    "supported_endpoints": [
+      "/v1/realtime"
+    ],
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text",
+      "audio"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "supports_function_calling": true,
+    "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_system_messages": true,
     "supports_tool_choice": true
   },
@@ -9987,6 +10093,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.000064,
     "output_cost_per_token": 0.000016,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "supported_endpoints": [
       "/v1/realtime"
     ],
@@ -10020,6 +10129,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.00002,
     "output_cost_per_token": 0.0000024,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "supported_endpoints": [
       "/v1/realtime"
     ],
@@ -10053,6 +10165,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.00002,
     "output_cost_per_token": 0.0000024,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "supported_endpoints": [
       "/v1/realtime"
     ],
@@ -10079,6 +10194,9 @@
     "max_input_tokens": 32000,
     "max_output_tokens": 4096,
     "mode": "realtime",
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_modalities": [
       "audio"
@@ -10088,7 +10206,50 @@
       "audio"
     ],
     "supports_audio_input": true,
-    "supports_audio_output": true
+    "supports_audio_output": true,
+    "supports_native_streaming": true
+  },
+  "azure/gpt-realtime-translate-2026-05-06": {
+    "input_cost_per_second": 0.0005666666666666667,
+    "litellm_provider": "azure",
+    "max_input_tokens": 32000,
+    "max_output_tokens": 4096,
+    "mode": "realtime",
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
+    "source": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/a-new-chapter-for-realtime-ai-reasoning-translation-and-real-time-transcription/4517124",
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "audio",
+      "text"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "supports_native_streaming": true
+  },
+  "azure/gpt-realtime-translate-2026-05-07": {
+    "input_cost_per_second": 0.0005666666666666667,
+    "litellm_provider": "azure",
+    "max_input_tokens": 32000,
+    "max_output_tokens": 4096,
+    "mode": "realtime",
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
+    "source": "https://ai.azure.com/catalog/models/gpt-realtime-translate",
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "audio",
+      "text"
+    ],
+    "supports_audio_input": true,
+    "supports_audio_output": true,
+    "supports_native_streaming": true
   },
   "azure/gpt-realtime-whisper": {
     "deprecation_date": "2027-05-06",
@@ -10097,6 +10258,53 @@
     "max_input_tokens": 32000,
     "max_output_tokens": 4096,
     "mode": "audio_transcription",
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/gpt-realtime-whisper",
+    "supported_endpoints": [
+      "/v1/realtime",
+      "/v1/realtime/transcription_sessions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
+  "azure/gpt-realtime-whisper-2026-05-06": {
+    "input_cost_per_second": 0.0002833333333333333,
+    "litellm_provider": "azure",
+    "max_input_tokens": 32000,
+    "max_output_tokens": 4096,
+    "mode": "audio_transcription",
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
+    "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/gpt-realtime-whisper",
+    "supported_endpoints": [
+      "/v1/realtime",
+      "/v1/realtime/transcription_sessions"
+    ],
+    "supported_modalities": [
+      "audio"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true
+  },
+  "azure/gpt-realtime-whisper-2026-05-07": {
+    "input_cost_per_second": 0.0002833333333333333,
+    "litellm_provider": "azure",
+    "max_input_tokens": 32000,
+    "max_output_tokens": 4096,
+    "mode": "audio_transcription",
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/gpt-realtime-whisper",
     "supported_endpoints": [
       "/v1/realtime",
@@ -10115,10 +10323,16 @@
     "input_cost_per_second": 0.000075,
     "litellm_provider": "azure",
     "mode": "audio_transcription",
+    "provider_specific_entry": {
+      "realtime_ga_only": 1,
+      "transcription_json_or_text_only": 1,
+      "transcription_usage_duration": 1
+    },
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'",
     "supported_endpoints": [
       "/v1/audio/transcriptions",
-      "/v1/realtime/transcription_sessions"
+      "/v1/realtime/transcription_sessions",
+      "/v1/realtime"
     ],
     "supported_modalities": [
       "text",
@@ -10127,7 +10341,8 @@
     "supported_output_modalities": [
       "text"
     ],
-    "supports_audio_input": true
+    "supports_audio_input": true,
+    "supports_native_streaming": true
   },
   "azure/hd/1024-x-1024/dall-e-3": {
     "input_cost_per_pixel": 8.39233E-8,
@@ -18738,6 +18953,7 @@
     "prompt_cache_min_tokens": 512,
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_computer_use": true,
     "supports_forced_tool_use": false,
     "supports_function_calling": true,
@@ -18905,6 +19121,7 @@
     "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_computer_use": true,
     "supports_forced_tool_use": false,
     "supports_function_calling": true,
@@ -19279,6 +19496,7 @@
     "prompt_cache_min_tokens": 512,
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_computer_use": true,
     "supports_forced_tool_use": false,
     "supports_function_calling": true,
@@ -19466,6 +19684,7 @@
     "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_computer_use": true,
     "supports_forced_tool_use": false,
     "supports_function_calling": true,
@@ -46361,6 +46580,7 @@
   "gpt-4.1": {
     "cache_read_input_token_cost": 5E-7,
     "cache_read_input_token_cost_priority": 8.75E-7,
+    "deprecation_date": "2027-01-14",
     "input_cost_per_token": 0.000002,
     "input_cost_per_token_batches": 0.000001,
     "input_cost_per_token_priority": 0.0000035,
@@ -46446,6 +46666,7 @@
   "gpt-4.1-mini": {
     "cache_read_input_token_cost": 1E-7,
     "cache_read_input_token_cost_priority": 1.75E-7,
+    "deprecation_date": "2027-01-14",
     "input_cost_per_token": 4E-7,
     "input_cost_per_token_batches": 2E-7,
     "input_cost_per_token_priority": 7E-7,
@@ -46605,6 +46826,7 @@
   "gpt-4o": {
     "cache_read_input_token_cost": 0.00000125,
     "cache_read_input_token_cost_priority": 0.000002125,
+    "deprecation_date": "2027-01-14",
     "input_cost_per_token": 0.0000025,
     "input_cost_per_token_batches": 0.00000125,
     "input_cost_per_token_priority": 0.00000425,
@@ -46731,6 +46953,7 @@
   "gpt-4o-mini": {
     "cache_read_input_token_cost": 7.5E-8,
     "cache_read_input_token_cost_priority": 1.25E-7,
+    "deprecation_date": "2027-01-14",
     "input_cost_per_token": 1.5E-7,
     "input_cost_per_token_batches": 7.5E-8,
     "input_cost_per_token_priority": 2.5E-7,
@@ -50515,7 +50738,8 @@
     "supported_output_modalities": [
       "text"
     ],
-    "supports_audio_input": true
+    "supports_audio_input": true,
+    "supports_native_streaming": true
   },
   "gpt-realtime": {
     "cache_creation_input_audio_token_cost": 4E-7,
@@ -50600,6 +50824,9 @@
     "mode": "realtime",
     "output_cost_per_audio_token": 0.000064,
     "output_cost_per_token": 0.000024,
+    "provider_specific_entry": {
+      "realtime_ga_only": 1
+    },
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/realtime"
@@ -50653,6 +50880,8 @@
     "supports_audio_output": true,
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_system_messages": true,
     "supports_tool_choice": true
   },
@@ -50689,6 +50918,8 @@
     "supports_audio_output": true,
     "supports_function_calling": true,
     "supports_parallel_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
     "supports_system_messages": true,
     "supports_tool_choice": true
   },
@@ -50812,7 +51043,8 @@
       "audio"
     ],
     "supports_audio_input": true,
-    "supports_audio_output": true
+    "supports_audio_output": true,
+    "supports_native_streaming": true
   },
   "gpt-realtime-whisper": {
     "input_cost_per_second": 0.000283333333333,
@@ -50851,6 +51083,10 @@
     "input_cost_per_second": 0.000075,
     "litellm_provider": "openai",
     "mode": "audio_transcription",
+    "provider_specific_entry": {
+      "transcription_json_or_text_only": 1,
+      "transcription_usage_duration": 1
+    },
     "source": "https://developers.openai.com/api/docs/pricing",
     "supported_endpoints": [
       "/v1/audio/transcriptions",
@@ -50863,7 +51099,8 @@
     "supported_output_modalities": [
       "text"
     ],
-    "supports_audio_input": true
+    "supports_audio_input": true,
+    "supports_native_streaming": true
   },
   "gradient_ai/alibaba-qwen3-32b": {
     "litellm_provider": "gradient_ai",
@@ -56613,18 +56850,18 @@
     "supports_vision": true
   },
   "mistral/mistral-large-4": {
-    "cache_read_input_token_cost": 1.4E-7,
-    "input_cost_per_token": 0.00000136,
+    "cache_read_input_token_cost": 7E-8,
+    "input_cost_per_token": 7E-7,
     "litellm_provider": "mistral",
     "max_input_tokens": 1048576,
     "max_output_tokens": 1048576,
     "mode": "chat",
-    "output_cost_per_token": 0.00000418,
+    "output_cost_per_token": 0.0000021,
     "reasoning_effort_levels": [
       "none",
       "high"
     ],
-    "source": "https://docs.mistral.ai/models/mistral-large-4",
+    "source": "https://docs.mistral.ai/models/mistral-large-4-0",
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
     "supports_prompt_caching": true,
@@ -56634,18 +56871,18 @@
     "supports_vision": true
   },
   "mistral/mistral-large-4-0": {
-    "cache_read_input_token_cost": 1.4E-7,
-    "input_cost_per_token": 0.00000136,
+    "cache_read_input_token_cost": 7E-8,
+    "input_cost_per_token": 7E-7,
     "litellm_provider": "mistral",
     "max_input_tokens": 1048576,
     "max_output_tokens": 1048576,
     "mode": "chat",
-    "output_cost_per_token": 0.00000418,
+    "output_cost_per_token": 0.0000021,
     "reasoning_effort_levels": [
       "none",
       "high"
     ],
-    "source": "https://docs.mistral.ai/models/mistral-large-4",
+    "source": "https://docs.mistral.ai/models/mistral-large-4-0",
     "supports_assistant_prefill": true,
     "supports_function_calling": true,
     "supports_prompt_caching": true,
@@ -63082,6 +63319,19 @@
     "supports_function_calling": false,
     "supports_response_schema": true,
     "supports_tool_choice": false
+  },
+  "parallel_ai/decision": {
+    "input_cost_per_query": 0.001,
+    "input_cost_per_token": 0.0,
+    "litellm_provider": "parallel_ai",
+    "max_input_tokens": 32000,
+    "mode": "evaluation",
+    "output_cost_per_token": 0.0,
+    "source": "https://docs.parallel.ai/getting-started/pricing#decisions-api",
+    "supported_endpoints": [
+      "/v1/decisions",
+      "/v1/systemone"
+    ]
   },
   "parallel_ai/search": {
     "input_cost_per_query": 0.005,
@@ -71504,7 +71754,8 @@
     "max_input_tokens": 65536,
     "mode": "evaluation",
     "output_cost_per_token": 0.0,
-    "source": "https://docs.typesafe.ai/models"
+    "source": "https://docs.typesafe.ai/models",
+    "supports_box_questions": true
   },
   "typesafe/jev-preview": {
     "input_cost_per_token": 4.2E-8,
@@ -71530,6 +71781,7 @@
     "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_computer_use": true,
     "supports_forced_tool_use": false,
     "supports_function_calling": true,
@@ -71690,6 +71942,7 @@
     "source": "https://aws.amazon.com/bedrock/pricing/",
     "supports_adaptive_thinking": true,
     "supports_assistant_prefill": false,
+    "supports_bedrock_native_structured_output": false,
     "supports_computer_use": true,
     "supports_forced_tool_use": false,
     "supports_function_calling": true,
