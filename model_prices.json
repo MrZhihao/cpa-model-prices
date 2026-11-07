@@ -9520,6 +9520,9 @@
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
   },
+  "azure/gpt-astra-latest": {
+    "alias_of": "azure/gpt-6-astra"
+  },
   "azure/gpt-audio": {
     "deprecation_date": "2027-03-02",
     "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirement-schedule",
@@ -9943,6 +9946,12 @@
     ],
     "supports_audio_input": true,
     "supports_native_streaming": true
+  },
+  "azure/gpt-luna-latest": {
+    "alias_of": "azure/gpt-6-luna"
+  },
+  "azure/gpt-mini-latest": {
+    "alias_of": "azure/gpt-5.4-mini"
   },
   "azure/gpt-realtime": {
     "cache_creation_input_audio_token_cost": 0.000004,
@@ -10503,6 +10512,12 @@
       "text"
     ],
     "supports_audio_input": true
+  },
+  "azure/gpt-sol-latest": {
+    "alias_of": "azure/gpt-6.1-sol"
+  },
+  "azure/gpt-terra-latest": {
+    "alias_of": "azure/gpt-6.1-terra"
   },
   "azure/gpt-transcribe": {
     "deprecation_date": "2028-02-01",
@@ -14326,6 +14341,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
+  "azure_ai/claude-fable-latest": {
+    "alias_of": "azure_ai/claude-fable-5-1"
+  },
   "azure_ai/claude-haiku-4-5": {
     "cache_creation_input_token_cost": 0.00000125,
     "cache_creation_input_token_cost_above_1hr": 0.000002,
@@ -14391,6 +14409,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": false,
     "thinking_on_by_default": true
+  },
+  "azure_ai/claude-haiku-latest": {
+    "alias_of": "azure_ai/claude-haiku-5-5"
   },
   "azure_ai/claude-mythos-5-1": {
     "cache_creation_input_token_cost": 0.0000125,
@@ -14654,6 +14675,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
+  "azure_ai/claude-opus-latest": {
+    "alias_of": "azure_ai/claude-opus-5-5"
+  },
   "azure_ai/claude-sonnet-4-5": {
     "cache_creation_input_token_cost": 0.00000375,
     "cache_creation_input_token_cost_above_1hr": 0.000006,
@@ -14776,6 +14800,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
+  "azure_ai/claude-sonnet-latest": {
+    "alias_of": "azure_ai/claude-sonnet-5-5"
+  },
   "azure_ai/codex-mini": {
     "cache_read_input_token_cost": 3.75E-7,
     "deprecation_date": "2026-11-15",
@@ -14869,6 +14896,12 @@
     "mode": "rerank",
     "output_cost_per_token": 0.0,
     "source": "https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20'Foundry%20Models'%20and%20armRegionName%20eq%20'eastus'%20and%20priceType%20eq%20'Consumption'"
+  },
+  "azure_ai/deepseek-flash-latest": {
+    "alias_of": "azure_ai/deepseek-v4-flash"
+  },
+  "azure_ai/deepseek-pro-latest": {
+    "alias_of": "azure_ai/deepseek-v4-pro"
   },
   "azure_ai/deepseek-r1": {
     "deprecation_date": "2026-08-13",
@@ -15050,6 +15083,12 @@
     "supported_endpoints": [
       "/v1/images/generations"
     ]
+  },
+  "azure_ai/glm-flash-latest": {
+    "alias_of": "azure_ai/FW-GLM-5.3-Flash"
+  },
+  "azure_ai/glm-latest": {
+    "alias_of": "azure_ai/FW-GLM-5.3"
   },
   "azure_ai/gpt-5.4": {
     "cache_read_input_token_cost": 2.5E-7,
@@ -15788,6 +15827,9 @@
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
   },
+  "azure_ai/gpt-astra-latest": {
+    "alias_of": "azure_ai/gpt-6-astra"
+  },
   "azure_ai/gpt-chat-latest": {
     "cache_read_input_token_cost": 5E-7,
     "deprecation_date": "2027-05-18",
@@ -15839,6 +15881,12 @@
     ],
     "supports_vision": true
   },
+  "azure_ai/gpt-luna-latest": {
+    "alias_of": "azure_ai/gpt-6-luna"
+  },
+  "azure_ai/gpt-mini-latest": {
+    "alias_of": "azure_ai/gpt-5.4-mini"
+  },
   "azure_ai/gpt-oss-120b": {
     "deprecation_date": "2027-09-15",
     "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/concepts/model-lifecycle-retirement",
@@ -15854,6 +15902,12 @@
     "supports_pdf_input": false,
     "supports_response_schema": true,
     "supports_tool_choice": true
+  },
+  "azure_ai/gpt-sol-latest": {
+    "alias_of": "azure_ai/gpt-6.1-sol"
+  },
+  "azure_ai/gpt-terra-latest": {
+    "alias_of": "azure_ai/gpt-6.1-terra"
   },
   "azure_ai/grok-3": {
     "deprecation_date": "2026-05-01",
@@ -16072,6 +16126,9 @@
     "supports_tool_choice": true,
     "supports_web_search": true
   },
+  "azure_ai/grok-latest": {
+    "alias_of": "azure_ai/grok-4.7"
+  },
   "azure_ai/jais-30b-chat": {
     "deprecation_date": "2026-01-30",
     "deprecation_source": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/retired-models",
@@ -16176,6 +16233,12 @@
     "supports_reasoning": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "azure_ai/kimi-latest": {
+    "alias_of": "azure_ai/FW-Kimi-K3"
+  },
+  "azure_ai/minimax-latest": {
+    "alias_of": "azure_ai/FW-MiniMax-M3"
   },
   "azure_ai/ministral-3b": {
     "deprecation_date": "2026-12-09",
@@ -16521,6 +16584,21 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "baseten/deepseek-flash-latest": {
+    "alias_of": "baseten/deepseek-ai/DeepSeek-V4-Flash-0731"
+  },
+  "baseten/deepseek-pro-latest": {
+    "alias_of": "baseten/deepseek-ai/DeepSeek-V4-Pro-0813"
+  },
+  "baseten/glm-flash-latest": {
+    "alias_of": "baseten/zai-org/GLM-5.3-Flash"
+  },
+  "baseten/glm-latest": {
+    "alias_of": "baseten/zai-org/GLM-5.3"
+  },
+  "baseten/kimi-latest": {
+    "alias_of": "baseten/moonshotai/Kimi-K3"
   },
   "baseten/meta-models/muse-spark-open": {
     "cache_read_input_token_cost": 1.5E-7,
@@ -17499,6 +17577,18 @@
     "mode": "chat",
     "output_cost_per_token": 6.9E-7,
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-8b-instruct.md"
+  },
+  "bedrock/claude-fable-latest": {
+    "alias_of": "global.anthropic.claude-fable-5-1"
+  },
+  "bedrock/claude-haiku-latest": {
+    "alias_of": "global.anthropic.claude-haiku-5-5"
+  },
+  "bedrock/claude-opus-latest": {
+    "alias_of": "global.anthropic.claude-opus-5-5"
+  },
+  "bedrock/claude-sonnet-latest": {
+    "alias_of": "global.anthropic.claude-sonnet-5-5"
   },
   "bedrock/claude_platform/claude-fable-5": {
     "cache_creation_input_token_cost": 0.0000125,
@@ -18679,6 +18769,24 @@
     "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mixtral-8x7b-instruct.md",
     "supports_tool_choice": true
   },
+  "bedrock/glm-latest": {
+    "alias_of": "global.zai.glm-5.3"
+  },
+  "bedrock/gpt-astra-latest": {
+    "alias_of": "global.openai.gpt-6-astra"
+  },
+  "bedrock/gpt-luna-latest": {
+    "alias_of": "global.openai.gpt-6-luna"
+  },
+  "bedrock/gpt-sol-latest": {
+    "alias_of": "global.openai.gpt-6.1-sol"
+  },
+  "bedrock/gpt-terra-latest": {
+    "alias_of": "global.openai.gpt-6.1-terra"
+  },
+  "bedrock/grok-latest": {
+    "alias_of": "global.xai.grok-4.7"
+  },
   "bedrock/guardrails": {
     "guardrail_cost_per_unit": {
       "automatedReasoningPolicyUnits": 0.00017,
@@ -18710,6 +18818,9 @@
     "supports_response_schema": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "bedrock/kimi-latest": {
+    "alias_of": "global.moonshotai.kimi-k3"
   },
   "bedrock/moonshotai.kimi-k2-thinking": {
     "deprecation_date": "2027-03-30",
@@ -21137,6 +21248,15 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
+  "bedrock_mantle/claude-haiku-latest": {
+    "alias_of": "bedrock_mantle/anthropic.claude-haiku-5-5"
+  },
+  "bedrock_mantle/claude-opus-latest": {
+    "alias_of": "bedrock_mantle/anthropic.claude-opus-5-5"
+  },
+  "bedrock_mantle/claude-sonnet-latest": {
+    "alias_of": "bedrock_mantle/anthropic.claude-sonnet-5-5"
+  },
   "bedrock_mantle/deepseek.v3.1": {
     "deprecation_date": "2027-03-30",
     "deprecation_source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle-legacy.html",
@@ -21233,6 +21353,21 @@
     "supports_tool_choice": true,
     "supports_vision": true,
     "use_openai_responses_path": true
+  },
+  "bedrock_mantle/gpt-astra-latest": {
+    "alias_of": "bedrock_mantle/openai.gpt-6-astra"
+  },
+  "bedrock_mantle/gpt-luna-latest": {
+    "alias_of": "bedrock_mantle/openai.gpt-6-luna"
+  },
+  "bedrock_mantle/gpt-sol-latest": {
+    "alias_of": "bedrock_mantle/openai.gpt-6.1-sol"
+  },
+  "bedrock_mantle/gpt-terra-latest": {
+    "alias_of": "bedrock_mantle/openai.gpt-6.1-terra"
+  },
+  "bedrock_mantle/grok-latest": {
+    "alias_of": "bedrock_mantle/xai.grok-4.7"
   },
   "bedrock_mantle/moonshotai.kimi-k2-thinking": {
     "deprecation_date": "2027-03-30",
@@ -23748,6 +23883,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
+  "claude-fable-latest": {
+    "alias_of": "claude-fable-5-1"
+  },
   "claude-haiku-4-5": {
     "cache_creation_input_token_cost": 0.00000125,
     "cache_creation_input_token_cost_above_1hr": 0.000002,
@@ -23856,6 +23994,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": false,
     "thinking_on_by_default": true
+  },
+  "claude-haiku-latest": {
+    "alias_of": "claude-haiku-5-5"
   },
   "claude-mythos-5": {
     "cache_creation_input_token_cost": 0.0000125,
@@ -24379,6 +24520,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
+  "claude-opus-latest": {
+    "alias_of": "claude-opus-5-5"
+  },
   "claude-sonnet-4-5": {
     "cache_creation_input_token_cost": 0.00000375,
     "cache_creation_input_token_cost_above_1hr": 0.000006,
@@ -24618,6 +24762,9 @@
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
+  },
+  "claude-sonnet-latest": {
+    "alias_of": "claude-sonnet-5-5"
   },
   "clf_ai_gateway/deepseek-v4-flash": {
     "cache_read_input_token_cost": 5E-9,
@@ -25282,6 +25429,8 @@
     "supports_vision": true
   },
   "codestral/codestral-2405": {
+    "deprecation_date": "2025-06-16",
+    "deprecation_source": "https://docs.mistral.ai/getting-started/models/",
     "input_cost_per_token": 0.0,
     "litellm_provider": "codestral",
     "max_input_tokens": 32000,
@@ -26168,6 +26317,9 @@
       }
     ]
   },
+  "dashscope/qwen-flash-latest": {
+    "alias_of": "dashscope/qwen3.8-flash"
+  },
   "dashscope/qwen-image-2.0": {
     "litellm_provider": "dashscope",
     "mode": "image_generation",
@@ -26218,6 +26370,9 @@
     "supports_function_calling": true,
     "supports_reasoning": true,
     "supports_tool_choice": true
+  },
+  "dashscope/qwen-max-latest": {
+    "alias_of": "dashscope/qwen3.8-max"
   },
   "dashscope/qwen-plus": {
     "input_cost_per_token": 4E-7,
@@ -27117,6 +27272,18 @@
     "mode": "evaluation",
     "output_cost_per_token": 0.0,
     "source": "https://docs.databricks.com/api/ai-functions/v1/ai-decide"
+  },
+  "databricks/claude-fable-latest": {
+    "alias_of": "databricks/databricks-claude-fable-5-1"
+  },
+  "databricks/claude-haiku-latest": {
+    "alias_of": "databricks/databricks-claude-haiku-5-5"
+  },
+  "databricks/claude-opus-latest": {
+    "alias_of": "databricks/databricks-claude-opus-5-5"
+  },
+  "databricks/claude-sonnet-latest": {
+    "alias_of": "databricks/databricks-claude-sonnet-5-5"
   },
   "databricks/databricks-bge-large-en": {
     "cache_creation_input_token_cost": 1.0003E-7,
@@ -29490,6 +29657,33 @@
       "image"
     ],
     "supports_vision": true
+  },
+  "databricks/glm-flash-latest": {
+    "alias_of": "databricks/databricks-glm-5-3-flash"
+  },
+  "databricks/glm-latest": {
+    "alias_of": "databricks/databricks-glm-5-3"
+  },
+  "databricks/gpt-astra-latest": {
+    "alias_of": "databricks/databricks-gpt-6-astra"
+  },
+  "databricks/gpt-luna-latest": {
+    "alias_of": "databricks/databricks-gpt-6-luna"
+  },
+  "databricks/gpt-mini-latest": {
+    "alias_of": "databricks/databricks-gpt-5-4-mini"
+  },
+  "databricks/gpt-sol-latest": {
+    "alias_of": "databricks/databricks-gpt-6-1-sol"
+  },
+  "databricks/gpt-terra-latest": {
+    "alias_of": "databricks/databricks-gpt-6-1-terra"
+  },
+  "databricks/grok-latest": {
+    "alias_of": "databricks/databricks-grok-4-7"
+  },
+  "databricks/kimi-latest": {
+    "alias_of": "databricks/databricks-kimi-k3"
   },
   "databricks/system.ai.deepseek-v4-flash-0731": {
     "deprecation_date": "2026-11-05",
@@ -32434,6 +32628,12 @@
     "supports_system_messages": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "deepseek/deepseek-flash-latest": {
+    "alias_of": "deepseek/deepseek-v4-flash"
+  },
+  "deepseek/deepseek-pro-latest": {
+    "alias_of": "deepseek/deepseek-v4-pro"
   },
   "deepseek/deepseek-r1": {
     "cache_read_input_token_cost": 1.4E-7,
@@ -41823,6 +42023,12 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "fireworks_ai/kimi-latest": {
+    "alias_of": "fireworks_ai/accounts/fireworks/models/kimi-k3"
+  },
+  "fireworks_ai/minimax-latest": {
+    "alias_of": "fireworks_ai/accounts/fireworks/models/minimax-m3"
+  },
   "fireworks_ai/minimax-m2p1": {
     "cache_read_input_token_cost": 3E-8,
     "input_cost_per_token": 3E-7,
@@ -42153,7 +42359,7 @@
     "supports_vision": true
   },
   "ft:babbage-002": {
-    "deprecation_date": "2026-10-23",
+    "deprecation_date": "2026-09-28",
     "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 0.0000016,
     "input_cost_per_token_batches": 8E-7,
@@ -42167,7 +42373,7 @@
     "successor_model": "gpt-5.6-terra"
   },
   "ft:davinci-002": {
-    "deprecation_date": "2026-10-23",
+    "deprecation_date": "2026-09-28",
     "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "input_cost_per_token": 0.000012,
     "input_cost_per_token_batches": 0.000006,
@@ -42226,7 +42432,7 @@
     "supports_tool_choice": true
   },
   "ft:gpt-3.5-turbo-1106": {
-    "deprecation_date": "2026-10-23",
+    "deprecation_date": "2026-09-28",
     "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
     "fedramp_uplift_multiplier": 1.1,
     "input_cost_per_token": 0.000003,
@@ -47444,6 +47650,9 @@
     "supports_vision": true,
     "thinking_always_on": true
   },
+  "github_copilot/claude-fable-latest": {
+    "alias_of": "github_copilot/claude-fable-5.1"
+  },
   "github_copilot/claude-haiku-4.5": {
     "cache_creation_input_token_cost": 0.00000125,
     "cache_read_input_token_cost": 1E-7,
@@ -47486,6 +47695,9 @@
     "supports_response_schema": true,
     "supports_vision": true,
     "thinking_always_on": false
+  },
+  "github_copilot/claude-haiku-latest": {
+    "alias_of": "github_copilot/claude-haiku-5.5"
   },
   "github_copilot/claude-opus-4.8": {
     "cache_creation_input_token_cost": 0.00000625,
@@ -47575,6 +47787,9 @@
     "supports_vision": true,
     "thinking_always_on": true
   },
+  "github_copilot/claude-opus-latest": {
+    "alias_of": "github_copilot/claude-opus-5.5"
+  },
   "github_copilot/claude-sonnet-4.6": {
     "cache_creation_input_token_cost": 0.00000375,
     "cache_read_input_token_cost": 3E-7,
@@ -47640,6 +47855,9 @@
     "supports_response_schema": true,
     "supports_vision": true,
     "thinking_always_on": true
+  },
+  "github_copilot/claude-sonnet-latest": {
+    "alias_of": "github_copilot/claude-sonnet-5.5"
   },
   "github_copilot/gemini-3.7-flash": {
     "cache_read_input_token_cost": 7.5E-8,
@@ -48113,6 +48331,18 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
+  "github_copilot/gpt-astra-latest": {
+    "alias_of": "github_copilot/gpt-6-astra"
+  },
+  "github_copilot/gpt-luna-latest": {
+    "alias_of": "github_copilot/gpt-6-luna"
+  },
+  "github_copilot/gpt-sol-latest": {
+    "alias_of": "github_copilot/gpt-6.1-sol"
+  },
+  "github_copilot/gpt-terra-latest": {
+    "alias_of": "github_copilot/gpt-6.1-terra"
+  },
   "github_copilot/grok-4.5": {
     "cache_read_input_token_cost": 5E-7,
     "cache_read_input_token_cost_above_200k_tokens": 0.000001,
@@ -48177,6 +48407,9 @@
     "supports_response_schema": true,
     "supports_vision": true
   },
+  "github_copilot/grok-latest": {
+    "alias_of": "github_copilot/grok-4.7"
+  },
   "github_copilot/kimi-k3": {
     "cache_read_input_token_cost": 3E-7,
     "input_cost_per_token": 0.000003,
@@ -48193,6 +48426,9 @@
     "supports_parallel_function_calling": true,
     "supports_response_schema": true,
     "supports_vision": true
+  },
+  "github_copilot/kimi-latest": {
+    "alias_of": "github_copilot/kimi-k3"
   },
   "github_copilot/mai-code-1.1-flash": {
     "cache_read_input_token_cost": 2E-8,
@@ -54629,6 +54865,9 @@
     "supports_web_search": true,
     "supports_xhigh_reasoning_effort": true
   },
+  "gpt-astra-latest": {
+    "alias_of": "gpt-6-astra"
+  },
   "gpt-audio": {
     "deprecation_date": "2027-01-20",
     "deprecation_source": "https://developers.openai.com/api/docs/deprecations",
@@ -55198,6 +55437,12 @@
     "supports_audio_input": true,
     "supports_native_streaming": true
   },
+  "gpt-luna-latest": {
+    "alias_of": "gpt-6-luna"
+  },
+  "gpt-mini-latest": {
+    "alias_of": "gpt-5.4-mini"
+  },
   "gpt-realtime": {
     "cache_creation_input_audio_token_cost": 4E-7,
     "cache_read_input_audio_token_cost": 4E-7,
@@ -55543,6 +55788,12 @@
     "mode": "chat",
     "output_cost_per_token": 0.000025,
     "source": "https://developers.openai.com/api/docs/pricing"
+  },
+  "gpt-sol-latest": {
+    "alias_of": "gpt-6.1-sol"
+  },
+  "gpt-terra-latest": {
+    "alias_of": "gpt-6.1-terra"
   },
   "gpt-transcribe": {
     "input_cost_per_second": 0.000075,
@@ -60753,6 +61004,9 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "minimax/minimax-latest": {
+    "alias_of": "minimax/MiniMax-M3"
+  },
   "minimax/speech-02-hd": {
     "input_cost_per_character": 0.0001,
     "litellm_provider": "minimax",
@@ -62408,6 +62662,31 @@
     "supports_reasoning": true,
     "supports_response_schema": true,
     "supports_vision": true
+  },
+  "moonshot/kimi-k3.1-pro-highspeed": {
+    "cache_creation_input_token_cost": 0.000004,
+    "cache_creation_input_token_cost_above_1hr": 0.000008,
+    "cache_read_input_token_cost": 2E-7,
+    "input_cost_per_token": 0.000004,
+    "litellm_provider": "moonshot",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.00002,
+    "reasoning_effort_levels": [
+      "low",
+      "high",
+      "max"
+    ],
+    "source": "https://platform.kimi.ai/docs/pricing/chat",
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_vision": true
+  },
+  "moonshot/kimi-latest": {
+    "alias_of": "moonshot/kimi-k3"
   },
   "moonshot/moonshot-v1-128k": {
     "deprecation_date": "2026-08-31",
@@ -75364,6 +75643,8 @@
     "supports_tool_choice": true
   },
   "text-completion-codestral/codestral-2405": {
+    "deprecation_date": "2025-06-16",
+    "deprecation_source": "https://docs.mistral.ai/getting-started/models/",
     "input_cost_per_token": 0.0,
     "litellm_provider": "text-completion-codestral",
     "max_input_tokens": 32000,
@@ -75783,13 +76064,13 @@
     "supports_reasoning": true
   },
   "together_ai/Qwen/Qwen3.7-Max": {
-    "cache_read_input_token_cost": 3E-7,
-    "input_cost_per_token": 0.0000015,
+    "cache_read_input_token_cost": 5E-7,
+    "input_cost_per_token": 0.0000025,
     "litellm_provider": "together_ai",
     "max_input_tokens": 1000000,
     "max_output_tokens": 1000000,
     "mode": "chat",
-    "output_cost_per_token": 0.0000045,
+    "output_cost_per_token": 0.0000075,
     "source": "https://www.together.ai/pricing",
     "supports_prompt_caching": true
   },
@@ -75950,6 +76231,22 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "together_ai/deepseek-pro-latest": {
+    "alias_of": "together_ai/deepseek-ai/DeepSeek-V4-Pro-0813"
+  },
+  "together_ai/essentialai/rnj-1-instruct": {
+    "input_cost_per_token": 1.5E-7,
+    "litellm_provider": "together_ai",
+    "mode": "chat",
+    "output_cost_per_token": 1.5E-7,
+    "source": "https://www.together.ai/models/rnj-1-instruct"
+  },
+  "together_ai/glm-flash-latest": {
+    "alias_of": "together_ai/zai-org/GLM-5.3-Flash"
+  },
+  "together_ai/glm-latest": {
+    "alias_of": "together_ai/zai-org/GLM-5.3"
+  },
   "together_ai/google/gemma-4-31B-it": {
     "deprecation_date": "2026-09-15",
     "deprecation_source": "https://docs.together.ai/docs/deprecations",
@@ -75961,6 +76258,9 @@
     "output_cost_per_token": 9.7E-7,
     "source": "https://api.together.ai/v1/models",
     "successor_model": "together_ai/zai-org/GLM-5.3-Flash"
+  },
+  "together_ai/kimi-latest": {
+    "alias_of": "together_ai/moonshotai/Kimi-K3"
   },
   "together_ai/meta-llama/Llama-3.1-405B-Instruct": {
     "input_cost_per_token": 0.0000035,
@@ -76258,6 +76558,9 @@
     "output_cost_per_token": 2E-7,
     "source": "https://api.together.ai/v1/models",
     "successor_model": "together_ai/Qwen/Qwen3.5-9B"
+  },
+  "together_ai/qwen-flash-latest": {
+    "alias_of": "together_ai/Qwen/Qwen3.8-Flash"
   },
   "together_ai/reflection/Beam-1.0-501B-A23B": {
     "cache_read_input_token_cost": 4E-8,
@@ -80385,6 +80688,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": true
   },
+  "vertex_ai/claude-fable-latest": {
+    "alias_of": "vertex_ai/claude-fable-5-1"
+  },
   "vertex_ai/claude-haiku-4-5": {
     "cache_creation_input_token_cost": 0.00000125,
     "cache_creation_input_token_cost_above_1hr": 0.000002,
@@ -80541,6 +80847,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_always_on": false,
     "thinking_on_by_default": true
+  },
+  "vertex_ai/claude-haiku-latest": {
+    "alias_of": "vertex_ai/claude-haiku-5-5"
   },
   "vertex_ai/claude-opus-4-5": {
     "cache_creation_input_token_cost": 0.00000625,
@@ -80994,6 +81303,9 @@
     "supports_xhigh_reasoning_effort": true,
     "thinking_on_by_default": true
   },
+  "vertex_ai/claude-opus-latest": {
+    "alias_of": "vertex_ai/claude-opus-5-5"
+  },
   "vertex_ai/claude-sonnet-4-5": {
     "cache_creation_input_token_cost": 0.00000375,
     "cache_creation_input_token_cost_above_1hr": 0.000006,
@@ -81295,6 +81607,9 @@
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true,
     "thinking_on_by_default": true
+  },
+  "vertex_ai/claude-sonnet-latest": {
+    "alias_of": "vertex_ai/claude-sonnet-5-5"
   },
   "vertex_ai/codestral-2": {
     "input_cost_per_token": 3E-7,
@@ -83030,6 +83345,9 @@
     "supports_function_calling": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "vertex_ai/grok-latest": {
+    "alias_of": "vertex_ai/xai/grok-4.7"
   },
   "vertex_ai/jamba-1.5": {
     "deprecation_date": "2026-02-27",
@@ -87037,6 +87355,9 @@
       "video"
     ]
   },
+  "xai/grok-latest": {
+    "alias_of": "xai/grok-4.7"
+  },
   "xai/grok-voice-2.0": {
     "input_cost_per_second": 0.001333333333333,
     "input_cost_per_text_message": 0.004,
@@ -87481,6 +87802,12 @@
     "supports_reasoning": true,
     "supports_tool_choice": true,
     "supports_vision": true
+  },
+  "zai/glm-flash-latest": {
+    "alias_of": "zai/glm-5.3-flash"
+  },
+  "zai/glm-latest": {
+    "alias_of": "zai/glm-5.3"
   },
   "zerogpu/LFM2.5-1.2B-Instruct": {
     "input_cost_per_token": 2E-8,
