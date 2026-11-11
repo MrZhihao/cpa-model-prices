@@ -19166,12 +19166,14 @@
   "bedrock/moonshotai.kimi-k2.5": {
     "input_cost_per_token": 6E-7,
     "input_cost_per_token_flex": 3E-7,
+    "input_cost_per_token_priority": 0.00000105,
     "litellm_provider": "bedrock",
     "max_input_tokens": 262144,
     "max_output_tokens": 16000,
     "mode": "chat",
     "output_cost_per_token": 0.000003,
     "output_cost_per_token_flex": 0.0000015,
+    "output_cost_per_token_priority": 0.00000525,
     "source": "https://b0.p.awsstatic.com/pricing/2.0/meteredUnitMaps/bedrock/USD/current/bedrock.json",
     "supports_audio_input": false,
     "supports_function_calling": true,
@@ -29071,6 +29073,36 @@
     "supports_video_input": true,
     "supports_vision": true
   },
+  "databricks/databricks-gemini-4-carbon": {
+    "cache_creation_input_token_cost": 0.000002,
+    "cache_read_input_token_cost": 0.000002,
+    "input_cost_per_token": 0.000002,
+    "litellm_provider": "databricks",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "metadata": {
+      "notes": "Gemini 4 Carbon on Databricks is available only through Unity Gateway with the model service name system.ai.gemini-4-carbon on a global endpoint. The Databricks pricing pages list no row for it yet, so input and output are the Global rates on the Vertex AI pricing page for Gemini 4 Carbon (listed there through November 30, 2026), no '*_dbu_cost_per_token' fields are published, and cache tokens bill at the input rate until Databricks publishes cache DBU rates."
+    },
+    "mode": "chat",
+    "output_cost_per_token": 0.00001,
+    "source": "https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models",
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true
+  },
   "databricks/databricks-gemma-3-12b": {
     "cache_creation_input_token_cost": 1.5001E-7,
     "cache_read_input_token_cost": 1.5001E-7,
@@ -30341,6 +30373,36 @@
     "source": "https://docs.databricks.com/aws/en/machine-learning/retired-models-policy",
     "successor_model": "databricks/databricks-deepseek-v4-1-flash-1017",
     "token_count_framing": 97
+  },
+  "databricks/system.ai.gemini-4-carbon": {
+    "cache_creation_input_token_cost": 0.000002,
+    "cache_read_input_token_cost": 0.000002,
+    "input_cost_per_token": 0.000002,
+    "litellm_provider": "databricks",
+    "max_input_tokens": 1048576,
+    "max_output_tokens": 1048576,
+    "metadata": {
+      "notes": "Gemini 4 Carbon on Databricks is available only through Unity Gateway with the model service name system.ai.gemini-4-carbon on a global endpoint. The Databricks pricing pages list no row for it yet, so input and output are the Global rates on the Vertex AI pricing page for Gemini 4 Carbon (listed there through November 30, 2026), no '*_dbu_cost_per_token' fields are published, and cache tokens bill at the input rate until Databricks publishes cache DBU rates."
+    },
+    "mode": "chat",
+    "output_cost_per_token": 0.00001,
+    "source": "https://docs.databricks.com/aws/en/machine-learning/foundation-model-apis/supported-models",
+    "supported_modalities": [
+      "text",
+      "image",
+      "audio",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_audio_input": true,
+    "supports_function_calling": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_tool_choice": true,
+    "supports_video_input": true,
+    "supports_vision": true
   },
   "databricks/system.ai.kimi-k3": {
     "litellm_provider": "databricks",
@@ -31814,12 +31876,12 @@
     "supports_vision": true
   },
   "deepinfra/anthropic/claude-sonnet-5": {
-    "input_cost_per_token": 0.000002,
+    "input_cost_per_token": 0.000003,
     "litellm_provider": "deepinfra",
     "max_input_tokens": 1000000,
     "max_output_tokens": 1000000,
     "mode": "chat",
-    "output_cost_per_token": 0.00001,
+    "output_cost_per_token": 0.000015,
     "prompt_cache_min_tokens": 1024,
     "source": "https://deepinfra.com/pricing",
     "supports_adaptive_thinking": true,
@@ -32424,7 +32486,7 @@
     "supports_tool_choice": true
   },
   "deepinfra/mistralai/Mistral-Nemo-Instruct-2407": {
-    "input_cost_per_token": 1.9E-8,
+    "input_cost_per_token": 2.9E-8,
     "litellm_provider": "deepinfra",
     "max_input_tokens": 131072,
     "max_output_tokens": 131072,
@@ -32600,11 +32662,11 @@
   },
   "deepinfra/nvidia/NVIDIA-Nemotron-3.5-Lightning": {
     "cache_read_input_token_cost": 4E-8,
-    "input_cost_per_token": 8E-8,
+    "input_cost_per_token": 6E-8,
     "litellm_provider": "deepinfra",
     "max_input_tokens": 262144,
     "mode": "chat",
-    "output_cost_per_token": 2E-7,
+    "output_cost_per_token": 1.6E-7,
     "source": "https://deepinfra.com/pricing",
     "supports_function_calling": true,
     "supports_prompt_caching": true,
@@ -38235,6 +38297,20 @@
       "/v1/images/generations"
     ]
   },
+  "fal_ai/bytedance/seedream/v5/pro/layerize": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per generated layer for total pixel area under 1536x1536; layers for a base image over 1536x1536 are $0.0675 each, which has no catalog field"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03375,
+    "source": "https://fal.ai/models/bytedance/seedream/v5/pro/layerize",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
   "fal_ai/clarityai/crystal-upscaler": {
     "litellm_provider": "fal_ai",
     "metadata": {
@@ -39351,6 +39427,72 @@
     ],
     "supports_vision": true
   },
+  "fal_ai/fal-ai/flux-2-max": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per image for the default 1 MP output; fal bills $0.07 for the first processed megapixel plus $0.03 per additional megapixel, which is not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.07,
+    "source": "https://fal.ai/models/fal-ai/flux-2-max",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ]
+  },
+  "fal_ai/fal-ai/flux-2-max/edit": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per image for the default 1 MP output; fal bills $0.07 for the first processed megapixel plus $0.03 per additional megapixel, which is not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.07,
+    "source": "https://fal.ai/models/fal-ai/flux-2-max/edit",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/flux-2-pro": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per image for the default 1 MP output; fal bills $0.03 for the first output megapixel plus $0.015 per additional input or output megapixel, rounded up, which is not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "source": "https://fal.ai/models/fal-ai/flux-2-pro",
+    "supported_endpoints": [
+      "/v1/images/generations"
+    ]
+  },
+  "fal_ai/fal-ai/flux-2-pro/edit": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per image for the default 1 MP output; fal bills $0.03 for the first output megapixel plus $0.015 per additional input or output megapixel, rounded up, which is not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "source": "https://fal.ai/models/fal-ai/flux-2-pro/edit",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/flux-2-pro/outpaint": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per image for the default 1 MP output; fal bills $0.03 for the first output megapixel plus $0.015 per additional input or output megapixel, rounded up, which is not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "source": "https://fal.ai/models/fal-ai/flux-2-pro/outpaint",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
   "fal_ai/fal-ai/flux-2/edit": {
     "litellm_provider": "fal_ai",
     "metadata": {
@@ -40047,6 +40189,20 @@
     "output_cost_per_image": 0.05,
     "output_cost_per_pixel": 4.76837158203125E-8,
     "source": "https://fal.ai/models/fal-ai/flux-pro/v1.1/redux",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
+  "fal_ai/fal-ai/flux-pro/v1/erase": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per image for the first generated megapixel; fal bills $0.004 for each subsequent generated megapixel and $0.004 per reference megapixel with a 3 MP minimum, which is not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.03,
+    "source": "https://fal.ai/models/fal-ai/flux-pro/v1/erase",
     "supported_endpoints": [
       "/v1/images/edits",
       "/v1/images/generations"
@@ -42030,6 +42186,25 @@
     "mode": "video_generation",
     "output_cost_per_second": 0.042,
     "source": "https://fal.ai/models/fal-ai/kling-video/v2.5-turbo/standard/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/kling-video/v2.6/pro/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video with the default generate_audio=true ($0.14); videos without audio are $0.07 per second and videos with audio and voice control are $0.168 per second, which have no catalog field"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.14,
+    "source": "https://fal.ai/models/fal-ai/kling-video/v2.6/pro/image-to-video",
     "supported_endpoints": [
       "/v1/videos"
     ],
@@ -44041,6 +44216,20 @@
     ],
     "supports_vision": true
   },
+  "fal_ai/fal-ai/smart-resize": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per single-image request at standard resolution: $0.15 per output image plus the $0.05 minimum vision analysis fee per request; additional output images in one request ($0.15 each) and 4K outputs (charged double) are not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.2,
+    "source": "https://fal.ai/models/fal-ai/smart-resize",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
   "fal_ai/fal-ai/stable-diffusion-v3-medium": {
     "litellm_provider": "fal_ai",
     "mode": "image_generation",
@@ -44153,6 +44342,25 @@
     ],
     "supports_vision": true
   },
+  "fal_ai/fal-ai/vidu/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second derived from the fixed 4s clip price of $0.20 per video"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.05,
+    "source": "https://fal.ai/models/fal-ai/vidu/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "fal_ai/fal-ai/vidu/q2/reference-to-image": {
     "litellm_provider": "fal_ai",
     "mode": "image_generation",
@@ -44229,6 +44437,44 @@
       "/v1/images/generations"
     ],
     "supports_vision": true
+  },
+  "fal_ai/fal-ai/vidu/reference-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second derived from the fixed 4s clip price of $0.40 per video"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.1,
+    "source": "https://fal.ai/models/fal-ai/vidu/reference-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/vidu/start-end-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second derived from the fixed 4s clip price of $0.20 per video"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.05,
+    "source": "https://fal.ai/models/fal-ai/vidu/start-end-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
   },
   "fal_ai/fal-ai/wan-22-vace-fun-a14b/depth": {
     "litellm_provider": "fal_ai",
@@ -46519,6 +46765,27 @@
     ],
     "supports_vision": true
   },
+  "fal_ai/luma/agent/ray/v3.2/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second derived from the 5s clip prices by resolution ($0.15 at 540p, $0.30 at 720p, $1.20 at 1080p); output_cost_per_second is the default resolution 540p rate, which has no tier field; HDR ($0.60 at 720p, $2.40 at 1080p per 5s) and HDR+EXR ($0.90, $3.60) are not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.03,
+    "output_cost_per_second_1080p": 0.24,
+    "output_cost_per_second_720p": 0.06,
+    "source": "https://fal.ai/models/luma/agent/ray/v3.2/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "fal_ai/luma/agent/ray/v3.2/reframe": {
     "litellm_provider": "fal_ai",
     "metadata": {
@@ -46540,6 +46807,61 @@
       "video"
     ]
   },
+  "fal_ai/luma/agent/ray/v3.2/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second derived from the 5s and 10s clip prices by resolution ($0.50/$1.00 at 540p, $1.00/$2.00 at 720p, $2.00/$4.00 at 1080p); output_cost_per_second is the default resolution 540p rate, which has no tier field"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.1,
+    "output_cost_per_second_1080p": 0.4,
+    "output_cost_per_second_720p": 0.2,
+    "source": "https://fal.ai/models/luma/agent/ray/v3.2/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/luma/agent/ray/v3.2/video-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second derived from the 5s and 10s clip prices by resolution ($0.72/$1.44 at 540p, $1.08/$2.16 at 720p, $2.16/$4.32 at 1080p); output_cost_per_second is the default resolution 540p rate, which has no tier field; HDR and HDR+EXR prices are not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.144,
+    "output_cost_per_second_1080p": 0.432,
+    "output_cost_per_second_720p": 0.216,
+    "source": "https://fal.ai/models/luma/agent/ray/v3.2/video-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/luma/agent/uni-1/v1/edit": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per edit with one source image ($0.042 per edit plus $0.003 per reference or source image); each additional reference image adds $0.003, which is not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.045,
+    "source": "https://fal.ai/models/luma/agent/uni-1/v1/edit",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
   "fal_ai/luma/agent/uni-1/v1/max": {
     "litellm_provider": "fal_ai",
     "mode": "image_generation",
@@ -46548,6 +46870,20 @@
     "supported_endpoints": [
       "/v1/images/generations"
     ]
+  },
+  "fal_ai/luma/agent/uni-1/v1/max/edit": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per edit with one source image ($0.102 per edit plus $0.003 per reference or source image); each additional reference image adds $0.003, which is not modeled"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.105,
+    "source": "https://fal.ai/models/luma/agent/uni-1/v1/max/edit",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
   },
   "fal_ai/luma/agent/uni-1/v1/text-to-image": {
     "litellm_provider": "fal_ai",
@@ -47969,6 +48305,47 @@
     "supported_modalities": [
       "text",
       "audio"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/pixverse/v6/max/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution without audio (the default generate_audio_switch=false); output_cost_per_second is the default resolution 720p rate; 360p $0.054 and 540p $0.081 have no catalog field; with audio the rates are $0.081/$0.099/$0.135/$0.252 per second, which is not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.099,
+    "output_cost_per_second_1080p": 0.198,
+    "output_cost_per_second_720p": 0.099,
+    "source": "https://fal.ai/models/pixverse/v6/max/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/pixverse/v6/max/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution without audio (the default generate_audio_switch=false); output_cost_per_second is the default resolution 720p rate; 360p $0.054 and 540p $0.081 have no catalog field; with audio the rates are $0.081/$0.099/$0.135/$0.252 per second, which is not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.099,
+    "output_cost_per_second_1080p": 0.198,
+    "output_cost_per_second_720p": 0.099,
+    "source": "https://fal.ai/models/pixverse/v6/max/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
     ],
     "supported_output_modalities": [
       "video"
@@ -53568,7 +53945,7 @@
     "input_cost_per_token_priority": 5.4E-7,
     "litellm_provider": "vertex_ai-language-models",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 65535,
+    "max_output_tokens": 65536,
     "mode": "chat",
     "output_cost_per_reasoning_token": 0.0000025,
     "output_cost_per_token": 0.0000025,
@@ -53689,7 +54066,7 @@
     "input_cost_per_token_priority": 1.8E-7,
     "litellm_provider": "vertex_ai-language-models",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 65535,
+    "max_output_tokens": 65536,
     "mode": "chat",
     "output_cost_per_reasoning_token": 4E-7,
     "output_cost_per_token": 4E-7,
@@ -53960,7 +54337,7 @@
     "input_cost_per_token_priority": 0.00000225,
     "litellm_provider": "vertex_ai-language-models",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 65535,
+    "max_output_tokens": 65536,
     "mode": "chat",
     "output_cost_per_token": 0.00001,
     "output_cost_per_token_above_200k_tokens": 0.000015,
@@ -53970,7 +54347,7 @@
     "output_cost_per_token_batches": 0.000005,
     "output_cost_per_token_flex": 0.000005,
     "output_cost_per_token_priority": 0.000018,
-    "prompt_cache_min_tokens": 2048,
+    "prompt_cache_min_tokens": 2048.0,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.035,
       "search_context_size_low": 0.035,
@@ -54061,7 +54438,7 @@
     "input_cost_per_token_priority": 9E-7,
     "litellm_provider": "vertex_ai-language-models",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 65535,
+    "max_output_tokens": 65536,
     "mode": "chat",
     "output_cost_per_reasoning_token": 0.000003,
     "output_cost_per_token": 0.000003,
@@ -54116,8 +54493,6 @@
     "cache_read_input_token_cost_batches": 1E-7,
     "cache_read_input_token_cost_flex": 1E-7,
     "cache_read_input_token_cost_priority": 3.6E-7,
-    "deprecation_date": "2027-05-28",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_image": 0.0011,
     "input_cost_per_token": 0.000002,
     "input_cost_per_token_above_200k_tokens": 0.000004,
@@ -54235,15 +54610,13 @@
     "cache_read_input_token_cost_batches": 2.5E-8,
     "cache_read_input_token_cost_flex": 2.5E-8,
     "cache_read_input_token_cost_priority": 9E-8,
-    "deprecation_date": "2027-05-28",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_image": 0.00056,
     "input_cost_per_token": 5E-7,
     "input_cost_per_token_batches": 2.5E-7,
     "input_cost_per_token_flex": 2.5E-7,
     "input_cost_per_token_priority": 9E-7,
     "litellm_provider": "vertex_ai-language-models",
-    "max_input_tokens": 65536,
+    "max_input_tokens": 131072,
     "max_output_tokens": 32768,
     "mode": "image_generation",
     "output_cost_per_image": 0.0672,
@@ -54345,8 +54718,6 @@
     "cache_read_input_token_cost_batches": 1.25E-8,
     "cache_read_input_token_cost_flex": 1.25E-8,
     "cache_read_input_token_cost_priority": 4.5E-8,
-    "deprecation_date": "2027-05-07",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_audio_token": 5E-7,
     "input_cost_per_audio_token_above_200k_tokens": 5E-7,
@@ -54679,8 +55050,6 @@
     "cache_read_input_token_cost_batches": 7.5E-8,
     "cache_read_input_token_cost_flex": 7.5E-8,
     "cache_read_input_token_cost_priority": 2.7E-7,
-    "deprecation_date": "2027-05-19",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_audio_token": 0.0000015,
     "input_cost_per_audio_token_priority": 0.0000027,
@@ -54690,14 +55059,14 @@
     "input_cost_per_token_priority": 0.0000027,
     "litellm_provider": "vertex_ai-language-models",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 65535,
+    "max_output_tokens": 65536,
     "mode": "chat",
     "output_cost_per_reasoning_token": 0.000009,
     "output_cost_per_token": 0.000009,
     "output_cost_per_token_batches": 0.0000045,
     "output_cost_per_token_flex": 0.0000045,
     "output_cost_per_token_priority": 0.0000162,
-    "prompt_cache_min_tokens": 4096,
+    "prompt_cache_min_tokens": 4096.0,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.014,
       "search_context_size_low": 0.014,
@@ -54747,8 +55116,6 @@
     "cache_read_input_token_cost_batches": 1.5E-8,
     "cache_read_input_token_cost_flex": 1.5E-8,
     "cache_read_input_token_cost_priority": 5.4E-8,
-    "deprecation_date": "2027-07-21",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_token": 3E-7,
     "input_cost_per_token_batches": 1.5E-7,
@@ -85967,14 +86334,80 @@
       "video"
     ]
   },
-  "runwayml/eleven_multilingual_v2": {
-    "input_cost_per_character": 3E-7,
+  "runwayml/bria_fibo_edit_1_5": {
     "litellm_provider": "runwayml",
     "metadata": {
-      "comment": "Estimated cost based on standard TTS pricing. RunwayML uses ElevenLabs models."
+      "comment": "5 credits per image @ $0.01 per credit = $0.05 per image"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.05,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "image"
+    ]
+  },
+  "runwayml/eleven_multilingual_v2": {
+    "input_cost_per_character": 0.0002,
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "1 credit per 50 characters @ $0.01 per credit = $0.0002 per character"
     },
     "mode": "audio_speech",
     "source": "https://docs.dev.runwayml.com/guides/pricing/"
+  },
+  "runwayml/eleven_v3": {
+    "input_cost_per_character": 0.0002,
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "1 credit per 50 characters @ $0.01 per credit = $0.0002 per character; 1 credit minimum not modeled"
+    },
+    "mode": "audio_speech",
+    "source": "https://docs.dev.runwayml.com/guides/pricing/"
+  },
+  "runwayml/eleven_v4": {
+    "input_cost_per_character": 0.00005,
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "5 credits per 1,000 characters @ $0.01 per credit = $0.00005 per character; 1 credit minimum not modeled"
+    },
+    "mode": "audio_speech",
+    "source": "https://docs.dev.runwayml.com/guides/pricing/"
+  },
+  "runwayml/gemini_2.5_flash": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "5 credits per image (any resolution) @ $0.01 per credit = $0.05 per image"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.05,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "image"
+    ]
+  },
+  "runwayml/gemini_image3.1_flash_lite": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "4 credits per 1K image @ $0.01 per credit = $0.04 per image"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.04,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "image"
+    ]
   },
   "runwayml/gemini_omni_flash": {
     "litellm_provider": "runwayml",
@@ -85983,6 +86416,44 @@
     },
     "mode": "video_generation",
     "output_cost_per_second": 0.1,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/gemini_omni_flash_1.1": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "10/15/30 credits per second at 720p/1080p/4K @ $0.01 per credit; the 360p rate (3.4 credits per second), 1 credit per reference image and 1 credit per second of input video are not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.1,
+    "output_cost_per_second_1080p": 0.15,
+    "output_cost_per_second_4k": 0.3,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/gemini_omni_flash_1.2": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "7/10/21 credits per second at 720p/1080p/4K @ $0.01 per credit; the 360p rate (2 credits per second), 1 credit per reference image or keyframe, 1 credit per second of input video and the 6 credit minimum per request are not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.07,
+    "output_cost_per_second_1080p": 0.1,
+    "output_cost_per_second_4k": 0.21,
     "source": "https://docs.dev.runwayml.com/guides/pricing/",
     "supported_modalities": [
       "text",
@@ -86059,6 +86530,59 @@
       "video"
     ]
   },
+  "runwayml/grok_imagine_1_5": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "10/16/29 credits per second at 480p/720p/1080p @ $0.01 per credit; 1 credit per image or audio reference not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.16,
+    "output_cost_per_second_1080p": 0.29,
+    "output_cost_per_second_480p": 0.1,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/grok_imagine_1_5_lite": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "2/3/14 credits per second at 480p/720p/1080p @ $0.01 per credit; 1 credit for an image-to-video start frame not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.03,
+    "output_cost_per_second_1080p": 0.14,
+    "output_cost_per_second_480p": 0.02,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/h3_max": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "8 credits per second at 768p, 5 at 480p @ $0.01 per credit"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.08,
+    "output_cost_per_second_480p": 0.05,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "runwayml/hailuo3": {
     "litellm_provider": "runwayml",
     "metadata": {
@@ -86077,14 +86601,180 @@
       "video"
     ]
   },
+  "runwayml/happyhorse_1_0": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "15 credits per second at 720p, 30 at 1080p @ $0.01 per credit"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.15,
+    "output_cost_per_second_1080p": 0.3,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/kling2.5_turbo_pro": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "12 credits per second @ $0.01 per credit = $0.12 per second"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.12,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/kling3.0_4k": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "43 credits per second @ $0.01 per credit = $0.43 per second, with or without audio"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.43,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/kling3.0_pro": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "17 credits per second with audio, 12 without @ $0.01 per credit; priced at the with-audio rate (audio defaults to true)"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.17,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/kling3.0_standard": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "13 credits per second with audio, 9 without @ $0.01 per credit; priced at the with-audio rate (audio defaults to true)"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.13,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/klingO3_4k": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "43 credits per second @ $0.01 per credit = $0.43 per second; video-to-video is billed per second of the input video, not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.43,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/klingO3_pro": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "17 credits per second @ $0.01 per credit = $0.17 per second; video-to-video is billed per second of the input video, not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.17,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/klingO3_standard": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "13 credits per second @ $0.01 per credit = $0.13 per second; video-to-video is billed per second of the input video, not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.13,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/kling_4_flash": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "9.4 credits per second (720p) without input video @ $0.01 per credit = $0.094 per second; the with-input-video rate (6.3 credits per output second plus 6.3 per second of the greater of input and output duration), rounding up to the next credit and the 29 credit minimum are not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.094,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/muse_image": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "1 credit per image (any resolution) @ $0.01 per credit = $0.01 per image"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.01,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "image"
+    ]
+  },
   "runwayml/seedance2": {
     "litellm_provider": "runwayml",
     "metadata": {
-      "comment": "36 credits per second at 480p/720p, 40 at 1080p, 150 at 4K @ $0.01 per credit"
+      "comment": "14/30/40/150 credits per second at 480p/720p/1080p/4K @ $0.01 per credit; 56 credit minimum per generation not modeled"
     },
     "mode": "video_generation",
-    "output_cost_per_second": 0.36,
+    "output_cost_per_second": 0.3,
     "output_cost_per_second_1080p": 0.4,
+    "output_cost_per_second_480p": 0.14,
     "output_cost_per_second_4k": 1.5,
     "source": "https://docs.dev.runwayml.com/guides/pricing/",
     "supported_modalities": [
@@ -86118,10 +86808,11 @@
   "runwayml/seedance2_fast": {
     "litellm_provider": "runwayml",
     "metadata": {
-      "comment": "29 credits per second at 480p/720p @ $0.01 per credit = $0.29 per second"
+      "comment": "11 credits per second at 480p, 24 at 720p @ $0.01 per credit; 44 credit minimum per generation not modeled"
     },
     "mode": "video_generation",
-    "output_cost_per_second": 0.29,
+    "output_cost_per_second": 0.24,
+    "output_cost_per_second_480p": 0.11,
     "source": "https://docs.dev.runwayml.com/guides/pricing/",
     "supported_modalities": [
       "text",
@@ -86135,10 +86826,11 @@
   "runwayml/seedance2_mini": {
     "litellm_provider": "runwayml",
     "metadata": {
-      "comment": "16 credits per second @ $0.01 per credit = $0.16 per second; 64 credit minimum per task not modeled"
+      "comment": "7 credits per second at 480p, 15 at 720p @ $0.01 per credit; 28 credit minimum per generation not modeled"
     },
     "mode": "video_generation",
-    "output_cost_per_second": 0.16,
+    "output_cost_per_second": 0.15,
+    "output_cost_per_second_480p": 0.07,
     "source": "https://docs.dev.runwayml.com/guides/pricing/",
     "supported_modalities": [
       "text",
@@ -86147,6 +86839,38 @@
     ],
     "supported_output_modalities": [
       "video"
+    ]
+  },
+  "runwayml/seedream5_flash": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "2 credits per image (any resolution) @ $0.01 per credit = $0.02 per image"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.02,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "image"
+    ]
+  },
+  "runwayml/seedream5_lite": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "4 credits per image (any resolution) @ $0.01 per credit = $0.04 per image"
+    },
+    "mode": "image_generation",
+    "output_cost_per_image": 0.04,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "image"
     ]
   },
   "runwayml/veo3.1": {
@@ -86172,6 +86896,42 @@
     },
     "mode": "video_generation",
     "output_cost_per_second": 0.15,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/wan3": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "5/10/20 credits per second at 480p/720p/1080p @ $0.01 per credit"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.1,
+    "output_cost_per_second_1080p": 0.2,
+    "output_cost_per_second_480p": 0.05,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/",
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "runwayml/wan3_prime": {
+    "litellm_provider": "runwayml",
+    "metadata": {
+      "comment": "6.8/14/28 credits per second at 480p/720p/1080p @ $0.01 per credit"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.14,
+    "output_cost_per_second_1080p": 0.28,
+    "output_cost_per_second_480p": 0.068,
     "source": "https://docs.dev.runwayml.com/guides/pricing/",
     "supported_modalities": [
       "text",
@@ -95381,7 +96141,7 @@
     "input_cost_per_token_priority": 9E-7,
     "litellm_provider": "vertex_ai",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 65535,
+    "max_output_tokens": 65536,
     "mode": "chat",
     "output_cost_per_token": 0.000003,
     "output_cost_per_token_batches": 0.0000015,
@@ -95434,8 +96194,6 @@
     "cache_read_input_token_cost_batches": 1E-7,
     "cache_read_input_token_cost_flex": 1E-7,
     "cache_read_input_token_cost_priority": 3.6E-7,
-    "deprecation_date": "2027-05-28",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_image": 0.0011,
     "input_cost_per_token": 0.000002,
     "input_cost_per_token_above_200k_tokens": 0.000004,
@@ -95563,15 +96321,13 @@
     "cache_read_input_token_cost_batches": 2.5E-8,
     "cache_read_input_token_cost_flex": 2.5E-8,
     "cache_read_input_token_cost_priority": 9E-8,
-    "deprecation_date": "2027-05-28",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "input_cost_per_image": 0.00056,
     "input_cost_per_token": 5E-7,
     "input_cost_per_token_batches": 2.5E-7,
     "input_cost_per_token_flex": 2.5E-7,
     "input_cost_per_token_priority": 9E-7,
     "litellm_provider": "vertex_ai-language-models",
-    "max_input_tokens": 65536,
+    "max_input_tokens": 131072,
     "max_output_tokens": 32768,
     "mode": "image_generation",
     "output_cost_per_image": 0.0672,
@@ -95626,8 +96382,6 @@
     "cache_read_input_token_cost_batches": 1.25E-8,
     "cache_read_input_token_cost_flex": 1.25E-8,
     "cache_read_input_token_cost_priority": 4.5E-8,
-    "deprecation_date": "2027-05-07",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_audio_token": 5E-7,
     "input_cost_per_audio_token_above_200k_tokens": 5E-7,
@@ -95938,8 +96692,6 @@
     "cache_read_input_token_cost_batches": 7.5E-8,
     "cache_read_input_token_cost_flex": 7.5E-8,
     "cache_read_input_token_cost_priority": 2.7E-7,
-    "deprecation_date": "2027-05-19",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_audio_token": 0.0000015,
     "input_cost_per_audio_token_priority": 0.0000027,
@@ -95949,14 +96701,14 @@
     "input_cost_per_token_priority": 0.0000027,
     "litellm_provider": "vertex_ai",
     "max_input_tokens": 1048576,
-    "max_output_tokens": 65535,
+    "max_output_tokens": 65536,
     "mode": "chat",
     "output_cost_per_reasoning_token": 0.000009,
     "output_cost_per_token": 0.000009,
     "output_cost_per_token_batches": 0.0000045,
     "output_cost_per_token_flex": 0.0000045,
     "output_cost_per_token_priority": 0.0000162,
-    "prompt_cache_min_tokens": 4096,
+    "prompt_cache_min_tokens": 4096.0,
     "regional_endpoint_uplift_multiplier": 1.1,
     "search_context_cost_per_query": {
       "search_context_size_high": 0.014,
@@ -96006,8 +96758,6 @@
     "cache_read_input_token_cost_batches": 1.5E-8,
     "cache_read_input_token_cost_flex": 1.5E-8,
     "cache_read_input_token_cost_priority": 5.4E-8,
-    "deprecation_date": "2027-07-21",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "google_maps_grounding_cost_per_query": 0.014,
     "input_cost_per_token": 3E-7,
     "input_cost_per_token_batches": 1.5E-7,
@@ -96814,7 +97564,8 @@
     "output_cost_per_reasoning_token": 0.000009,
     "output_cost_per_token": 0.000009,
     "output_cost_per_video_token": 0.0000175,
-    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing"
+    "source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+    "successor_model": "vertex_ai/gemini-omni-1.2-flash"
   },
   "vertex_ai/gemini-omni-1.1-flash-preview": {
     "input_cost_per_token": 0.0000015,
@@ -96826,6 +97577,7 @@
     "output_cost_per_token": 0.000009,
     "output_cost_per_video_token": 0.0000175,
     "source": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/gemini/omni-1-1-flash",
+    "successor_model": "vertex_ai/gemini-omni-1.2-flash",
     "supported_endpoints": [
       "/v1beta/interactions"
     ],
@@ -97687,8 +98439,6 @@
     ]
   },
   "vertex_ai/veo-3.1-fast-generate-001": {
-    "deprecation_date": "2026-11-17",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "litellm_provider": "vertex_ai-video-models",
     "max_input_tokens": 1024,
     "mode": "video_generation",
@@ -97696,6 +98446,7 @@
     "output_cost_per_second_1080p": 0.12,
     "output_cost_per_second_4k": 0.3,
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+    "successor_model": "vertex_ai/gemini-omni-1.2-flash",
     "supported_modalities": [
       "text"
     ],
@@ -97719,14 +98470,13 @@
     ]
   },
   "vertex_ai/veo-3.1-generate-001": {
-    "deprecation_date": "2026-11-17",
-    "deprecation_source": "https://cloud.google.com/vertex-ai/generative-ai/docs/learn/model-versions",
     "litellm_provider": "vertex_ai-video-models",
     "max_input_tokens": 1024,
     "mode": "video_generation",
     "output_cost_per_second": 0.4,
     "output_cost_per_second_4k": 0.6,
     "source": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
+    "successor_model": "vertex_ai/gemini-omni-1.2-flash",
     "supported_modalities": [
       "text"
     ],
@@ -101161,6 +101911,7 @@
   "zai.glm-5": {
     "input_cost_per_token": 0.000001,
     "input_cost_per_token_batches": 5E-7,
+    "input_cost_per_token_flex": 5E-7,
     "input_cost_per_token_priority": 0.00000175,
     "litellm_provider": "bedrock_converse",
     "max_input_tokens": 200000,
@@ -101168,6 +101919,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.0000032,
     "output_cost_per_token_batches": 0.0000016,
+    "output_cost_per_token_flex": 0.0000016,
     "output_cost_per_token_priority": 0.0000056,
     "source": "https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonBedrock/current/us-east-1/index.json",
     "supports_audio_input": false,
