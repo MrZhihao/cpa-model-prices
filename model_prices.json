@@ -25960,6 +25960,18 @@
     "rpm": 300,
     "supports_reasoning": true
   },
+  "cloudflare/@cf/thinkingmachines/inkling-2-small": {
+    "cache_read_input_token_cost": 1E-7,
+    "input_cost_per_token": 3E-7,
+    "litellm_provider": "cloudflare",
+    "max_input_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.000001,
+    "source": "https://developers.cloudflare.com/workers-ai/models/inkling-2-small/",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_vision": true
+  },
   "cloudflare/@cf/zai-org/glm-4.7-flash": {
     "input_cost_per_token": 6.05E-8,
     "litellm_provider": "cloudflare",
@@ -37792,6 +37804,17 @@
     ],
     "supports_vision": true
   },
+  "fal_ai/bria/rmbg-3": {
+    "litellm_provider": "fal_ai",
+    "mode": "image_generation",
+    "output_cost_per_image": 0.018,
+    "source": "https://fal.ai/models/bria/rmbg-3",
+    "supported_endpoints": [
+      "/v1/images/edits",
+      "/v1/images/generations"
+    ],
+    "supports_vision": true
+  },
   "fal_ai/bria/text-to-image/3.2": {
     "litellm_provider": "fal_ai",
     "mode": "image_generation",
@@ -38195,6 +38218,68 @@
     "output_cost_per_second_480p": 0.1731,
     "output_cost_per_second_720p": 0.37,
     "source": "https://fal.ai/models/bytedance/seedance-2.0/us/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/bytedance/seedance-2.5/flash/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 720p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.3094,
+    "output_cost_per_second_480p": 0.1442,
+    "output_cost_per_second_720p": 0.3094,
+    "source": "https://fal.ai/models/bytedance/seedance-2.5/flash/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/bytedance/seedance-2.5/flash/reference-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 720p rate; with video references fal bills input and output duration and multiplies by 0.614, about 0.1901 per second at 720p, not modeled"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.3094,
+    "output_cost_per_second_480p": 0.1442,
+    "output_cost_per_second_720p": 0.3094,
+    "source": "https://fal.ai/models/bytedance/seedance-2.5/flash/reference-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/bytedance/seedance-2.5/flash/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "metadata": {
+      "comment": "per second of generated video by resolution; output_cost_per_second is the default resolution 720p rate"
+    },
+    "mode": "video_generation",
+    "output_cost_per_second": 0.3094,
+    "output_cost_per_second_480p": 0.1442,
+    "output_cost_per_second_720p": 0.3094,
+    "source": "https://fal.ai/models/bytedance/seedance-2.5/flash/text-to-video",
     "supported_endpoints": [
       "/v1/videos"
     ],
@@ -43827,6 +43912,57 @@
     ],
     "supports_vision": true
   },
+  "fal_ai/fal-ai/pixverse/extend": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/extend",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/extend/fast": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.8,
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/extend/fast",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
   "fal_ai/fal-ai/pixverse/lipsync": {
     "litellm_provider": "fal_ai",
     "metadata": {
@@ -43841,6 +43977,557 @@
     "supported_modalities": [
       "text",
       "video"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v3.5/effects": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v3.5/effects",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v3.5/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v3.5/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v3.5/image-to-video/fast": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.8,
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v3.5/image-to-video/fast",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v3.5/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v3.5/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v3.5/text-to-video/fast": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.8,
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v3.5/text-to-video/fast",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v3.5/transition": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v3.5/transition",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4.5/effects": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4.5/effects",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4.5/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4.5/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4.5/image-to-video/fast": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.8,
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4.5/image-to-video/fast",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4.5/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4.5/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4.5/text-to-video/fast": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.8,
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4.5/text-to-video/fast",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4.5/transition": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4.5/transition",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4/effects": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4/effects",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4/image-to-video/fast": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.8,
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4/image-to-video/fast",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v4/text-to-video/fast": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.8,
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v4/text-to-video/fast",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v5/effects": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v5/effects",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v5/image-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v5/image-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v5/text-to-video": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v5/text-to-video",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text"
+    ],
+    "supported_output_modalities": [
+      "video"
+    ]
+  },
+  "fal_ai/fal-ai/pixverse/v5/transition": {
+    "litellm_provider": "fal_ai",
+    "mode": "video_generation",
+    "output_cost_per_video_clip": {
+      "5s": {
+        "1080p": 0.4,
+        "360p": 0.15,
+        "540p": 0.15,
+        "720p": 0.2
+      },
+      "8s": {
+        "360p": 0.3,
+        "540p": 0.3,
+        "720p": 0.4
+      }
+    },
+    "source": "https://fal.ai/models/fal-ai/pixverse/v5/transition",
+    "supported_endpoints": [
+      "/v1/videos"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
     ],
     "supported_output_modalities": [
       "video"
@@ -58754,6 +59441,7 @@
     "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
+    "supports_xhigh_reasoning_effort": true,
     "tpm": 800000.0,
     "web_search_billing_unit": "per_query"
   },
@@ -59819,6 +60507,8 @@
   "github_copilot/claude-fable-5": {
     "cache_creation_input_token_cost": 0.0000125,
     "cache_read_input_token_cost": 0.000001,
+    "deprecation_date": "2026-12-14",
+    "deprecation_source": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
     "input_cost_per_token": 0.00001,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 200000,
@@ -59826,6 +60516,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.00005,
     "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "successor_model": "github_copilot/claude-fable-5.2",
     "supported_endpoints": [
       "/v1/chat/completions",
       "/v1/messages"
@@ -59888,12 +60579,15 @@
   "github_copilot/claude-haiku-4.5": {
     "cache_creation_input_token_cost": 0.00000125,
     "cache_read_input_token_cost": 1E-7,
+    "deprecation_date": "2026-12-14",
+    "deprecation_source": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
     "input_cost_per_token": 0.000001,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 128000,
     "max_output_tokens": 16000,
     "mode": "chat",
     "output_cost_per_token": 0.000005,
+    "successor_model": "github_copilot/claude-haiku-5.5",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -60112,6 +60806,8 @@
   },
   "github_copilot/gemini-3.8-flash": {
     "cache_read_input_token_cost": 7.5E-8,
+    "deprecation_date": "2026-12-14",
+    "deprecation_source": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
     "input_cost_per_token": 7.5E-7,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 200000,
@@ -60119,6 +60815,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.00000375,
     "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "successor_model": "github_copilot/gemini-4-hydrogen",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -60130,6 +60827,8 @@
   },
   "github_copilot/gemini-4-argon": {
     "cache_read_input_token_cost": 1E-7,
+    "deprecation_date": "2026-12-14",
+    "deprecation_source": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
     "input_cost_per_token": 0.000002,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 200000,
@@ -60137,6 +60836,7 @@
     "mode": "chat",
     "output_cost_per_token": 0.00001,
     "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "successor_model": "github_copilot/gemini-4-carbon",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -60634,6 +61334,8 @@
   "github_copilot/grok-4.6": {
     "cache_read_input_token_cost": 5E-7,
     "cache_read_input_token_cost_above_200k_tokens": 0.000001,
+    "deprecation_date": "2026-12-14",
+    "deprecation_source": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
     "input_cost_per_token": 0.000002,
     "input_cost_per_token_above_200k_tokens": 0.000004,
     "litellm_provider": "github_copilot",
@@ -60643,6 +61345,7 @@
     "output_cost_per_token": 0.000006,
     "output_cost_per_token_above_200k_tokens": 0.000012,
     "source": "https://raw.githubusercontent.com/github/docs/main/data/tables/copilot/models-and-pricing.yml",
+    "successor_model": "github_copilot/grok-4.7",
     "supported_endpoints": [
       "/v1/chat/completions"
     ],
@@ -60678,6 +61381,8 @@
   },
   "github_copilot/kimi-k3": {
     "cache_read_input_token_cost": 3E-7,
+    "deprecation_date": "2026-12-14",
+    "deprecation_source": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
     "input_cost_per_token": 0.000003,
     "litellm_provider": "github_copilot",
     "max_input_tokens": 917504,
@@ -61638,6 +62343,37 @@
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
   },
+  "global.openai.gpt-5.6-cyber": {
+    "cache_creation_input_token_cost": 0.000015625,
+    "cache_read_input_token_cost": 0.00000125,
+    "input_cost_per_token": 0.0000125,
+    "litellm_provider": "bedrock_converse",
+    "max_input_tokens": 922000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.000075,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-cyber.html",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_bedrock_converse_tool_result_images": false,
+    "supports_bedrock_runtime_chat_completions_response_format": true,
+    "supports_function_calling": true,
+    "supports_minimal_reasoning_effort": false,
+    "supports_reasoning": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true
+  },
   "global.openai.gpt-5.6-luna": {
     "cache_creation_input_token_cost": 2.5E-7,
     "cache_creation_input_token_cost_above_272k_tokens": 5E-7,
@@ -61946,6 +62682,41 @@
     "supports_minimal_reasoning_effort": false,
     "supports_none_reasoning_effort": true,
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true
+  },
+  "global.openai.gpt-daybreak-blue-5.6-sol": {
+    "cache_creation_input_token_cost": 0.000005,
+    "cache_creation_input_token_cost_above_272k_tokens": 0.00001,
+    "cache_read_input_token_cost": 4E-7,
+    "cache_read_input_token_cost_above_272k_tokens": 8E-7,
+    "input_cost_per_token": 0.000004,
+    "input_cost_per_token_above_272k_tokens": 0.000008,
+    "litellm_provider": "bedrock_converse",
+    "max_input_tokens": 922000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.00002,
+    "output_cost_per_token_above_272k_tokens": 0.00003,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-daybreak-blue-56-sol.html",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_bedrock_converse_tool_result_images": false,
+    "supports_bedrock_runtime_chat_completions_response_format": true,
+    "supports_function_calling": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_reasoning": true,
     "supports_sampling_params": false,
     "supports_tool_choice": true,
@@ -68466,7 +69237,7 @@
     "supports_web_search": true
   },
   "groq/openai/gpt-oss-safeguard-20b": {
-    "cache_read_input_token_cost": 3.7E-8,
+    "cache_read_input_token_cost": 3.75E-8,
     "input_cost_per_token": 7.5E-8,
     "litellm_provider": "groq",
     "max_input_tokens": 131072,
@@ -76122,6 +76893,7 @@
     "cache_read_input_token_cost": 2E-7,
     "input_cost_per_token": 0.000002,
     "litellm_provider": "nebius",
+    "max_input_tokens": 1048576,
     "mode": "chat",
     "output_cost_per_token": 0.00001,
     "source": "https://tokenfactory.nebius.com/api/public/models_info",
@@ -76279,6 +77051,18 @@
     "source": "https://tokenfactory.nebius.com/api/public/models_info",
     "supports_function_calling": true,
     "supports_reasoning": true
+  },
+  "nebius/thinkingmachines/Inkling-2-Small": {
+    "cache_read_input_token_cost": 6E-8,
+    "input_cost_per_token": 3E-7,
+    "litellm_provider": "nebius",
+    "max_input_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.000001,
+    "source": "https://tokenfactory.nebius.com/api/public/models_info",
+    "supports_function_calling": true,
+    "supports_reasoning": true,
+    "supports_vision": true
   },
   "nebius/zai-org/GLM-5.1": {
     "cache_read_input_token_cost": 2.6E-7,
@@ -79850,6 +80634,15 @@
     "max_output_tokens": 0,
     "mode": "moderation",
     "output_cost_per_token": 0.0
+  },
+  "omni-moderation-csam-latest": {
+    "input_cost_per_token": 0.0,
+    "litellm_provider": "openai",
+    "max_input_tokens": 32768,
+    "max_output_tokens": 0,
+    "mode": "moderation",
+    "output_cost_per_token": 0.0,
+    "source": "https://developers.openai.com/api/docs/guides/csam-classifier"
   },
   "omni-moderation-latest": {
     "input_cost_per_token": 0.0,
@@ -93788,6 +94581,37 @@
     "supports_vision": true,
     "supports_xhigh_reasoning_effort": true
   },
+  "us.openai.gpt-5.6-cyber": {
+    "cache_creation_input_token_cost": 0.0000171875,
+    "cache_read_input_token_cost": 0.000001375,
+    "input_cost_per_token": 0.00001375,
+    "litellm_provider": "bedrock_converse",
+    "max_input_tokens": 922000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.0000825,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-56-cyber.html",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_bedrock_converse_tool_result_images": false,
+    "supports_bedrock_runtime_chat_completions_response_format": true,
+    "supports_function_calling": true,
+    "supports_minimal_reasoning_effort": false,
+    "supports_reasoning": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true
+  },
   "us.openai.gpt-5.6-luna": {
     "cache_creation_input_token_cost": 2.75E-7,
     "cache_creation_input_token_cost_above_272k_tokens": 5.5E-7,
@@ -94096,6 +94920,41 @@
     "supports_minimal_reasoning_effort": false,
     "supports_none_reasoning_effort": true,
     "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_sampling_params": false,
+    "supports_tool_choice": true,
+    "supports_vision": true,
+    "supports_xhigh_reasoning_effort": true
+  },
+  "us.openai.gpt-daybreak-blue-5.6-sol": {
+    "cache_creation_input_token_cost": 0.0000055,
+    "cache_creation_input_token_cost_above_272k_tokens": 0.000011,
+    "cache_read_input_token_cost": 4.4E-7,
+    "cache_read_input_token_cost_above_272k_tokens": 8.8E-7,
+    "input_cost_per_token": 0.0000044,
+    "input_cost_per_token_above_272k_tokens": 0.0000088,
+    "litellm_provider": "bedrock_converse",
+    "max_input_tokens": 922000,
+    "max_output_tokens": 128000,
+    "mode": "chat",
+    "output_cost_per_token": 0.000022,
+    "output_cost_per_token_above_272k_tokens": 0.000033,
+    "source": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-daybreak-blue-56-sol.html",
+    "supported_endpoints": [
+      "/v1/chat/completions",
+      "/v1/responses"
+    ],
+    "supported_modalities": [
+      "text",
+      "image"
+    ],
+    "supported_output_modalities": [
+      "text"
+    ],
+    "supports_bedrock_converse_tool_result_images": false,
+    "supports_bedrock_runtime_chat_completions_response_format": true,
+    "supports_function_calling": true,
+    "supports_minimal_reasoning_effort": false,
     "supports_reasoning": true,
     "supports_sampling_params": false,
     "supports_tool_choice": true,
@@ -98673,6 +99532,7 @@
     "supports_video_input": true,
     "supports_vision": true,
     "supports_web_search": true,
+    "supports_xhigh_reasoning_effort": true,
     "web_search_billing_unit": "per_query"
   },
   "vertex_ai/gemini-embedding-2": {
