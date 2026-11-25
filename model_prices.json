@@ -41603,7 +41603,7 @@
   },
   "chatgpt/gpt-5.3-codex-spark": {
     "deprecation_date": "2026-09-14",
-    "deprecation_source": "https://developers.openai.com/codex/models",
+    "deprecation_source": "https://learn.chatgpt.com/docs/models",
     "litellm_provider": "chatgpt",
     "max_input_tokens": 128000,
     "max_output_tokens": 128000,
@@ -41634,7 +41634,7 @@
   "chatgpt/gpt-5.4": {
     "default_reasoning_effort": "none",
     "deprecation_date": "2026-08-31",
-    "deprecation_source": "https://developers.openai.com/codex/models",
+    "deprecation_source": "https://learn.chatgpt.com/docs/models",
     "litellm_provider": "chatgpt",
     "max_input_tokens": 1050000,
     "max_output_tokens": 128000,
@@ -41672,7 +41672,7 @@
   },
   "chatgpt/gpt-5.5": {
     "deprecation_date": "2026-10-14",
-    "deprecation_source": "https://developers.openai.com/codex/models",
+    "deprecation_source": "https://learn.chatgpt.com/docs/models",
     "litellm_provider": "chatgpt",
     "max_input_tokens": 1050000,
     "max_output_tokens": 128000,
@@ -70884,6 +70884,25 @@
     "supports_tool_choice": true,
     "supports_vision": true
   },
+  "fireworks_ai/accounts/fireworks/models/inkling-2-small": {
+    "cache_read_input_token_cost": 3E-8,
+    "cache_read_input_token_cost_priority": 3.75E-8,
+    "input_cost_per_token": 3E-7,
+    "input_cost_per_token_priority": 3.75E-7,
+    "litellm_provider": "fireworks_ai",
+    "max_input_tokens": 1048576,
+    "mode": "chat",
+    "output_cost_per_token": 0.000001,
+    "output_cost_per_token_priority": 0.00000125,
+    "source": "https://docs.fireworks.ai/serverless/pricing",
+    "supports_function_calling": true,
+    "supports_mid_conversation_system": true,
+    "supports_prompt_caching": true,
+    "supports_reasoning": true,
+    "supports_response_schema": true,
+    "supports_tool_choice": true,
+    "supports_vision": true
+  },
   "fireworks_ai/accounts/fireworks/models/internvl3-38b": {
     "input_cost_per_token": 9E-7,
     "litellm_provider": "fireworks_ai",
@@ -83255,7 +83274,8 @@
     },
     "source": "https://docs.gnani.ai/api/STT/models/prisma-v2-5",
     "supported_endpoints": [
-      "/v1/audio/transcriptions"
+      "/v1/audio/transcriptions",
+      "/v1/realtime"
     ]
   },
   "gnani/prisma-v3.0": {
@@ -83263,7 +83283,8 @@
     "mode": "audio_transcription",
     "source": "https://docs.gnani.ai/api/STT/models/prisma-v3",
     "supported_endpoints": [
-      "/v1/audio/transcriptions"
+      "/v1/audio/transcriptions",
+      "/v1/realtime"
     ]
   },
   "google.gemma-3-12b-it": {
@@ -89477,7 +89498,6 @@
     "litellm_provider": "huawei_maas",
     "max_input_tokens": 1000000,
     "max_output_tokens": 384000,
-    "max_tokens": 384000,
     "mode": "chat",
     "off_peak_pricing": {
       "cache_read_input_token_cost": 1.5E-8,
@@ -89499,7 +89519,6 @@
     "litellm_provider": "huawei_maas",
     "max_input_tokens": 1000000,
     "max_output_tokens": 384000,
-    "max_tokens": 384000,
     "mode": "chat",
     "off_peak_pricing": {
       "cache_read_input_token_cost": 3E-9,
@@ -89523,7 +89542,6 @@
     "litellm_provider": "huawei_maas",
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
-    "max_tokens": 128000,
     "mode": "chat",
     "off_peak_pricing": {
       "cache_read_input_token_cost": 1.82E-7,
@@ -89543,7 +89561,6 @@
     "litellm_provider": "huawei_maas",
     "max_input_tokens": 1000000,
     "max_output_tokens": 128000,
-    "max_tokens": 128000,
     "mode": "chat",
     "output_cost_per_token": 0.0000044,
     "source": "https://support.huaweicloud.com/intl/en-us/price-maas/price-maas-0002.html",
