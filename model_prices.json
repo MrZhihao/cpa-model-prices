@@ -128630,6 +128630,8 @@
   "xai/grok-code-fast": {
     "cache_read_input_token_cost": 2E-7,
     "cache_read_input_token_cost_above_200k_tokens": 4E-7,
+    "deprecation_date": "2026-05-15",
+    "deprecation_source": "https://docs.x.ai/developers/migration/may-15-retirement",
     "input_cost_per_image_token": 0.000001,
     "input_cost_per_token": 0.000001,
     "input_cost_per_token_above_200k_tokens": 0.000002,
@@ -128640,6 +128642,7 @@
     "output_cost_per_token": 0.000002,
     "output_cost_per_token_above_200k_tokens": 0.000004,
     "source": "https://api.x.ai/v1/language-models",
+    "successor_model": "xai/grok-build-0.1",
     "supported_modalities": [
       "text",
       "image"
@@ -128681,6 +128684,8 @@
   "xai/grok-code-fast-1-0825": {
     "cache_read_input_token_cost": 2E-7,
     "cache_read_input_token_cost_above_200k_tokens": 4E-7,
+    "deprecation_date": "2026-05-15",
+    "deprecation_source": "https://docs.x.ai/developers/migration/may-15-retirement",
     "input_cost_per_image_token": 0.000001,
     "input_cost_per_token": 0.000001,
     "input_cost_per_token_above_200k_tokens": 0.000002,
@@ -128691,6 +128696,7 @@
     "output_cost_per_token": 0.000002,
     "output_cost_per_token_above_200k_tokens": 0.000004,
     "source": "https://api.x.ai/v1/language-models",
+    "successor_model": "xai/grok-build-0.1",
     "supported_modalities": [
       "text",
       "image"
